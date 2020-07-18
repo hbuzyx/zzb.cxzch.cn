@@ -1,0 +1,40 @@
+<!--导航 -->
+<div class='headwrap'>
+	<div class='head'>
+		<if condition="$cid eq ''">
+		<h2><a href="/" title="<tp:sitename />-<tp:sitetitle/>"><tp:sitename /></a></h2>
+		<else/>
+		<h1><a href="/" title="{$title}-<tp:sitename />">{$title}</a></h1>
+		</if>
+	    <div class="searchbox">
+	        <form method="get" action="<tp:searchurl />">
+	            <input type="text" class="input" name="keyword" placeholder="请输入关键词..." value="" />
+	            <input type="submit" class="submit"/>
+	        </form>
+	    </div>                                                      
+	</div>
+</div>
+<div class="navwrap">
+	<div class="nav">
+		<ul class="navleft">
+			<li><a href="/" title="<tp:sitename />" <if condition="$cid eq ''">class="cur"</if> >网站首页</a></li>
+            <tp:navlist typeid='0'>
+            <li><a href='{$navlist.url}' title="{$navlist.name}" <if condition="$cid eq $navlist['id'] or $pid eq $navlist['id']">class="cur"</if> >{$navlist.name}</a></li>
+            </tp:navlist>
+		</ul> 
+		<div class="hotnav">
+			<a href="javascript:;">热门搜索：</a>
+			<a href="{:U('Search/index')}?keyword=撸管图">撸管图</a><span></span>
+			<a href="{:U('Search/index')}?keyword=傻缺" class="cur">傻缺</a><span></span>
+			<a href="{:U('Search/index')}?keyword=福利">福利</a>
+		</div>
+	</div>
+</div>
+
+<div class="AdWrap">
+	<div class="Ad" style="padding-top:0">
+		<div class="Ad968NAV">
+			
+		</div>
+	</div>
+</div>

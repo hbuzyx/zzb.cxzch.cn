@@ -1,0 +1,91 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!-- saved from url=(0070)http://kaoshi.hbxuwe.cn/index.php?exam-app-exampaper-makescore&ehid=55 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>在线考试系统</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="/Public/Kaoshi/static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/Public/Kaoshi/static/datetimepicker.css">
+	<link rel="stylesheet" type="text/css" href="/Public/Kaoshi/static/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="/Public/Kaoshi/static/peskin.css">
+	<!--[if lt IE 9]>
+	<script src="app/core/styles/js/html5shiv.min.js"></script>
+	<script src="app/core/styles/js/respond.min.js"></script>
+	<![endif]-->
+	<script src="/Public/Kaoshi/static/jquery.min.js"></script>
+	<script src="/Public/Kaoshi/static/jquery.json.js"></script>
+	<script src="/Public/Kaoshi/static/jquery-ui.min.js"></script>
+	<script src="/Public/Kaoshi/static/bootstrap.min.js"></script>
+	<script src="/Public/Kaoshi/static/bootstrap-datetimepicker.js"></script>
+	<script src="/Public/Kaoshi/static/all.fine-uploader.min.js"></script>
+	<script src="/Public/Kaoshi/static/ckeditor.js"></script><style>.cke{visibility:hidden;}</style>
+	<script src="/Public/Kaoshi/static/plugin.js"></script>
+</head><body> 
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="main">
+			<div class="box itembox" style="margin-bottom:0px;display:none">
+				<div class="col-xs-12">
+					<ol class="breadcrumb">
+					  <li><a href="http://kaoshi.hbxuwe.cn/index.php">首页</a></li>
+					  <li><a href="http://kaoshi.hbxuwe.cn/index.php?exam-app">考试</a></li>
+					  <li><a href="http://kaoshi.hbxuwe.cn/index.php?exam-app-basics">党建在线考场</a></li>
+					  <li><a href="http://kaoshi.hbxuwe.cn/index.php?exam-app-exampaper">模拟考试</a></li>
+					  <li class="active">成绩单</li>
+					</ol>
+				</div>
+			</div>
+			<div class="box itembox">
+				<legend class="text-center"><h3>党建知识测试</h3></legend>
+								<div class="col-xs-4">
+            		<div class="boardscore">
+            			<h1 class="text-center text-danger">0.00 分</h1>
+            			<p>分数评价</p>
+            		</div>
+            	</div>
+            	<div class="col-xs-8">
+            		<div><b class="text-info">考试详情：</b></div>
+          			<p>总分：<b class="text-warning">100</b>分 合格分数线：<b class="text-warning">60</b>分 答卷耗时：<b class="text-warning">2分钟</b></p>
+              		<table class="table table-hover table-bordered">
+                      <tbody><tr class="success">
+                        <th>题型</th>
+                        <th>总题数</th>
+                        <th>答对题数</th>
+                        <th>总分</th>
+                        <th>得分</th>
+                      </tr>
+                                                                  <tr>
+                        <td>单选题</td>
+                        <td>70</td>
+                        <td>0</td>
+                        <td>70.0</td>
+                        <td>0.0</td>
+                      </tr>
+                                                                                        <tr>
+                        <td>多选题</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>10.0</td>
+                        <td>0.0</td>
+                      </tr>
+                                                                                        <tr>
+                        <td>判断题</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>5.0</td>
+                        <td>0.0</td>
+                      </tr>
+                                                                                                                                                                                                      <tr>
+                        <td colspan="5" align="left">本次考试共<b class="text-warning">85</b>道题，总分<b class="text-warning">100</b>分，您做对<b class="text-warning">0</b>道题，得到<b class="text-warning">0.00</b>分</td>
+                      </tr>
+                   </tbody></table>
+                                      <div class="text-center"><a href="answer.html" class="btn btn-info">查看答案和解析</a>
+                   <!--&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php?exam-app-history&ehtype=1" class="btn btn-info">进入我的考试记录2</a>--></div>
+            	               	</div>
+            	            </div>
+		</div>
+	</div>
+</div> 
+
+</body></html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$title}-<yang:sitename /></title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link href="__PUBLIC__/style/style_new.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/style/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js" ></script>
+<script type="text/javascript">
+function changeVcode(obj){
+	$("#VCode").attr("src",'<yang:vcodeurl />'+ '#'+Math.random());
+	return false;
+}
+</script>
+</head>
+<body class="bodyview">
+<!--w980-->
+<include file="Public:top" />
+<div id="w1000">
+<include file="Public:header_user" />
+<div class="crl"></div>
+<div class="list_w_1"><yang:position /> </div>
+<div class="block10"></div>
+
+<div class="warp1 mt">
+	<include file="Member:left" />
+<div class="right f_r">
+<div class="nybt"><span>个人中心</span></div>
+<div class="form">
+	<form method='post' enctype="multipart/form-data" id="upForm" action="{:U('Member/face')}">		
+		<div class="h3">上传头像</div>
+		<dl>
+			<dt>当前头像：</dt>
+			<dd><img src="{$user.face}" /></dd>
+		</dl>
+		<dl>
+			<!--<dt style=" height:47px; line-height:47px;">上传头像：</dt>-->
+			<dd>
+                    <div id="altContent" ></div>
+                    <input type="hidden" name="path" id="path" />
+                
+			</dd>
+            
+		</dl>
+
+		<!--<div class="form_b">
+			<input type="submit" class="btn_blue" id="submit" value="保存">		
+		</div>-->
+	</form>
+
+	</div>
+
+</div>
+<div class=" clear"></div>
+</div>
+
+<div class="block12"></div>
+<include file="Public:footer" />
+
+<script type="text/javascript" src="__DATA__/FaustCplus/swfobject.js"></script>
+<script type="text/javascript" src="__DATA__/FaustCplus/requestTicket.js"></script>
+<script type="text/javascript">
+	
+
+	function submitForm(path) {
+		//alert(path);
+		$("#path").val(path);
+		$("#altContent").hide();
+		$("#upForm").submit();
+		$("#TB_closeWindowButton").trigger('click');
+	}
+	function uploadevent(status) {
+		//alert(status);
+		status = status.substring(1);
+		if (status && status !== -1) {
+			//alert('头像上传成功！');
+			submitForm(status);
+		} else if (status === -2) {
+			alert('头像上传失败!');
+			//window.location.href = "#";
+		} else {
+			$("#TB_closeWindowButton").trigger('click');
+		}
+
+	}
+	var flashvars = {
+		"jsfunc": "uploadevent",
+	   	"imgUrl": "__ROOT__/avatar/system/0.gif",
+		"pid": "75642723",
+		"uploadSrc": true,
+		"showBrow": true,
+		"showCame": true,
+		"uploadUrl":"__ROOT__/saveavater.php?action=uploadavatar&uid={$uid}"
+	};
+	var params = {
+		menu: "false",
+		scale: "noScale",
+		allowFullscreen: "true",
+		allowScriptAccess: "always",
+		wmode: "transparent",
+		bgcolor: "#FFFFFF"
+	};
+	var attributes = {
+		id: "FaustCplus"
+	};
+	swfobject.embedSWF("__DATA__/FaustCplus/FaustCplus.swf", "altContent", "650", "485", "9.0.0", "expressInstall.swf",flashvars,params,attributes);
+</script>
+
+</div>
+</div><!--end w980-->
+</body>
+</html>
+
+
+

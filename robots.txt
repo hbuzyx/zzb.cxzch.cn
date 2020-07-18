@@ -1,0 +1,3 @@
+# Robots For 5ufxw.com
+User-agent: *
+Disallow: /Public/

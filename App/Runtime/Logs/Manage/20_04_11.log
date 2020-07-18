@@ -1,0 +1,248 @@
+[ 2020-04-11T09:42:01+08:00 ] 110.245.45.41 /xn_admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2020-04-11T09:42:04+08:00 ] 110.245.45.41 /xn_admin.php?s=/Product/index/pid/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `my_product` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_product product LEFT JOIN my_category category ON product.cid = category.id WHERE product.status > 0 AND product.cid IN (24) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT product.id AS id,product.title AS title,product.color AS color,product.keywords AS keywords,product.litpic AS litpic,product.description AS description,product.price AS price,product.marketprice AS marketprice,product.brand AS brand,product.units AS units,product.specification AS specification,product.publishtime AS publishtime,product.updatetime AS updatetime,product.click AS click,product.cid AS cid,product.commentflag AS commentflag,product.flag AS flag,product.jumpurl AS jumpurl,product.status AS status,product.userid AS userid,product.aid AS aid,product.tag AS tag,product.scores AS scores,product.demo AS demo,product.downlink AS downlink,product.downnum AS downnum,product.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_product product LEFT JOIN my_category category ON product.cid = category.id WHERE product.status > 0 AND product.cid IN (24) ORDER BY product.id DESC LIMIT 0,10   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2020-04-11T09:42:04+08:00 ] 110.245.45.41 /xn_admin.php?s=/Index/getParentCate&pid=0&rnd=5694
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0042s ]
+
+[ 2020-04-11T18:39:41+08:00 ] 110.245.45.41 /xn_admin.php?s=/Index/getParentCate&pid=0&rnd=15441
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0007s ]
+
+[ 2020-04-11T22:32:11+08:00 ] 110.245.45.41 /xn_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','75','76','77','78','43','45') LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','75','76','77','78','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'flagtype' ORDER BY sort,id  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2020-04-11T22:32:16+08:00 ] 110.245.45.41 /xn_admin.php?s=/Article/index/pid/76
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (76) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (76) ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2020-04-11T22:32:17+08:00 ] 110.245.45.41 /xn_admin.php?s=/Article/add/pid/76
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2020-04-11T22:32:18+08:00 ] 110.245.45.41 /xn_admin.php?s=/Public/editorMethod&action=config&&noCache=1586615534730
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2020-04-11T22:32:56+08:00 ] 110.245.45.41 /xn_admin.php?s=/Public/editorMethod&action=catchimage&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: x /www/wwwroot/ym.cxzch.cn/Include/Library/Think/Image/Driver/Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y /www/wwwroot/ym.cxzch.cn/Include/Library/Think/Image/Driver/Gd.class.php 第 270 行.
+SQL: SHOW COLUMNS FROM `my_attachment` [ RunTime:0.0216s ]
+SQL: INSERT INTO `my_attachment` (`filepath`,`title`,`haslitpic`,`filetype`,`filesize`,`uploadtime`,`aid`) VALUES ('img1/20200411/5e91d51870a8a.png','231629qzlzebd9e7xxpnfx.png','1','1','5430','1586615576','1') [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2020-04-11T22:33:10+08:00 ] 110.245.45.41 /xn_admin.php?s=/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/ym.cxzch.cn/App/Common/Common/function.php 第 1762 行.
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/ym.cxzch.cn/App/Common/Common/function.php 第 1763 行.
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0059s ]
+SQL: INSERT INTO `my_article` (`title`,`jumpurl`,`cid`,`litpic`,`keywords`,`tag`,`description`,`author`,`copyfrom`,`content`,`publishtime`,`commentflag`,`status`,`shorttitle`,`updatetime`,`click`,`aid`,`flag`) VALUES ('如何正确配置 Nginx + PHP','','76','','Nginx + PHP','','对很多人而言，配置Nginx+PHP无外乎就是搜索一篇教程，然后拷贝粘贴。听上去似乎也没什么问题，可惜实际上网络上很多资料本身年久失修，漏洞百出，如果大家不求甚解，一味的拷贝粘贴，早晚有一天会为此付出代价。假设我们用PHP实现了一个前端控制','管理员','','<p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">对很多人而言，配置Nginx+PHP无外乎就是搜索一篇教程，然后拷贝粘贴。听上去似乎也没什么问题，可惜实际上网络上很多资料本身年久失修，漏洞百出，如果大家不求甚解，一味的拷贝粘贴，早晚有一天会为此付出代价。</p><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\"><img title=\'如何正确配置 Nginx + PHP\' alt=\'如何正确配置 Nginx + PHP\' title=\'如何正确配置 Nginx + PHP\' src=\"/uploads/img1/20200411/5e91d51870a8a.png\" alt=\"如何正确配置 Nginx+PHP\" width=\"800\" height=\"400\"/></p><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">假设我们用PHP实现了一个前端控制器，或者直白点说就是统一入口：把PHP请求都发送到同一个文件上，然后在此文件里通过解析「REQUEST_URI」实现路由。</p><h2 style=\"margin: 30px 0px 14px; padding: 0px 0px 5px; color: rgb(34, 34, 34); border-bottom: 1px solid rgb(238, 238, 238); font-size: 18px; font-family: &quot;microsoft yahei&quot;; white-space: normal;\">一般这样配置</h2><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">此时很多教程会教大家这样配置Nginx+PHP：</p><pre class=\"hljs nginx\" style=\"margin: 15px auto; padding: 10px 15px; overflow-x: auto; color: rgb(51, 51, 51); background-color: rgb(251, 251, 251); word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 20px; font-family: &quot;courier new&quot;; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial;\">server&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;listen&nbsp;80;&nbsp;&nbsp;&nbsp;&nbsp;server_name&nbsp;foo.com;&nbsp;&nbsp;&nbsp;&nbsp;root&nbsp;/path;&nbsp;&nbsp;&nbsp;&nbsp;location&nbsp;/&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index&nbsp;index.html&nbsp;index.htm&nbsp;index.php;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!-e&nbsp;$request_filename)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rewrite&nbsp;.&nbsp;/index.php&nbsp;last;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;location&nbsp;~&nbsp;/.php$&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;include&nbsp;fastcgi_params;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fastcgi_param&nbsp;SCRIPT_FILENAME&nbsp;/path$fastcgi_script_name;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fastcgi_pass&nbsp;127.0.0.1:9000;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fastcgi_index&nbsp;index.php;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">这里面有很多错误，或者说至少是坏味道的地方，大家看看能发现几个。</p><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">我们有必要先了解一下Nginx配置文件里指令的继承关系：</p><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">Nginx配置文件分为好多块，常见的从外到内依次是「http」、「server」、「location」等等，缺省的继承关系是从外到内，也就是说内层块会自动获取外层块的值作为缺省值。</p><h2 style=\"margin: 30px 0px 14px; padding: 0px 0px 5px; color: rgb(34, 34, 34); border-bottom: 1px solid rgb(238, 238, 238); font-size: 18px; font-family: &quot;microsoft yahei&quot;; white-space: normal;\">让我们先从「index」指令入手吧</h2><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">在问题配置中它是在「location」中定义的：</p><pre class=\"hljs nginx\" style=\"margin: 15px auto; padding: 10px 15px; overflow-x: auto; color: rgb(51, 51, 51); background-color: rgb(251, 251, 251); word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 20px; font-family: &quot;courier new&quot;; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial;\">location&nbsp;/&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;index&nbsp;index.html&nbsp;index.htm&nbsp;index.php;
+}</pre><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">一旦未来需要加入新的「location」，必然会出现重复定义的「index」指令，这是因为多个「location」是平级的关系，不存在继承，此时应该在「server」里定义「index」，借助继承关系，「index」指令在所有的「location」中都能生效。</p><h2 style=\"margin: 30px 0px 14px; padding: 0px 0px 5px; color: rgb(34, 34, 34); border-bottom: 1px solid rgb(238, 238, 238); font-size: 18px; font-family: &quot;microsoft yahei&quot;; white-space: normal;\">接下来看看「if」指令</h2><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">说它是大家误解最深的Nginx指令毫不为过：</p><pre class=\"hljs nginx\" style=\"margin: 15px auto; padding: 10px 15px; overflow-x: auto; color: rgb(51, 51, 51); background-color: rgb(251, 251, 251); word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 20px; font-family: &quot;courier new&quot;; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial;\">if&nbsp;(!-e&nbsp;$request_filename)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;rewrite&nbsp;.&nbsp;/index.php&nbsp;last;
+}</pre><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">很多人喜欢用「if」指令做一系列的检查，不过这实际上是「try_files」指令的职责：</p><pre class=\"hljs nginx\" style=\"margin: 15px auto; padding: 10px 15px; overflow-x: auto; color: rgb(51, 51, 51); background-color: rgb(251, 251, 251); word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 20px; font-family: &quot;courier new&quot;; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial;\">try_files&nbsp;$uri&nbsp;$uri/&nbsp;/index.php;</pre><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">除此以外，初学者往往会认为「if」指令是内核级的指令，但是实际上它是rewrite模块的一部分，加上Nginx配置实际上是声明式的，而非过程式的，所以当其和非rewrite模块的指令混用时，结果可能会非你所愿。</p><h2 style=\"margin: 30px 0px 14px; padding: 0px 0px 5px; color: rgb(34, 34, 34); border-bottom: 1px solid rgb(238, 238, 238); font-size: 18px; font-family: &quot;microsoft yahei&quot;; white-space: normal;\">下面看看「fastcgi_params」配置文件</h2><pre class=\"hljs php\" style=\"margin: 15px auto; padding: 10px 15px; overflow-x: auto; color: rgb(51, 51, 51); background-color: rgb(251, 251, 251); word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 20px; font-family: &quot;courier new&quot;; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial;\">include&nbsp;fastcgi_params;</pre><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">Nginx有两份fastcgi配置文件，分别是「fastcgi_params」和「fastcgi.conf」，它们没有太大的差异，唯一的区别是后者比前者多了一行「SCRIPT_FILENAME」的定义：</p><pre class=\"hljs nginx\" style=\"margin: 15px auto; padding: 10px 15px; overflow-x: auto; color: rgb(51, 51, 51); background-color: rgb(251, 251, 251); word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 20px; font-family: &quot;courier new&quot;; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial;\">fastcgi_param&nbsp;SCRIPT_FILENAME&nbsp;$document_root$fastcgi_script_name;</pre><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">注意：$document_root 和 $fastcgi_script_name 之间没有 /。</p><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">原本Nginx只有「fastcgi_params」，后来发现很多人在定义「SCRIPT_FILENAME」时使用了硬编码的方式，于是为了规范用法便引入了「fastcgi.conf」。</p><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">不过这样的话就产生一个疑问：为什么一定要引入一个新的配置文件，而不是修改旧的配置文件？这是因为「fastcgi_param」指令是数组型的，和普通指令相同的是：内层替换外层；和普通指令不同的是：当在同级多次使用的时候，是新增而不是替换。换句话说，如果在同级定义两次「SCRIPT_FILENAME」，那么它们都会被发送到后端，这可能会导致一些潜在的问题，为了避免此类情况，便引入了一个新的配置文件。</p><p></p><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">此外，我们还需要考虑一个安全问题：在PHP开启「cgi.fix_pathinfo」的情况下，PHP可能会把错误的文件类型当作PHP文件来解析。如果Nginx和PHP安装在同一台服务器上的话，那么最简单的解决方法是用「try_files」指令做一次过滤：</p><pre class=\"hljs nginx\" style=\"margin: 15px auto; padding: 10px 15px; overflow-x: auto; color: rgb(51, 51, 51); background-color: rgb(251, 251, 251); word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 20px; font-family: &quot;courier new&quot;; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial;\">try_files&nbsp;$uri&nbsp;=404;</pre><h2 style=\"margin: 30px 0px 14px; padding: 0px 0px 5px; color: rgb(34, 34, 34); border-bottom: 1px solid rgb(238, 238, 238); font-size: 18px; font-family: &quot;microsoft yahei&quot;; white-space: normal;\">改良后的版本</h2><p style=\"margin-top: 0px; margin-bottom: 15px; padding: 0px; color: rgb(68, 68, 68); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal;\">依照前面的分析，给出一份改良后的版本，是不是比开始的版本清爽了很多：</p><pre class=\"hljs nginx\" style=\"margin: 15px auto; padding: 10px 15px; overflow-x: auto; color: rgb(51, 51, 51); background-color: rgb(251, 251, 251); word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 20px; font-family: &quot;courier new&quot;; border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(221, 221, 221); border-image: initial;\">server&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;listen&nbsp;80;&nbsp;&nbsp;&nbsp;&nbsp;server_name&nbsp;foo.com;&nbsp;&nbsp;&nbsp;&nbsp;root&nbsp;/path;&nbsp;&nbsp;&nbsp;&nbsp;index&nbsp;index.html&nbsp;index.htm&nbsp;index.php;&nbsp;&nbsp;&nbsp;&nbsp;location&nbsp;/&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try_files&nbsp;$uri&nbsp;$uri/&nbsp;/index.php$is_args$args;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;location&nbsp;~&nbsp;/.php$&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try_files&nbsp;$uri&nbsp;=404;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;include&nbsp;fastcgi.conf;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fastcgi_pass&nbsp;127.0.0.1:9000;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre><p><br/></p>','1586615537','1','1','','1586615590','0','1','7') [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `my_attachment` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`filepath` FROM `my_attachment` WHERE `filepath` IN ('img1/20200411/5e91d51870a8a.png')  [ RunTime:0.0005s ]
+SQL: UPDATE `my_article` SET `litpic`='/uploads/img1/20200411/5e91d51870a8a.png!300X300.jpg' WHERE `id` = 576 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `my_attachmentindex` [ RunTime:0.0156s ]
+SQL: INSERT INTO `my_attachmentindex` (`attid`,`arcid`,`modelid`) VALUES ('442','576','1') [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+
+[ 2020-04-11T22:33:11+08:00 ] 110.245.45.41 /xn_admin.php?s=/Article/index/pid/76
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (76) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (76) ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/ym.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003866s ]
+

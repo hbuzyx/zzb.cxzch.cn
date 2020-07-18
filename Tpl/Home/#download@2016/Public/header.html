@@ -1,0 +1,170 @@
+<!--<div id="site_nav">
+            <div  class="sn_container clearfix">
+                <ul class="tg_tools fr">
+                    <li class="no-hover" style="display: none">
+                        <a id="msg_notify" class="msg_notify" href="{:U('Member/message')}"></a>
+                    </li>
+                    <li class="box_color nav_home hide haslogin">
+                        <span><a href="{:U('Member/index')}">个人中心</a></span><b class="icon"></b>
+                        <ul>
+                            <li><a href="{:U('Member/index')}"><span>我的主页</span></a></li>
+                            <li><a href="{:U('Member/person')}"><span>个人设置</span></a></li>
+                            <li><a href="{:U('Member/index')}"><span>我的签到</span></a></li>
+                            <li><a href="{:U('Public/logout')}"><span>退出登录</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="tg-line"></li>
+                    <li class="box_color">
+                        <span>帮助中心</span><b class="icon"></b>
+                        <ul>
+                        	<tp:catlist typeid='1' flag='1'>
+                            <li><a href="{$catlist.url}"><span>{$catlist.name}</span></a></li>
+                            </tp:catlist>
+                        </ul>
+                    </li>
+                    <li class="tg-line"></li>
+                    <li class="box_color">
+                        <span><a href="{:U('Tag/lists')}">标签库</a></span>
+                    </li>
+                </ul>
+                <ul class="tg_tools fl" id="login_area" style="display: block;">
+                    <li class="tg_tools_home no-hover"><i class="icon-more"></i><span><a href="<tp:siteurl />">小楠首页</a></span></li>
+                    <li class="no-hover hide haslogin"><span><a href="{:U('Member/index')}"><font class="sn_login username" id="head_username"></font></a></span></li>
+                    <li class="tg-line icon"></li>
+                    <li class="no-hover hide haslogin"><span><a href="{:U('Public/logout')}">退出</a></span></li>
+
+                    <li class="no-hover nologin"><span><a href="{:U('Public/register')}">注册</a></span></li>
+                    <li class="tg-line icon"></li>
+                    <li class="box_color nav_home" id="nav_login"><span><a href="{:U('Public/login')}" class="sn_login">登录</a></span></li>
+                </ul>
+            </div>
+        </div>
+<div id="header">
+    <div class="tg_tools_home">
+        <div class="bbs_enter">
+           <a class="bbs-banner"  href="Member/pay.html" target="_blank"><img src="__PUBLIC__/images/other/banner.jpg" alt="充值"></a>
+        </div>
+        <div class="logo">
+            <a class="logo-bd" href="<tp:siteurl />"><img src="__PUBLIC__/images/logo.png" alt="<tp:sitename />logo"></a>
+        </div>
+        <form action="<tp:searchurl />" method="get" id="form_search" onsubmit="return searchSub()">
+            <div id="search">
+                <div class="search_area">
+                    <input type="submit" value="搜 索" class="btn_search">
+                    <div class="search_select">
+                        <span class="icon-search"></span>
+                    </div>
+                    <input type="text" value='请输入搜索内容'  class="search_input"  autocomplete="off" id="search_input" data-default="请输入搜索内容" onblur="checkInputBlur($(this))" onfocus="checkInputFocus($(this))" />
+                    <input type="hidden" name="modelid" value="5" />
+                    <input type="hidden" name="keyword" />
+                </div>
+                <div class="search_box hide" id="search_box"></div>
+                <div class="search_keywords" >
+                    <span>热门搜索：</span>
+                    <volist name="searchkey" id="vo">
+                        <a href="{:U('Search/index')}?modelid=5&keyword={$vo.keyword}">{$vo.keyword}</a>
+                    </volist>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="nav" class="nav">
+    <div class='nav_main clearfix'>
+        <a href="<tp:siteurl />" title="<tp:sitename />" class="menu <if condition="$cid eq ''">current</if>" >首 页</a>
+        <tp:navlist typeid='0'>
+        <a href="{$navlist.url}" title="{$navlist.name}" class="menu <if condition="$cid eq $navlist['id'] or $pid eq $navlist['id']">current</if>" >{$navlist.name}</a>
+        </tp:navlist>
+        <span class="icon_hot"></span>
+    </div>
+</div>-->
+<div class="head" style="position:relative">
+  <div class="wap_logo">
+    <a href="http://j.hbxuwe.cn/"><img src="__PUBLIC__/zzb/logo.png"/></a>
+  </div>
+  <div class="banner">
+    <!-- <div class="banner_top"></div> -->
+    <div
+      data-am-widget="slider"
+      class="am-slider am-slider-a2 am-no-layout"
+      data-am-slider='{"directionNav":false,"slideshowSpeed": 5000,"animationSpeed": 1000,"animation": "fade","slideshow:":false}'
+    >
+<!--
+      data-am-slider='{"slideshow:":false}'
+    >
+-->
+      <ul class="am-slides">
+        <li
+          class="am-active-slide"
+          data-thumb-alt=""
+          style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"
+        >
+          <div
+            class="ddsgg"
+            style="background: url(/uploads/img1/banner1.png);background-size: 100% 100%;"
+          ></div>
+        </li>
+        <li
+          class="am-active-slide"
+          data-thumb-alt=""
+          style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 2;"
+        >
+          <div
+            class="ddsgg"
+            style="background: url(/uploads/img1/banner2.png);background-size: 100% 100%;"
+          ></div>
+        </li>
+
+
+
+</ul>
+      <ol class="am-control-nav am-control-paging">
+        <li><a href="http://j.hbxuwe.cn/#" class="">1</a><i></i></li>
+      </ol>
+<div style="background: url(/uploads/img1/tc.png);width: 100%; height: 238px; margin-right: -100%; top: 0px; position: absolute;; z-index: 9;"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="nav" id="nav">
+  <div class="jz">
+    <ul class="nav_main">
+      <li class="yiji_li"><a class="wh_wbd" href="<tp:siteurl />">首页</a></li>
+      <tp:navlist typeid="0">
+        <li
+          class="yiji_li"
+          style="<if condition='$navlist.id eq 50 or $navlist.id eq 8 or  $navlist.id eq 42'> display:none;</if>"
+        >
+          <a class="wh_wbd " href="{$navlist.url}">{$navlist.name}</a>
+          <ul class="nav_c">
+            <volist name='navlist["child"]' id="v" offset="0" length="6">
+              <li class="erji_li c"> <a href="{$v.ename}">{$v.name}</a> </li>
+            </volist>
+          </ul>
+        </li>
+      </tp:navlist>
+    </ul>
+  </div>
+</div>
+<nav
+  data-am-widget="menu"
+  class="am-menu  am-menu-dropdown1 am-no-layout"
+  data-am-menu-collapse=""
+>
+  <a href="javascript: void(0)" class="am-menu-toggle">
+    <img src="__PUBLIC__/zzb/ddh.png" alt="Menu Toggle" />
+  </a>
+  <ul class="am-menu-nav am-avg-sm-1 am-collapse" style="height: 0px;">
+    <tp:navlist typeid="0">
+      <li class="am-parent" style="">
+        <a href="{$navlist.url}" class="">{$navlist.name}</a>
+        <ul class="am-menu-sub am-collapse  am-avg-sm-2 ">
+          <volist name='navlist["child"]' id="v" offset="0" length="6">
+            <li class=""> <a href="{$v.ename}">{$v.name}</a> </li>
+          </volist>
+        </ul>
+      </li>
+    </tp:navlist>
+  </ul>
+</nav>

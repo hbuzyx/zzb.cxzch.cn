@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>{$title} - <tp:sitename /></title>
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" type="image/x-icon" /> 
+    <link rel="stylesheet" href="__PUBLIC__/css/style_version1.css" type="text/css" /> 
+    <link rel="stylesheet" href="__PUBLIC__/css/article.css" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.js" ></script>
+</head> 
+<body> 
+        
+    <include file="Public:header" />
+
+	<div class="wenda clearfix"> 
+
+    <div class="wenda-main">
+        
+        <div class="tag_head">
+            <h1>标签：<strong>{$tagname}</strong></h1>
+        </div>
+        
+        <!--左侧列表内容-->
+        <div class="article-list">
+        
+            <foreach name="vlist" item="list" key="autoindex">
+            <div class="news1"> 
+            <a title="{$list.title}" href="{$list.url}" target="_blank"><img src="{$list.litpic}" alt="{$list.title}" /></a>
+            <div class="news_title">
+                <h4><a title="{$list.title}" href="{$list.url}" target="_blank" >{$list.title}</a> </h4>
+                <em><img src="__PUBLIC__/images/icon3.png" alt="阅读">{$list.click}</em>
+                <div class="clear"></div>
+            </div>
+            <p>{$list.description}...</p>
+            <span class="news_span1">{$list.publishtime|date='Y-m-d H:i:s',###}</span>
+            <if condition="$list['tag']">
+            <div class="keyword-list">
+            <php>$tag = explode(',',$list['tag']);</php>
+                <volist name="tag" id="vo">
+                    <a class="list-tag" href="/news?tagname={$vo}" >{$vo}</a>
+                </volist>
+            </div>
+            </if>
+            </div>
+            </foreach>
+                
+            <div class="pager">{$page1}</div>
+
+            <!--page-->
+        </div>
+    </div>
+    <div class="wenda-slider">
+        <!-- pub new ques -->
+        <div class="newques-container">
+            <a  id="js-newques" class="newques-btn" href="{:U('Member/article_add')}"><i class="icon-addques"></i>发表文章</a>
+        </div>
+
+        <div class="panel wenda-form clearfix">
+            <div class="panel-body clearfix">
+            <volist name="tags" id="vo">
+                <a class="hot-label" href="/news?tagname={$vo['tag_name']}" style="margin:0 6px 10px 0">{$vo.tag_name}</a>
+            </volist>
+            </div>
+        </div>
+        <div class="panel hot">
+            <div class="panel-heading">
+                <h2 class="panel-title">热门问答</h2>
+            </div>
+            <div class="panel-body clearfix">
+                <ul class="weekly-hot">
+                
+                <tp:list limit='20' orderby='click DESC'>
+                <li <if condition="$autoindex eq 0">class="padtop"<elseif condition="count($_list) gt 1 and ($autoindex+1) eq count($_list)" />class="bordbottom"</if> ><em class="hoticon hot{$autoindex+1}">热</em><a class="hottalk" href="{$list.url}">{$list.title}</a><i class="rankingnum">{$list.comment}<br>回答</i>
+                </li>
+                </tp:list>
+                
+                </ul>
+            </div>
+        </div>
+        </div>
+     </div>
+
+<include file="Public:footer" />
+
+</body>
+</html>

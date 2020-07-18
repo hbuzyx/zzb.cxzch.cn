@@ -1,0 +1,98 @@
+<div class="box">
+	
+</div>
+<div class="pageTabWrap mB20">
+  <ul class="pageTab">
+        <li id="tab1" onclick="setTab('tab',1,3)" class="hover">最热</li>
+        <li id="tab2" onclick="setTab('tab',2,3)" class="">最新</li>
+        <li id="tab3" onclick="setTab('tab',3,3)" class="">TOP</li>
+    </ul>
+    <div id="con_tab_1" class="hover" style="display: block;">
+        <ul class="pageTabBox">
+            <tp:list typeid='0' limit='5' orderby='click DESC' >
+            <li><a href="{$list.url}" title="{$list.title}">+&nbsp;&nbsp;&nbsp;{$list.title}</a></li>
+            </tp:list>
+        </ul>
+    </div>
+    <div id="con_tab_2" style="display: none;">
+        <ul class="pageTabBox">
+            <tp:list typeid='0' limit='5'>
+            <li><a href="{$list.url}" title="{$list.title}">+&nbsp;&nbsp;&nbsp;{$list.title}</a></li>
+            </tp:list>
+        </ul>
+    </div>
+    <div id="con_tab_3" style="display: none;">
+        <ul class="pageTabBox">
+            <tp:list typeid='0' limit='5' orderby='ding DESC' >
+            <li><a href="{$list.url}" title="{$list.title}">+&nbsp;&nbsp;&nbsp;{$list.title}</a></li>
+            </tp:list>
+        </ul>
+    </div>
+</div>
+<div class="box">
+	
+</div>
+<div class="box">
+	
+</div>
+<!--<div class="pageTabWrap mB20">
+
+</div>
+
+<div class="pageTabWrap mB20">
+
+</div>
+
+<div class="pageTabWrap mB20">
+    <ul class="pageTab">
+        <li id="tab1" onclick="setTab('tab',1,3)" class="hover">最热</li>
+        <li id="tab2" onclick="setTab('tab',2,3)" class="">最新</li>
+        <li id="tab3" onclick="setTab('tab',3,3)" class="">TOP</li>
+    </ul>
+    <div id="con_tab_1" class="hover" style="display: block;">
+        <ul class="pageTabBox">
+            <tp:list typeid='0' limit='5' orderby='click DESC' >
+            <li><a href="{$list.url}" title="{$list.title}">+&nbsp;&nbsp;&nbsp;{$list.title}</a></li>
+            </tp:list>
+        </ul>
+    </div>
+    <div id="con_tab_2" style="display: none;">
+        <ul class="pageTabBox">
+            <tp:list typeid='0' limit='5'>
+            <li><a href="{$list.url}" title="{$list.title}">+&nbsp;&nbsp;&nbsp;{$list.title}</a></li>
+            </tp:list>
+        </ul>
+    </div>
+    <div id="con_tab_3" style="display: none;">
+        <ul class="pageTabBox">
+            <tp:list typeid='0' limit='5' orderby='ding DESC' >
+            <li><a href="{$list.url}" title="{$list.title}">+&nbsp;&nbsp;&nbsp;{$list.title}</a></li>
+            </tp:list>
+        </ul>
+    </div>
+</div>
+
+<div class="pageTabWrap mB20">
+    <ul class="pageTab">
+        <li id="tabbb1" onclick="setTab('tabbb',1,3)" class="hover">推荐动态图</li>
+        <li id="tabbb2" onclick="setTab('tabbb',2,3)" class="">推荐视频</li>
+    </ul>
+    <div id="con_tabbb_1" class="hover" style="display: block;">
+        <ul class="pageTabBoxPic">
+            <foreach name="articlegif" item="v">
+                <li>
+                    <a href="{:U('/'.$v['id'])}" title="{$v.title}"><h4>{$v.title}</h4><img src="/Uploads/{$v['thumbnail']}" class="img"/></a>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+    <div id="con_tabbb_2" style="display: none;">
+        <ul class="pageTabBoxPic">
+            <foreach name="articlevideo" item="v" title="{$v.title}">
+                <li>
+                    <a href="{:U('/'.$v['id'])}" title="{$v.title}"><img src="/Uploads/{$v['thumbnail']}" class="img"/><h4>+ {$v.title}</h4></a>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+</div>-->

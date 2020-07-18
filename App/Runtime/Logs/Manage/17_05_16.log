@@ -1,0 +1,2338 @@
+[ 2017-05-16T06:44:04+08:00 ] 127.0.0.1 /code_admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:04+08:00 ] 127.0.0.1 /code_admin.php?s=/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:04+08:00 ] 127.0.0.1 /code_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:05+08:00 ] 127.0.0.1 /code_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:17+08:00 ] 127.0.0.1 /code_admin.php?s=/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:18+08:00 ] 127.0.0.1 /code_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:21+08:00 ] 127.0.0.1 /code_admin.php?s=/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_admin` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `my_admin` SET `logintime`='1494888261',`loginip`='127.0.0.1',`loginnum`='99' WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `role_id` FROM `my_role_user` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-05-16T06:44:21+08:00 ] 127.0.0.1 /code_admin.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:21+08:00 ] 127.0.0.1 /code_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:22+08:00 ] 127.0.0.1 /code_admin.php?s=/Public/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT VERSION() as ver; [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant session - assumed 'session' D:\WWW\demo\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Undefined variable: Think D:\WWW\demo\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Use of undefined constant yang_adm_superadmin - assumed 'yang_adm_superadmin' D:\WWW\demo\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:22+08:00 ] 127.0.0.1 /code_admin.php?s=/Index/getParentCate&pid=0&rnd=40695
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0010s ]
+
+[ 2017-05-16T06:44:25+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'flagtype' ORDER BY sort,id  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:29+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:30+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (31,'32','33','36','34','37','39','35','38') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (31,'32','33','36','34','37','39','35','38') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:31+08:00 ] 127.0.0.1 /code_admin.php?s=/Page/index/pid/28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_category` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:31+08:00 ] 127.0.0.1 /code_admin.php?s=/Public/editorMethod&action=config&&noCache=1494888271867
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:34+08:00 ] 127.0.0.1 /code_admin.php?s=/Topic/index/pid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_topic` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_topic topic LEFT JOIN my_category category ON topic.cid = category.id WHERE topic.status > 0 AND topic.cid IN (29,'40','41') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT topic.id AS id,topic.title AS title,topic.shorttitle AS shorttitle,topic.color AS color,topic.copyfrom AS copyfrom,topic.author AS author,topic.keywords AS keywords,topic.litpic AS litpic,topic.description AS description,topic.publishtime AS publishtime,topic.updatetime AS updatetime,topic.click AS click,topic.cid AS cid,topic.commentflag AS commentflag,topic.flag AS flag,topic.jumpurl AS jumpurl,topic.status AS status,topic.userid AS userid,topic.aid AS aid,topic.ding AS ding,topic.cai AS cai,topic.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_topic topic LEFT JOIN my_category category ON topic.cid = category.id WHERE topic.status > 0 AND topic.cid IN (29,'40','41') ORDER BY topic.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\9c973587044a718e6f5b8681944ba20f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\9c973587044a718e6f5b8681944ba20f.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\9c973587044a718e6f5b8681944ba20f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\9c973587044a718e6f5b8681944ba20f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:36+08:00 ] 127.0.0.1 /code_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:36+08:00 ] 127.0.0.1 /code_admin.php?s=/Page/index/pid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:37+08:00 ] 127.0.0.1 /code_admin.php?s=/Public/editorMethod&action=config&&noCache=1494888277144
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:44:37+08:00 ] 127.0.0.1 /code_admin.php?s=/Picture/index/pid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_picture` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT picture.id AS id,picture.title AS title,picture.color AS color,picture.author AS author,picture.keywords AS keywords,picture.litpic AS litpic,picture.description AS description,picture.copyfrom AS copyfrom,picture.template AS template,picture.publishtime AS publishtime,picture.updatetime AS updatetime,picture.click AS click,picture.cid AS cid,picture.commentflag AS commentflag,picture.flag AS flag,picture.jumpurl AS jumpurl,picture.status AS status,picture.userid AS userid,picture.aid AS aid,picture.ding AS ding,picture.cai AS cai,picture.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8) ORDER BY picture.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:38+08:00 ] 127.0.0.1 /code_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configgroup' ORDER BY sort,id  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configtype' ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\demo\App\Manage\Common\function.php 第 413 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:39+08:00 ] 127.0.0.1 /code_admin.php?s=/Collect/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_collect` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_collect` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_collect` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:44:48+08:00 ] 127.0.0.1 /code_admin.php?s=/Collect/page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] require_once(./page.config.php): failed to open stream: No such file or directory D:\WWW\demo\App\Manage\Controller\CollectController.class.php 第 108 行.
+
+[ 2017-05-16T06:45:41+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:45:42+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:45:42+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (31,'32','33','36','34','37','39','35','38') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (31,'32','33','36','34','37','39','35','38') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:45:44+08:00 ] 127.0.0.1 /code_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\demo\App\Manage\Common\function.php 第 413 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:46:08+08:00 ] 127.0.0.1 /code_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0030s ]
+SQL: UPDATE `my_config` SET `value`='素材火' WHERE `name` = 'CFG_WEBNAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://www.demo.com' WHERE `name` = 'CFG_WEBURL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://www.demo.com/Mobile' WHERE `name` = 'CFG_MWEBURL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='网站模板_网站源码_PHP教程_PHP源码_thinkphp源码' WHERE `name` = 'CFG_WEBTITLE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='网站模板,网站源码,PHP教程,PHP源码,thinkphp源码' WHERE `name` = 'CFG_KEYWORDS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='素材火下载网提供精品站长资源：包括各类主流网站模板（织梦dedecms、destoon、wordpress、discuz、ecshop、phpcms等模板）等和源码（thinkphp源码、PHP源码、JAVA源码、ASP源码、商城源码）等资源的免费下载服务和仿站服务。' WHERE `name` = 'CFG_DESCRIPTION' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='#download@2016' WHERE `name` = 'CFG_DEFAULT_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='sucai' WHERE `name` = 'CFG_THEMESTYLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='昆明市五华区' WHERE `name` = 'CFG_ADDRESS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0871-8888888' WHERE `name` = 'CFG_PHONE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='default' WHERE `name` = 'CFG_DEFAULT_MOBILE_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='Copyright©2014-2017 All Rights Reserved.' WHERE `name` = 'CFG_POWERBY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_STATS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_BAIDUSTATS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='滇ICP备14001033号-2' WHERE `name` = 'CFG_BEIAN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='m5msJbKhM' WHERE `name` = 'CFG_COOKIE_ENCODE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MOBILE_AUTO' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_WEBSITE_CLOSE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='站点维护中，请稍等一会...' WHERE `name` = 'CFG_WEBSITE_CLOSE_INFO' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='艾滋病|中国共产党|111111111' WHERE `name` = 'CFG_BADWORD' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_FEEDBACK_GUEST' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_VERIFY_REGISTER' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_VERIFY_LOGIN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_VERIFY_GUESTBOOK' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_VERIFY_REVIEW' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='416148489@qq.com' WHERE `name` = 'CFG_EMAIL_FROM' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='站名' WHERE `name` = 'CFG_EMAIL_FROM_NAME' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='smtp.exmail.qq.com' WHERE `name` = 'CFG_EMAIL_HOST' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='25' WHERE `name` = 'CFG_EMAIL_PORT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='416148489@qq.com' WHERE `name` = 'CFG_EMAIL_LOGINNAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_PASSWORD' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='20480' WHERE `name` = 'CFG_UPLOAD_MAXSIZE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='300X300' WHERE `name` = 'CFG_IMGTHUMB_SIZE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_IMGTHUMB_TYPE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='600' WHERE `name` = 'CFG_IMGTHUMB_WIDTH' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='./uploads/' WHERE `name` = 'CFG_UPLOAD_ROOTPATH' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='jpg,gif,png,jpeg,txt,doc,docx,xls,ppt,zip,rar,mp3' WHERE `name` = 'CFG_UPLOAD_FILE_EXT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='jpg,gif,png,jpeg' WHERE `name` = 'CFG_UPLOAD_IMG_EXT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='5242880' WHERE `name` = 'CFG_SQL_FILESIZE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_DOWNLOAD_HIDE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MEMBER_OPEN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MEMBER_VERIFYEMAIL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'REGISTER_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'LOGIN_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'PUBLISH_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'REPLY_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'SIGN_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='www,bbs,ftp,mail,user,users,admin,administrator' WHERE `name` = 'CFG_MEMBER_NOTALLOW' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='10' WHERE `name` = 'POINTS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'JINBI' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_EMAIL_ACTIVE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_TITLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_NAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_ID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_NUMBER' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_APPSECRET' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'WESYS_TYPE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='203564' WHERE `name` = 'QQ_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='bab1f3acc0c67b69a1f470ac5e8dc36a' WHERE `name` = 'QQ_APPKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:90/Oauth-login-type-qq.html' WHERE `name` = 'QQ_CALLBACK' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='602735229' WHERE `name` = 'SINA_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='66781cbeab9fdb9b014a387ab6e943fe' WHERE `name` = 'SINA_APPKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:90/Oauth-login-type-sina.html' WHERE `name` = 'SINA_CALLBACK' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'STORAGE_OPEN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'ACCESSKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'SECRETKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'BUCKET' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'DOMAIN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='xuanhanfei@126.com' WHERE `name` = 'ALIPAY_EMAIL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='ggo084pb84gl43qnw82a39n9b7r1jq2m' WHERE `name` = 'ALIPAY_KEY' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='2088901006538525' WHERE `name` = 'ALIPAY_PARTNER' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='wx426b3015555a46be' WHERE `name` = 'WECHAT_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1900009851' WHERE `name` = 'WECHAT_MCHID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='8934e7d15453e97507ef794cf7b0519d' WHERE `name` = 'WECHAT_KEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='7813490da6f1265e4901ffb80afaa36f' WHERE `name` = 'WECHAT_APPSECRET' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T06:46:09+08:00 ] 127.0.0.1 /code_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0030s ]
+SQL: SELECT `name`,`value`,`typeid` FROM `my_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\demo\App\Manage\Common\function.php 第 413 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:54:12+08:00 ] 127.0.0.1 /code_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0030s ]
+SQL: UPDATE `my_config` SET `value`='素材火' WHERE `name` = 'CFG_WEBNAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://www.demo.com' WHERE `name` = 'CFG_WEBURL' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='http://www.demo.com/Mobile' WHERE `name` = 'CFG_MWEBURL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='网站模板_网站源码_PHP教程_PHP源码_thinkphp源码' WHERE `name` = 'CFG_WEBTITLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='网站模板,网站源码,PHP教程,PHP源码,thinkphp源码' WHERE `name` = 'CFG_KEYWORDS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='素材火下载网提供精品站长资源：包括各类主流网站模板（织梦dedecms、destoon、wordpress、discuz、ecshop、phpcms等模板）等和源码（thinkphp源码、PHP源码、JAVA源码、ASP源码、商城源码）等资源的免费下载服务和仿站服务。' WHERE `name` = 'CFG_DESCRIPTION' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='#download@2016' WHERE `name` = 'CFG_DEFAULT_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='sucai' WHERE `name` = 'CFG_THEMESTYLE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='昆明市五华区' WHERE `name` = 'CFG_ADDRESS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0871-8888888' WHERE `name` = 'CFG_PHONE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='default' WHERE `name` = 'CFG_DEFAULT_MOBILE_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='Copyright©2014-2017 All Rights Reserved.' WHERE `name` = 'CFG_POWERBY' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_STATS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_BAIDUSTATS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='滇ICP备14001033号-2' WHERE `name` = 'CFG_BEIAN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='m5msJbKhM' WHERE `name` = 'CFG_COOKIE_ENCODE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MOBILE_AUTO' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_WEBSITE_CLOSE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='站点维护中，请稍等一会...' WHERE `name` = 'CFG_WEBSITE_CLOSE_INFO' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='艾滋病|中国共产党|111111111' WHERE `name` = 'CFG_BADWORD' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_FEEDBACK_GUEST' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_VERIFY_REGISTER' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_VERIFY_LOGIN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_VERIFY_GUESTBOOK' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_VERIFY_REVIEW' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='admin@sucaihuo.com' WHERE `name` = 'CFG_EMAIL_FROM' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='站名' WHERE `name` = 'CFG_EMAIL_FROM_NAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='smtp.exmail.qq.com' WHERE `name` = 'CFG_EMAIL_HOST' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='25' WHERE `name` = 'CFG_EMAIL_PORT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='admin@sucaihuo.com' WHERE `name` = 'CFG_EMAIL_LOGINNAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='sucaihuo' WHERE `name` = 'CFG_EMAIL_PASSWORD' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='20480' WHERE `name` = 'CFG_UPLOAD_MAXSIZE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='300X300' WHERE `name` = 'CFG_IMGTHUMB_SIZE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_IMGTHUMB_TYPE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='600' WHERE `name` = 'CFG_IMGTHUMB_WIDTH' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='./uploads/' WHERE `name` = 'CFG_UPLOAD_ROOTPATH' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='jpg,gif,png,jpeg,txt,doc,docx,xls,ppt,zip,rar,mp3' WHERE `name` = 'CFG_UPLOAD_FILE_EXT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='jpg,gif,png,jpeg' WHERE `name` = 'CFG_UPLOAD_IMG_EXT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='5242880' WHERE `name` = 'CFG_SQL_FILESIZE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_DOWNLOAD_HIDE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MEMBER_OPEN' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MEMBER_VERIFYEMAIL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'REGISTER_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'LOGIN_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'PUBLISH_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'REPLY_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'SIGN_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='www,bbs,ftp,mail,user,users,admin,administrator' WHERE `name` = 'CFG_MEMBER_NOTALLOW' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='10' WHERE `name` = 'POINTS' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'JINBI' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_EMAIL_ACTIVE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_TITLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_NAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_ID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_NUMBER' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_APPSECRET' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'WESYS_TYPE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='203564' WHERE `name` = 'QQ_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='bab1f3acc0c67b69a1f470ac5e8dc36a' WHERE `name` = 'QQ_APPKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:90/Oauth-login-type-qq.html' WHERE `name` = 'QQ_CALLBACK' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='602735229' WHERE `name` = 'SINA_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='66781cbeab9fdb9b014a387ab6e943fe' WHERE `name` = 'SINA_APPKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:90/Oauth-login-type-sina.html' WHERE `name` = 'SINA_CALLBACK' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'STORAGE_OPEN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'ACCESSKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'SECRETKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'BUCKET' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'DOMAIN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='xuanhanfei@126.com' WHERE `name` = 'ALIPAY_EMAIL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='ggo084pb84gl43qnw82a39n9b7r1jq2m' WHERE `name` = 'ALIPAY_KEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2088901006538525' WHERE `name` = 'ALIPAY_PARTNER' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='wx426b3015555a46be' WHERE `name` = 'WECHAT_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1900009851' WHERE `name` = 'WECHAT_MCHID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='8934e7d15453e97507ef794cf7b0519d' WHERE `name` = 'WECHAT_KEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='7813490da6f1265e4901ffb80afaa36f' WHERE `name` = 'WECHAT_APPSECRET' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T06:54:13+08:00 ] 127.0.0.1 /code_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0020s ]
+SQL: SELECT `name`,`value`,`typeid` FROM `my_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\demo\App\Manage\Common\function.php 第 413 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:00:24+08:00 ] 127.0.0.1 /code_admin.php?s=/Collect/page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_category` ORDER BY sort  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:00:50+08:00 ] 127.0.0.1 /code_admin.php?s=/Collect/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_collect` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_collect` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_collect` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:01:04+08:00 ] 127.0.0.1 /code_admin.php?s=/Rbac/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_admin` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_admin` WHERE `id` > '0' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`encrypt`,`realname`,`email`,`usertype`,`logintime`,`loginip`,`loginnum`,`islock` FROM `my_admin` WHERE `id` > '0' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_role_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_role` [ RunTime:0.0020s ]
+SQL: SELECT role_user.user_id AS user_id,role.name AS name,role.remark AS remark,role.status AS rstatus FROM my_role_user role_user  JOIN my_role role ON role_user.role_id = role.id WHERE role_user.user_id = '1'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:01:06+08:00 ] 127.0.0.1 /code_admin.php?s=/Rbac/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_role` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_role` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_role` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:01:12+08:00 ] 127.0.0.1 /code_admin.php?s=/System/url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_meta` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_meta` WHERE `groupid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:01:14+08:00 ] 127.0.0.1 /code_admin.php?s=/System/online
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_meta` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_meta` WHERE `groupid` = 9  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\WWW\demo\App\Runtime\Cache\Manage\ede0e86615c85f2852b2b060c7772d68.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:01:15+08:00 ] 127.0.0.1 /code_admin.php?s=/System/clearCache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:01:16+08:00 ] 127.0.0.1 /code_admin.php?s=/Sitemap/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0020s ]
+SQL: SELECT `name`,`value`,`typeid` FROM `my_config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`keywords`,`litpic`,`publishtime`,`click`,`cid` FROM `my_article` WHERE ( status=1 ) UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_picture WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_soft WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_special WHERE status=1 ORDER BY id desc LIMIT 10000 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0020s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`keywords`,`litpic`,`publishtime`,`click`,`cid` FROM `my_article` WHERE ( status=1 ) UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_picture WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_soft WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_special WHERE status=1 ORDER BY id desc LIMIT 10000 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`keywords`,`litpic`,`publishtime`,`click`,`cid` FROM `my_article` WHERE ( status=1 ) UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_picture WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_soft WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_special WHERE status=1 ORDER BY id desc LIMIT 10000 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+NOTIC: [8] Undefined index: description D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 139 行.
+NOTIC: [8] Undefined index: url D:\WWW\demo\App\Manage\Controller\SitemapController.class.php 第 144 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-16T07:01:17+08:00 ] 127.0.0.1 /code_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configgroup' ORDER BY sort,id  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configtype' ORDER BY sort,id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\demo\App\Manage\Common\function.php 第 413 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:01:32+08:00 ] 127.0.0.1 /code_admin.php?s=/Menu/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_menu` ORDER BY sort,id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:02:07+08:00 ] 127.0.0.1 /code_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\demo\App\Manage\Common\function.php 第 413 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:03:36+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_abc` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\70453eaa0aea42241fe97b6b657a3cc7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:03:38+08:00 ] 127.0.0.1 /code_admin.php?s=/Union/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_union` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_union` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_union` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\b3a5865e9100f5e12a44c7305279315d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:03:39+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_abc` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\70453eaa0aea42241fe97b6b657a3cc7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-16T07:03:43+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/edit/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:04:13+08:00 ] 127.0.0.1 /code_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\WWW\demo\App\Manage\Common\function.php 第 413 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:04:48+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_abc` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\70453eaa0aea42241fe97b6b657a3cc7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:05:56+08:00 ] 127.0.0.1 /code_admin.php?s=/Union/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_union` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_union` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_union` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\b3a5865e9100f5e12a44c7305279315d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:05:57+08:00 ] 127.0.0.1 /code_admin.php?s=/Union/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:06:03+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_abc` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\70453eaa0aea42241fe97b6b657a3cc7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:06:04+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/getcode/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:06:10+08:00 ] 127.0.0.1 /code_admin.php?s=/Union/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_union` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_union` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_union` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\b3a5865e9100f5e12a44c7305279315d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:06:12+08:00 ] 127.0.0.1 /code_admin.php?s=/Union/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:06:29+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_abc` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\70453eaa0aea42241fe97b6b657a3cc7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:06:31+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/edit/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:06:47+08:00 ] 127.0.0.1 /code_admin.php?s=/Union/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_union` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_union` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_union` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\b3a5865e9100f5e12a44c7305279315d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-16T07:06:48+08:00 ] 127.0.0.1 /code_admin.php?s=/Union/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:07:14+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_abc` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\70453eaa0aea42241fe97b6b657a3cc7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:07:18+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/addDetail/aid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:07:53+08:00 ] 127.0.0.1 /code_admin.php?s=/Public/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\WWW\demo\Include\Library\Think\Upload.class.php 第 173 行.
+SQL: SHOW COLUMNS FROM `my_attachment` [ RunTime:0.0030s ]
+SQL: INSERT INTO `my_attachment` (`filepath`,`title`,`haslitpic`,`filetype`,`filesize`,`uploadtime`,`aid`) VALUES ('abc1/20170516/591a34c932d6f.jpg','10.jpg','0','1','48396','1494889673','1') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:08:10+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/addDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc_detail` [ RunTime:0.0020s ]
+SQL: INSERT INTO `my_abc_detail` (`title`,`starttime`,`endtime`,`content`,`url`,`sort`,`status`,`aid`) VALUES ('微信支付','1494889638','1687388820','/uploads/abc1/20170516/591a34c932d6f.jpg','http://www.sucaihuo.com/php/1200.html','1','1','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0020s ]
+SQL: UPDATE `my_abc` SET `items`=items+1 WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_attachment` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `my_attachment` WHERE `filepath` IN ('abc1/20170516/591a34c932d6f.jpg')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_attachmentindex` [ RunTime:0.0020s ]
+SQL: INSERT INTO `my_attachmentindex` (`attid`,`arcid`,`desc`) VALUES ('216','6','abc') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:08:11+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/detail/aid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_abc_detail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc_detail` WHERE `aid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_abc_detail` WHERE `aid` = 1 ORDER BY sort,id LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:08:26+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/editDetail/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_abc_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_abc_detail` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:08:36+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/editDetail/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `my_abc_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_abc_detail` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:09:00+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_abc` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\70453eaa0aea42241fe97b6b657a3cc7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:09:05+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:09:14+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/detail/aid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_abc_detail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc_detail` WHERE `aid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_abc_detail` WHERE `aid` = 1 ORDER BY sort,id LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:09:19+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/editDetail/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_abc_detail` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:09:50+08:00 ] 127.0.0.1 /code_admin.php?s=/Union/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_union` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_union` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_union` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\b3a5865e9100f5e12a44c7305279315d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:09:51+08:00 ] 127.0.0.1 /code_admin.php?s=/Union/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:10:38+08:00 ] 127.0.0.1 /code_admin.php?s=/Comment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_comment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `my_member` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_comment comment LEFT JOIN my_model model ON comment.modelid = model.id LEFT JOIN my_member member ON comment.userid = member.id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT comment.id AS id,comment.postid AS postid,comment.modelid AS modelid,comment.title AS title,comment.username AS username,comment.nickname AS nickname,comment.email AS email,comment.ip AS ip,comment.agent AS agent,comment.posttime AS posttime,comment.content AS content,comment.status AS status,comment.pid AS pid,comment.userid AS userid,model.name AS modelname,model.tablename AS tablename,member.face AS face FROM my_comment comment LEFT JOIN my_model model ON comment.modelid = model.id LEFT JOIN my_member member ON comment.userid = member.id ORDER BY comment.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:10:40+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'flagtype' ORDER BY sort,id  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:12:56+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_abc` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pid D:\WWW\demo\App\Runtime\Cache\Manage\70453eaa0aea42241fe97b6b657a3cc7.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:12:59+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/detail/aid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_abc_detail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_abc_detail` WHERE `aid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_abc_detail` WHERE `aid` = 1 ORDER BY sort,id LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:13:06+08:00 ] 127.0.0.1 /code_admin.php?s=/Abc/editDetail/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_abc_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_abc_detail` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_abc` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_abc` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-16T07:19:42+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:19:51+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 10,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:19:53+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23/p/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 20,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:19:54+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:20:38+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 10,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:20:49+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23/p/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 20,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:21:05+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/edit/id/21/pid/23/p/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0030s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_soft` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'softtype' ORDER BY sort,id  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'softlanguage' ORDER BY sort,id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT category.property AS property FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.id = 23 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:21:05+08:00 ] 127.0.0.1 /code_admin.php?s=/Ajax/get_proplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_property` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `my_property` WHERE `id` IN ('35','36')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_property_value` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_property_value` WHERE ( prop_id=35 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_property_value` WHERE ( prop_id=36 )  [ RunTime:0.0000s ]
+
+[ 2017-05-16T07:21:06+08:00 ] 127.0.0.1 /code_admin.php?s=/Public/editorMethod&action=config&&noCache=1494890465734
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:21:50+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\demo\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-16T07:21:55+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/index/pid/23/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 10,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:22:07+08:00 ] 127.0.0.1 /code_admin.php?s=/Soft/edit/id/29/pid/23/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_soft` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0020s ]
+SQL: SELECT category.property AS property FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.id = 23 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-16T07:22:07+08:00 ] 127.0.0.1 /code_admin.php?s=/Ajax/get_proplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_property` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_property` WHERE `id` IN ('35','36')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_property_value` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_property_value` WHERE ( prop_id=35 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_property_value` WHERE ( prop_id=36 )  [ RunTime:0.0000s ]
+
+[ 2017-05-16T07:22:07+08:00 ] 127.0.0.1 /code_admin.php?s=/Public/editorMethod&action=config&&noCache=1494890527598
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

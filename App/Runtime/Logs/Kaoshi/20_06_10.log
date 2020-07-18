@@ -1,0 +1,162 @@
+[ 2020-06-10T06:41:57+08:00 ] 192.168.65.3 /kaoshi.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006717s ]
+ERR: 无法加载控制器:Index
+
+[ 2020-06-10T06:42:22+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010585s ]
+ERR: 无法加载控制器:Index
+
+[ 2020-06-10T06:43:11+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006772s ]
+ERR: 无法加载控制器:Index
+
+[ 2020-06-10T06:43:38+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006327s ]
+ERR: 无法加载控制器:Index
+
+[ 2020-06-10T06:44:24+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028021s ]
+ERR: 无法加载控制器:Index
+
+[ 2020-06-10T06:45:16+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008330s ]
+
+[ 2020-06-10T06:45:29+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005257s ]
+ERR: 模板不存在:./App/Kaoshi/View/default/Index/index.html
+
+[ 2020-06-10T06:46:55+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018480s ]
+
+[ 2020-06-10T06:52:03+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.198553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.198747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.409419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.409491s ]
+
+[ 2020-06-10T06:52:53+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006624s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008450s ]
+
+[ 2020-06-10T06:52:57+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005874s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017603s ]
+
+[ 2020-06-10T06:53:24+08:00 ] 192.168.65.3 /kaoshi.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.045074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.045151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.274537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.274605s ]
+

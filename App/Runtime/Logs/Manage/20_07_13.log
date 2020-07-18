@@ -1,0 +1,1054 @@
+[ 2020-07-13T11:16:32+08:00 ] 106.8.162.252 /xn_admin.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+
+[ 2020-07-13T11:16:32+08:00 ] 106.8.162.252 /xn_admin.php?s=/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2020-07-13T11:16:32+08:00 ] 106.8.162.252 /xn_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2020-07-13T11:16:43+08:00 ] 106.8.162.252 /xn_admin.php?s=/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `my_admin` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `my_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-07-13T11:16:43+08:00 ] 106.8.162.252 /xn_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2020-07-13T11:17:03+08:00 ] 106.8.162.252 /xn_admin.php?s=/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `my_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `my_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `my_admin` SET `logintime`='1594610223',`loginip`='106.8.162.252',`loginnum`='127' WHERE `id` = 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `my_role_user` [ RunTime:0.0018s ]
+SQL: SELECT `role_id` FROM `my_role_user` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-07-13T11:17:03+08:00 ] 106.8.162.252 /xn_admin.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0091s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2020-07-13T11:17:03+08:00 ] 106.8.162.252 /xn_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2020-07-13T11:17:03+08:00 ] 106.8.162.252 /xn_admin.php?s=/Public/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SELECT VERSION() as ver; [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant session - assumed 'session' /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Undefined variable: Think /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Use of undefined constant yang_adm_superadmin - assumed 'yang_adm_superadmin' /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/189add388cdd1263d35cd37739affe0d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2020-07-13T11:17:03+08:00 ] 106.8.162.252 /xn_admin.php?s=/Index/getParentCate&pid=0&rnd=58205
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0004s ]
+
+[ 2020-07-13T11:17:13+08:00 ] 106.8.162.252 /xn_admin.php?s=/Soft/index/pid/50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0004s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (50,'56','57','58') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (50,'56','57','58') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2020-07-13T11:17:19+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0006s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (16,'17','22','20','18') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (16,'17','22','20','18') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2020-07-13T11:17:24+08:00 ] 106.8.162.252 /xn_admin.php?s=/Soft/index/pid/50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0005s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (50,'56','57','58') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (50,'56','57','58') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2020-07-13T11:17:26+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0005s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (23,'24','25','26','27') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2020-07-13T11:17:27+08:00 ] 106.8.162.252 /xn_admin.php?s=/Soft/index/pid/50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0007s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (50,'56','57','58') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (50,'56','57','58') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2020-07-13T11:17:29+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0004s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (23,'24','25','26','27') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2020-07-13T11:17:29+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0004s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (31,'32','33','36','34') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (31,'32','33','36','34') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2020-07-13T11:17:30+08:00 ] 106.8.162.252 /xn_admin.php?s=/Page/index/pid/28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `my_category` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0005s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2020-07-13T11:17:31+08:00 ] 106.8.162.252 /xn_admin.php?s=/Public/editorMethod&action=config&&noCache=1594610032005
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2020-07-13T11:17:47+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/46
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0004s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (46,'47','48','49') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (46,'47','48','49') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2020-07-13T11:17:48+08:00 ] 106.8.162.252 /xn_admin.php?s=/Topic/index/pid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0005s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_topic` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_topic topic LEFT JOIN my_category category ON topic.cid = category.id WHERE topic.status > 0 AND topic.cid IN (29,'40','41') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT topic.id AS id,topic.title AS title,topic.shorttitle AS shorttitle,topic.color AS color,topic.copyfrom AS copyfrom,topic.author AS author,topic.keywords AS keywords,topic.litpic AS litpic,topic.description AS description,topic.publishtime AS publishtime,topic.updatetime AS updatetime,topic.click AS click,topic.cid AS cid,topic.commentflag AS commentflag,topic.flag AS flag,topic.jumpurl AS jumpurl,topic.status AS status,topic.userid AS userid,topic.aid AS aid,topic.ding AS ding,topic.cai AS cai,topic.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_topic topic LEFT JOIN my_category category ON topic.cid = category.id WHERE topic.status > 0 AND topic.cid IN (29,'40','41') ORDER BY topic.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/9c973587044a718e6f5b8681944ba20f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/9c973587044a718e6f5b8681944ba20f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/9c973587044a718e6f5b8681944ba20f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/9c973587044a718e6f5b8681944ba20f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2020-07-13T11:17:49+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/59
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0005s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (59,'60','61','62','63') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (59,'60','61','62','63') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2020-07-13T11:17:50+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/64
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0007s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (64,'65','66','67') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (64,'65','66','67') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2020-07-13T11:17:50+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/69
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0004s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (69,'70','71','72','73') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (69,'70','71','72','73') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2020-07-13T11:17:52+08:00 ] 106.8.162.252 /xn_admin.php?s=/Page/index/pid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0005s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2020-07-13T11:17:52+08:00 ] 106.8.162.252 /xn_admin.php?s=/Public/editorMethod&action=config&&noCache=1594610053124
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2020-07-13T11:17:52+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/74
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0006s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (74,'75','76','77','78') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (74,'75','76','77','78') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2020-07-13T11:17:53+08:00 ] 106.8.162.252 /xn_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0004s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'53','54','55') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'53','54','55') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2020-07-13T11:17:54+08:00 ] 106.8.162.252 /xn_admin.php?s=/Picture/index/pid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0004s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_picture` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8,'79','80','81') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT picture.id AS id,picture.title AS title,picture.color AS color,picture.author AS author,picture.keywords AS keywords,picture.litpic AS litpic,picture.description AS description,picture.copyfrom AS copyfrom,picture.template AS template,picture.publishtime AS publishtime,picture.updatetime AS updatetime,picture.click AS click,picture.cid AS cid,picture.commentflag AS commentflag,picture.flag AS flag,picture.jumpurl AS jumpurl,picture.status AS status,picture.userid AS userid,picture.aid AS aid,picture.ding AS ding,picture.cai AS cai,picture.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8,'79','80','81') ORDER BY picture.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 131 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/201265d6d788a0b4d5c714b29d6a0c47.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2020-07-13T11:17:57+08:00 ] 106.8.162.252 /xn_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/zzb.cxzch.cn/App/Manage/Common/function.php 第 413 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2020-07-13T11:17:58+08:00 ] 106.8.162.252 /xn_admin.php?s=/Collect/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `my_collect` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_collect` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `my_collect` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2020-07-13T11:17:59+08:00 ] 106.8.162.252 /xn_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [2] Invalid argument supplied for foreach() /www/wwwroot/zzb.cxzch.cn/App/Manage/Common/function.php 第 413 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2020-07-13T11:17:59+08:00 ] 106.8.162.252 /xn_admin.php?s=/Collect/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `my_collect` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_collect` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `my_collect` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2020-07-13T11:18:00+08:00 ] 106.8.162.252 /xn_admin.php?s=/Collect/page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `my_category` ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2020-07-13T11:18:00+08:00 ] 106.8.162.252 /xn_admin.php?s=/Temp/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0004s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_temp` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_temp temp LEFT JOIN my_category category ON temp.cid = category.id WHERE temp.status > 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT temp.id AS id,temp.title AS title,temp.color AS color,temp.author AS author,temp.keywords AS keywords,temp.litpic AS litpic,temp.description AS description,temp.copyfrom AS copyfrom,temp.template AS template,temp.publishtime AS publishtime,temp.updatetime AS updatetime,temp.click AS click,temp.cid AS cid,temp.commentflag AS commentflag,temp.flag AS flag,temp.jumpurl AS jumpurl,temp.status AS status,temp.userid AS userid,temp.aid AS aid,temp.ding AS ding,temp.cai AS cai,temp.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_temp temp LEFT JOIN my_category category ON temp.cid = category.id WHERE temp.status > 0 ORDER BY temp.id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2020-07-13T11:18:01+08:00 ] 106.8.162.252 /xn_admin.php?s=/Comment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `my_comment` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `my_member` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_comment comment LEFT JOIN my_model model ON comment.modelid = model.id LEFT JOIN my_member member ON comment.userid = member.id LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT comment.id AS id,comment.postid AS postid,comment.modelid AS modelid,comment.title AS title,comment.username AS username,comment.nickname AS nickname,comment.email AS email,comment.ip AS ip,comment.agent AS agent,comment.posttime AS posttime,comment.content AS content,comment.status AS status,comment.pid AS pid,comment.userid AS userid,model.name AS modelname,model.tablename AS tablename,member.face AS face FROM my_comment comment LEFT JOIN my_model model ON comment.modelid = model.id LEFT JOIN my_member member ON comment.userid = member.id ORDER BY comment.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2020-07-13T11:18:02+08:00 ] 106.8.162.252 /xn_admin.php?s=/Tag/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_tag` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `my_tag` ORDER BY tag_id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2020-07-13T11:18:03+08:00 ] 106.8.162.252 /xn_admin.php?s=/Comment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `my_comment` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `my_member` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_comment comment LEFT JOIN my_model model ON comment.modelid = model.id LEFT JOIN my_member member ON comment.userid = member.id LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT comment.id AS id,comment.postid AS postid,comment.modelid AS modelid,comment.title AS title,comment.username AS username,comment.nickname AS nickname,comment.email AS email,comment.ip AS ip,comment.agent AS agent,comment.posttime AS posttime,comment.content AS content,comment.status AS status,comment.pid AS pid,comment.userid AS userid,model.name AS modelname,model.tablename AS tablename,member.face AS face FROM my_comment comment LEFT JOIN my_model model ON comment.modelid = model.id LEFT JOIN my_member member ON comment.userid = member.id ORDER BY comment.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2020-07-13T11:18:08+08:00 ] 106.8.162.252 /xn_admin.php?s=/Soft/index/pid/50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Undefined variable: cate_arr /www/wwwroot/zzb.cxzch.cn/App/Common/Common/function.php 第 109 行.
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0006s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort asc,category.id ASC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (50,'56','57','58') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (50,'56','57','58') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p /www/wwwroot/zzb.cxzch.cn/App/Runtime/Cache/Manage/d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+

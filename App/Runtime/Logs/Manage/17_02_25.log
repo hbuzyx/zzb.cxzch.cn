@@ -1,0 +1,1022 @@
+[ 2017-02-25T00:13:59+08:00 ] ::1 /yuanma_admin.php?s=/Collect/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_collect` [ RunTime:0.0630s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_collect` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_collect` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0370s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-02-25T00:14:12+08:00 ] ::1 /yuanma_admin.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0250s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:14:13+08:00 ] ::1 /yuanma_admin.php?s=/Public/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT VERSION() as ver; [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant session - assumed 'session' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Undefined variable: Think D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Use of undefined constant yang_adm_superadmin - assumed 'yang_adm_superadmin' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T00:14:13+08:00 ] ::1 /yuanma_admin.php?s=/Index/getParentCate&pid=0&rnd=55603
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0020s ]
+
+[ 2017-02-25T00:14:15+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-02-25T00:14:19+08:00 ] ::1 /yuanma_admin.php?s=/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_config` WHERE `id` > 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_config` WHERE `id` > 0 ORDER BY sort,id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:14:21+08:00 ] ::1 /yuanma_admin.php?s=/System/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-25T00:14:59+08:00 ] ::1 /yuanma_admin.php?s=/Model/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_model` ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:15:16+08:00 ] ::1 /yuanma_admin.php?s=/Itemgroup/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_itemgroup` [ RunTime:0.0500s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_itemgroup` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_itemgroup` ORDER BY id LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T00:15:21+08:00 ] ::1 /yuanma_admin.php?s=/Iteminfo/index/group/configtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_iteminfo` WHERE `group` = 'configtype' LIMIT 1   [ RunTime:0.0340s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configtype' ORDER BY sort LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:15:36+08:00 ] ::1 /yuanma_admin.php?s=/Iteminfo/add/group/configtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_itemgroup` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_itemgroup`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0080s ]
+SQL: SELECT MAX(value) as maxv FROM `my_iteminfo` WHERE `group` = 'configtype' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:15:54+08:00 ] ::1 /yuanma_admin.php?s=/Iteminfo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configtype' AND `value` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: INSERT INTO `my_iteminfo` (`name`,`value`,`group`,`sort`) VALUES ('文件','5','configtype','0') [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T00:15:55+08:00 ] ::1 /yuanma_admin.php?s=/Iteminfo/index/group/configtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_iteminfo` WHERE `group` = 'configtype' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configtype' ORDER BY sort LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:10+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:12+08:00 ] ::1 /yuanma_admin.php?s=/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_config` WHERE `id` > 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_config` WHERE `id` > 0 ORDER BY sort,id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:19+08:00 ] ::1 /yuanma_admin.php?s=/System/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:26+08:00 ] ::1 /yuanma_admin.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:26+08:00 ] ::1 /yuanma_admin.php?s=/Public/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT VERSION() as ver; [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant session - assumed 'session' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Undefined variable: Think D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Use of undefined constant yang_adm_superadmin - assumed 'yang_adm_superadmin' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:27+08:00 ] ::1 /yuanma_admin.php?s=/Index/getParentCate&pid=0&rnd=13492
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0020s ]
+
+[ 2017-02-25T00:16:28+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:29+08:00 ] ::1 /yuanma_admin.php?s=/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_config` WHERE `id` > 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_config` WHERE `id` > 0 ORDER BY sort,id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:31+08:00 ] ::1 /yuanma_admin.php?s=/System/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T00:16:45+08:00 ] ::1 /yuanma_admin.php?s=/Comment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_comment` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `my_member` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_comment comment LEFT JOIN my_model model ON comment.modelid = model.id LEFT JOIN my_member member ON comment.userid = member.id LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT comment.id AS id,comment.postid AS postid,comment.modelid AS modelid,comment.title AS title,comment.username AS username,comment.nickname AS nickname,comment.email AS email,comment.ip AS ip,comment.agent AS agent,comment.posttime AS posttime,comment.content AS content,comment.status AS status,comment.pid AS pid,comment.userid AS userid,model.name AS modelname,model.tablename AS tablename,member.face AS face FROM my_comment comment LEFT JOIN my_model model ON comment.modelid = model.id LEFT JOIN my_member member ON comment.userid = member.id ORDER BY comment.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:48+08:00 ] ::1 /yuanma_admin.php?s=/Itemgroup/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_itemgroup` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_itemgroup` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_itemgroup` ORDER BY id LIMIT 0,10   [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:16:55+08:00 ] ::1 /yuanma_admin.php?s=/Iteminfo/index/group/configtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_iteminfo` WHERE `group` = 'configtype' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configtype' ORDER BY sort LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-25T00:17:03+08:00 ] ::1 /yuanma_admin.php?s=/System/clearCache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:17:07+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0090s ]
+SQL: SELECT `name`,`value`,`typeid` FROM `my_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configgroup' ORDER BY sort,id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configtype' ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T00:17:09+08:00 ] ::1 /yuanma_admin.php?s=/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_config` WHERE `id` > 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_config` WHERE `id` > 0 ORDER BY sort,id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T00:17:10+08:00 ] ::1 /yuanma_admin.php?s=/System/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T10:11:49+08:00 ] ::1 /yuanma_admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T10:11:49+08:00 ] ::1 /yuanma_admin.php?s=/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028002s ]
+
+[ 2017-02-25T10:11:50+08:00 ] ::1 /yuanma_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T10:11:58+08:00 ] ::1 /yuanma_admin.php?s=/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_admin` [ RunTime:0.1340s ]
+SQL: SELECT * FROM `my_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0150s ]
+SQL: UPDATE `my_admin` SET `logintime`='1487988718',`loginip`='0.0.0.0',`loginnum`='93' WHERE `id` = 1 [ RunTime:0.1310s ]
+SQL: SHOW COLUMNS FROM `my_role_user` [ RunTime:0.1280s ]
+SQL: SELECT `role_id` FROM `my_role_user` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-02-25T10:11:59+08:00 ] ::1 /yuanma_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T10:11:59+08:00 ] ::1 /yuanma_admin.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.1310s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0170s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T10:11:59+08:00 ] ::1 /yuanma_admin.php?s=/Public/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT VERSION() as ver; [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant session - assumed 'session' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Undefined variable: Think D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Use of undefined constant yang_adm_superadmin - assumed 'yang_adm_superadmin' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T10:12:00+08:00 ] ::1 /yuanma_admin.php?s=/Index/getParentCate&pid=0&rnd=55314
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0970s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.1330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.1270s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0020s ]
+
+[ 2017-02-25T13:48:25+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.1250s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.198012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.198012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-25T13:49:04+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0660s ]
+SQL: UPDATE `my_config` SET `value`='吉他谱大全网' WHERE `name` = 'CFG_WEBNAME' [ RunTime:0.0080s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:88' WHERE `name` = 'CFG_WEBURL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:88/Mobile' WHERE `name` = 'CFG_MWEBURL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='最全的吉他谱下载_吉他教学_吉他弹唱网站' WHERE `name` = 'CFG_WEBTITLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='吉他谱,吉他教学,吉他弹唱,吉他谱网,吉他谱大全' WHERE `name` = 'CFG_KEYWORDS' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='吉他谱大全网(jita.ichang8.com)，提供最全面的吉他谱和吉他教学资源下载，实时更新当前最新最热门的流行歌曲、民谣、摇滚等各类吉他谱(六线谱、TXT和弦谱、GTP谱)。' WHERE `name` = 'CFG_DESCRIPTION' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='#download@2016' WHERE `name` = 'CFG_DEFAULT_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='sucai' WHERE `name` = 'CFG_THEMESTYLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='昆明市五华区' WHERE `name` = 'CFG_ADDRESS' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0871-8888888' WHERE `name` = 'CFG_PHONE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='default' WHERE `name` = 'CFG_DEFAULT_MOBILE_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='default' WHERE `name` = 'CFG_MOBILE_THEMESTYLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='Copyright©2014-2017 All Rights Reserved.' WHERE `name` = 'CFG_POWERBY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_STATS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_BAIDUSTATS' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='滇ICP备14001033号-2' WHERE `name` = 'CFG_BEIAN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='m5msJbKhM' WHERE `name` = 'CFG_COOKIE_ENCODE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MOBILE_AUTO' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_WEBSITE_CLOSE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='站点维护中，请稍等一会...' WHERE `name` = 'CFG_WEBSITE_CLOSE_INFO' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='艾滋病|中国共产党|111111111' WHERE `name` = 'CFG_BADWORD' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_FEEDBACK_GUEST' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_VERIFY_REGISTER' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_VERIFY_LOGIN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_VERIFY_GUESTBOOK' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_VERIFY_REVIEW' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='416148489@qq.com' WHERE `name` = 'CFG_EMAIL_FROM' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='站名' WHERE `name` = 'CFG_EMAIL_FROM_NAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='smtp.exmail.qq.com' WHERE `name` = 'CFG_EMAIL_HOST' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='25' WHERE `name` = 'CFG_EMAIL_PORT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='416148489@qq.com' WHERE `name` = 'CFG_EMAIL_LOGINNAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_PASSWORD' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='20480' WHERE `name` = 'CFG_UPLOAD_MAXSIZE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='300X300' WHERE `name` = 'CFG_IMGTHUMB_SIZE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_IMGTHUMB_TYPE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='600' WHERE `name` = 'CFG_IMGTHUMB_WIDTH' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='./uploads/' WHERE `name` = 'CFG_UPLOAD_ROOTPATH' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='jpg,gif,png,jpeg,txt,doc,docx,xls,ppt,zip,rar,mp3' WHERE `name` = 'CFG_UPLOAD_FILE_EXT' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='jpg,gif,png,jpeg' WHERE `name` = 'CFG_UPLOAD_IMG_EXT' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='5242880' WHERE `name` = 'CFG_SQL_FILESIZE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_DOWNLOAD_HIDE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MEMBER_OPEN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MEMBER_VERIFYEMAIL' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'REGISTER_SCORE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'LOGIN_SCORE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'PUBLISH_SCORE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'REPLY_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'SIGN_SCORE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='www,bbs,ftp,mail,user,users,admin,administrator' WHERE `name` = 'CFG_MEMBER_NOTALLOW' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='10' WHERE `name` = 'POINTS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'JINBI' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_EMAIL_ACTIVE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_TITLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_NAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_ID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_NUMBER' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_APPID' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_APPSECRET' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'WESYS_TYPE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='203564' WHERE `name` = 'QQ_APPID' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='bab1f3acc0c67b69a1f470ac5e8dc36a' WHERE `name` = 'QQ_APPKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:90/Oauth-login-type-qq.html' WHERE `name` = 'QQ_CALLBACK' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='602735229' WHERE `name` = 'SINA_APPID' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='66781cbeab9fdb9b014a387ab6e943fe' WHERE `name` = 'SINA_APPKEY' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:90/Oauth-login-type-sina.html' WHERE `name` = 'SINA_CALLBACK' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'STORAGE_OPEN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'ACCESSKEY' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'SECRETKEY' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'BUCKET' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'DOMAIN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='xuanhanfei@126.com' WHERE `name` = 'ALIPAY_EMAIL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='ggo084pb84gl43qnw82a39n9b7r1jq2m' WHERE `name` = 'ALIPAY_KEY' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='2088901006538525' WHERE `name` = 'ALIPAY_PARTNER' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='wx426b3015555a46be' WHERE `name` = 'WECHAT_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1900009851' WHERE `name` = 'WECHAT_MCHID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='8934e7d15453e97507ef794cf7b0519d' WHERE `name` = 'WECHAT_KEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='7813490da6f1265e4901ffb80afaa36f' WHERE `name` = 'WECHAT_APPSECRET' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T13:49:06+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0690s ]
+SQL: SELECT `name`,`value`,`typeid` FROM `my_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-25T16:23:11+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0840s ]
+SQL: UPDATE `my_config` SET `value`='素材火' WHERE `name` = 'CFG_WEBNAME' [ RunTime:0.0170s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:88' WHERE `name` = 'CFG_WEBURL' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:88/Mobile' WHERE `name` = 'CFG_MWEBURL' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='最全的吉他谱下载_吉他教学_吉他弹唱网站' WHERE `name` = 'CFG_WEBTITLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='吉他谱,吉他教学,吉他弹唱,吉他谱网,吉他谱大全' WHERE `name` = 'CFG_KEYWORDS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='吉他谱大全网(jita.ichang8.com)，提供最全面的吉他谱和吉他教学资源下载，实时更新当前最新最热门的流行歌曲、民谣、摇滚等各类吉他谱(六线谱、TXT和弦谱、GTP谱)。' WHERE `name` = 'CFG_DESCRIPTION' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='#download@2016' WHERE `name` = 'CFG_DEFAULT_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='sucai' WHERE `name` = 'CFG_THEMESTYLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='昆明市五华区' WHERE `name` = 'CFG_ADDRESS' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0871-8888888' WHERE `name` = 'CFG_PHONE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='default' WHERE `name` = 'CFG_DEFAULT_MOBILE_TPL' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='default' WHERE `name` = 'CFG_MOBILE_THEMESTYLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='Copyright©2014-2017 All Rights Reserved.' WHERE `name` = 'CFG_POWERBY' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_STATS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_BAIDUSTATS' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='滇ICP备14001033号-2' WHERE `name` = 'CFG_BEIAN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='m5msJbKhM' WHERE `name` = 'CFG_COOKIE_ENCODE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MOBILE_AUTO' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_WEBSITE_CLOSE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='站点维护中，请稍等一会...' WHERE `name` = 'CFG_WEBSITE_CLOSE_INFO' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='艾滋病|中国共产党|111111111' WHERE `name` = 'CFG_BADWORD' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_FEEDBACK_GUEST' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_VERIFY_REGISTER' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_VERIFY_LOGIN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_VERIFY_GUESTBOOK' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_VERIFY_REVIEW' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='416148489@qq.com' WHERE `name` = 'CFG_EMAIL_FROM' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='站名' WHERE `name` = 'CFG_EMAIL_FROM_NAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='smtp.exmail.qq.com' WHERE `name` = 'CFG_EMAIL_HOST' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='25' WHERE `name` = 'CFG_EMAIL_PORT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='416148489@qq.com' WHERE `name` = 'CFG_EMAIL_LOGINNAME' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_PASSWORD' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='20480' WHERE `name` = 'CFG_UPLOAD_MAXSIZE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='300X300' WHERE `name` = 'CFG_IMGTHUMB_SIZE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_IMGTHUMB_TYPE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='600' WHERE `name` = 'CFG_IMGTHUMB_WIDTH' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='./uploads/' WHERE `name` = 'CFG_UPLOAD_ROOTPATH' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='jpg,gif,png,jpeg,txt,doc,docx,xls,ppt,zip,rar,mp3' WHERE `name` = 'CFG_UPLOAD_FILE_EXT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='jpg,gif,png,jpeg' WHERE `name` = 'CFG_UPLOAD_IMG_EXT' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='5242880' WHERE `name` = 'CFG_SQL_FILESIZE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'CFG_DOWNLOAD_HIDE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MEMBER_OPEN' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_MEMBER_VERIFYEMAIL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'REGISTER_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'LOGIN_SCORE' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'PUBLISH_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'REPLY_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'SIGN_SCORE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='www,bbs,ftp,mail,user,users,admin,administrator' WHERE `name` = 'CFG_MEMBER_NOTALLOW' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='10' WHERE `name` = 'POINTS' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2' WHERE `name` = 'JINBI' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1' WHERE `name` = 'CFG_EMAIL_ACTIVE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_TITLE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'CFG_EMAIL_TPL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_NAME' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_ID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_NUMBER' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'WESYS_APPSECRET' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'WESYS_TYPE' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='203564' WHERE `name` = 'QQ_APPID' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='bab1f3acc0c67b69a1f470ac5e8dc36a' WHERE `name` = 'QQ_APPKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:90/Oauth-login-type-qq.html' WHERE `name` = 'QQ_CALLBACK' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='602735229' WHERE `name` = 'SINA_APPID' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='66781cbeab9fdb9b014a387ab6e943fe' WHERE `name` = 'SINA_APPKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='http://localhost:90/Oauth-login-type-sina.html' WHERE `name` = 'SINA_CALLBACK' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='0' WHERE `name` = 'STORAGE_OPEN' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'ACCESSKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'SECRETKEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'BUCKET' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='' WHERE `name` = 'DOMAIN' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='xuanhanfei@126.com' WHERE `name` = 'ALIPAY_EMAIL' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='ggo084pb84gl43qnw82a39n9b7r1jq2m' WHERE `name` = 'ALIPAY_KEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='2088901006538525' WHERE `name` = 'ALIPAY_PARTNER' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='wx426b3015555a46be' WHERE `name` = 'WECHAT_APPID' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='1900009851' WHERE `name` = 'WECHAT_MCHID' [ RunTime:0.0010s ]
+SQL: UPDATE `my_config` SET `value`='8934e7d15453e97507ef794cf7b0519d' WHERE `name` = 'WECHAT_KEY' [ RunTime:0.0000s ]
+SQL: UPDATE `my_config` SET `value`='7813490da6f1265e4901ffb80afaa36f' WHERE `name` = 'WECHAT_APPSECRET' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-25T16:23:13+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0680s ]
+SQL: SELECT `name`,`value`,`typeid` FROM `my_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T16:55:14+08:00 ] ::1 /yuanma_admin.php?s=/System/clearCache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

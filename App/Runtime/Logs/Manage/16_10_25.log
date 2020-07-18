@@ -1,0 +1,1449 @@
+[ 2016-10-25T11:00:24+08:00 ] ::1 /yuanma_admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.053003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017000s ]
+
+[ 2016-10-25T11:00:24+08:00 ] ::1 /yuanma_admin.php?s=/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011000s ]
+
+[ 2016-10-25T11:00:25+08:00 ] ::1 /yuanma_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-10-25T11:00:39+08:00 ] ::1 /yuanma_admin.php?s=/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_admin` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `my_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `my_admin` SET `logintime`='1477364438',`loginip`='0.0.0.0',`loginnum`='87' WHERE `id` = 1 [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `my_role_user` [ RunTime:0.0430s ]
+SQL: SELECT `role_id` FROM `my_role_user` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-10-25T11:00:39+08:00 ] ::1 /yuanma_admin.php?s=/Login/verify/id/a_login_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:00:39+08:00 ] ::1 /yuanma_admin.php?s=/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0200s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:00:39+08:00 ] ::1 /yuanma_admin.php?s=/Public/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SELECT VERSION() as ver; [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant session - assumed 'session' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Undefined variable: Think D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Use of undefined constant yang_adm_superadmin - assumed 'yang_adm_superadmin' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:00:39+08:00 ] ::1 /yuanma_admin.php?s=/Index/getParentCate&pid=0&rnd=3077
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0020s ]
+
+[ 2016-10-25T11:00:44+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'flagtype' ORDER BY sort,id  [ RunTime:0.0100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.182010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-10-25T11:00:53+08:00 ] ::1 /yuanma_admin.php?s=/Tag/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_tag` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_tag` ORDER BY tag_id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-10-25T11:01:57+08:00 ] ::1 /yuanma_admin.php?s=/Model/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_model` ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:02:30+08:00 ] ::1 /yuanma_admin.php?s=/Tag/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_tag` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_tag` ORDER BY tag_id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:04:27+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:04:28+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit/id/533/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_article` WHERE `id` = 533 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:04:29+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477364669567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-10-25T11:04:32+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = '湖南都市职业学院' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%湖南都市职业学院%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `my_tag` SET `num`='1',`tag_click`='3' WHERE `tag_name` = '湖南都市职业学院' [ RunTime:0.0030s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = '学生死亡' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%学生死亡%' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `my_tag` SET `num`='1',`tag_click`='3' WHERE `tag_name` = '学生死亡' [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = '灵异事件' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%灵异事件%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `my_tag` SET `num`='1',`tag_click`='3' WHERE `tag_name` = '灵异事件' [ RunTime:0.0020s ]
+
+[ 2016-10-25T11:05:14+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:07:23+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit/id/533/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_article` WHERE `id` = 533 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-10-25T11:07:23+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477364843899
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-10-25T11:09:49+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:09:51+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit/id/533/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `my_article` WHERE `id` = 533 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\WWW\yuanma\Include\Common\functions.php:819) D:\WWW\yuanma\Include\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\WWW\yuanma\Include\Common\functions.php:819) D:\WWW\yuanma\Include\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\WWW\yuanma\Include\Common\functions.php:819) D:\WWW\yuanma\Include\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-10-25T11:09:52+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477364992341
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:10:30+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:10:32+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit/id/533/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_article` WHERE `id` = 533 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\WWW\yuanma\Include\Common\functions.php:819) D:\WWW\yuanma\Include\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\WWW\yuanma\Include\Common\functions.php:819) D:\WWW\yuanma\Include\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\WWW\yuanma\Include\Common\functions.php:819) D:\WWW\yuanma\Include\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:10:32+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477365032303
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:10:49+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:14:39+08:00 ] ::1 /yuanma_admin.php?s=/Tag/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_tag` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_tag` ORDER BY tag_id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-10-25T11:16:09+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:16:10+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit/id/533/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `my_article` WHERE `id` = 533 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:16:10+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477365370619
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:17:22+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:17:23+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit/id/533/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `my_article` WHERE `id` = 533 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:17:24+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477365444085
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:17:26+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-10-25T11:17:28+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:25:39+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:25:41+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit/id/533/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `my_article` WHERE `id` = 533 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-10-25T11:25:41+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477365941452
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:25:44+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = '湖南都市职业学院' AND `tablename` = 'article' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%湖南都市职业学院%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `my_tag` (`tag_name`,`typeid`,`tag_sort`,`tag_status`,`posttime`,`tag_click`,`tablename`,`num`) VALUES ('湖南都市职业学院','45','1','1','1477365944','1','article','1') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = '学生死亡' AND `tablename` = 'article' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%学生死亡%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `my_tag` (`tag_name`,`typeid`,`tag_sort`,`tag_status`,`posttime`,`tag_click`,`tablename`,`num`) VALUES ('学生死亡','45','1','1','1477365944','1','article','1') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = '灵异事件' AND `tablename` = 'article' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%灵异事件%' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `my_tag` (`tag_name`,`typeid`,`tag_sort`,`tag_status`,`posttime`,`tag_click`,`tablename`,`num`) VALUES ('灵异事件','45','1','1','1477365944','1','article','1') [ RunTime:0.0010s ]
+SQL: UPDATE `my_article` SET `title`='湖南都市职业学院4天内竟有3名学生死亡，是巧合还是灵异事件？',`shorttitle`='',`color`='',`jumpurl`='',`cid`='45',`litpic`='/uploads/img1/20161019/5806de1bd50b7.jpg!300X300.jpg',`keywords`='',`description`='摘要：湖南都市职业学院上头条了，原因竟是近几日内接连发生学生死亡案！据澎湃新闻，10月14日到17日，湖南都市职业学院三名学生死亡。三位死者中，2人系坠楼身亡，1人斗殴去世。这接连不断的死人，这不禁让人怀疑到底是巧合还是灵异事件？湖南都市职',`author`='管理员',`copyfrom`='凤凰网',`content`='<p style=\"line-height: 2em; text-indent: 2em;\"><strong>摘要：湖南都市职业学院上头条了，原因竟是近几日内接连发生学生死亡案！据澎湃新闻，10月14日到17日，湖南都市职业学院三名学生死亡。三位死者中，2人系坠楼身亡，1人斗殴去世。这接连不断的死人，这不禁让人怀疑到底是巧合还是灵异事件？</strong></p><p><br/></p><p style=\"text-align: center;\"><img src=\"/uploads/img1/20161019/5806de1bd50b7.jpg\" title=\"湖南都市职业学院\" alt=\"湖南都市职业学院\" width=\"600\" height=\"517\"/></p><p style=\"text-align: center;\"><strong>湖南都市职业学院</strong></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">据知情人士透露，10月14日，一名男生于宿舍楼跳楼身亡；15日，一名男生在校外KTV与他人斗殴时身亡；17日，另一名男生于宿舍楼跳楼身亡。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">学院理事长助理吴先生18日证实：第一个学生14日晚出事，事后查明该生生前两次到医院就诊查出精神分裂症；第二名学生出事时间为15日凌晨，该生与社会人员发生争执后被殴打致死；第三名学生因花钱问题，17日下午与家属在寝室发生争执后坠亡。三起学生死亡事件发生后，校方均对家属进行了安抚和积极协商，之后学校管理层召开了紧急会议。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\"><strong>学生死亡事件真相还原：</strong></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">第一名坠亡学生为10月14日晚上11点半左右坠楼，具体坠亡原因不明；第二名学生死亡时间为15日凌晨，疑因KTV与人斗殴而死。</p><p><br/></p><p style=\"text-align: center;\"><img src=\"/uploads/img1/20161019/5806df03eaa2c.jpg\" title=\"第一位跳楼死亡的学生\" alt=\"第一位跳楼死亡的学生\" width=\"348\" height=\"464\"/></p><p style=\"text-align: center;\"><strong>第一位跳楼死亡的学生，死因不明</strong></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">KTV斗殴致死学生的父亲郭界群告诉澎湃新闻，儿子郭睿棋今年17岁，是湖南都市职业学院五年制大专金融系学生。14日上午，郭睿棋受浏阳籍学长张某林的邀请前往长沙市浏阳市（县级市）游玩。当日傍晚，郭睿棋一行五男一女在浏阳市内一家KTV内唱歌。其间，女子拿手机与KTV外一名男子视频，女子手机摄像头照到KTV内男子遭遇阻止，因而引发与女子视频男子对KTV内男子的不满，并电话里起争执。</p><p><br/></p><p style=\"text-align: center;\"><img src=\"/uploads/img1/20161019/5806df5e08737.jpg\" title=\"KTV斗殴致死学生郭睿棋\" alt=\"KTV斗殴致死学生郭睿棋\" width=\"600\" height=\"800\"/></p><p style=\"text-align: center;\"><strong>KTV斗殴致死学生郭睿棋</strong></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">第三名死亡学生疑因花钱问题与父亲起争执后坠亡。他说，10月17日坠楼身亡的学生坠亡前，该学生的父母均在旁边。当时，学生要求父母给他买电脑，家里给他寄了5000元钱，后又给他汇款2000元，随后，父母觉得不对劲来到学校质问，引发争执。该生父亲提出让儿子请假回家休息三天，并开始为儿子整理行李。随后，情绪非常激动的儿子冲出寝室，坠楼身亡。</p><p><br/></p><p style=\"text-align: center;\"><img src=\"/uploads/img1/20161019/5806de7869819.jpg\" title=\"第三名死亡学生疑因花钱问题与父亲起争执后坠亡\" alt=\"第三名死亡学生疑因花钱问题与父亲起争执后坠亡\" width=\"434\" height=\"326\"/></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">郭界群说，随后，争执双方约在KTV附近面谈，见面后很快由口角升级为互殴。打斗过程中，郭睿棋颅骨开裂，另有三人重伤。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">由此看来，这三个死亡事件都是事出有因，仅仅只是个巧合而已，并不是什么灵异事件，大家大可不必惊慌。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">从这个事件可以看出，越来越突显对青年一代的政治思想教育的重要性，没有政治思想，缺乏理想信仰，就容易产生极端情绪，及纪律观念淡薄。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">小时候千宠百娇，养成了唯我独尊的习性，长大后跟人一接触、感觉无法适应。于是，跳楼、喝药、上吊等全来了，全然不顾亲人的感受。“棍棒下面出孝子”，这句老话还是有一定道理的。</p><p><br/></p>',`tag`='湖南都市职业学院,学生死亡,灵异事件',`publishtime`='1476844953',`commentflag`='1',`status`='1',`updatetime`='1477365944',`flag`='5' WHERE `id` = 533 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `my_attachmentindex` [ RunTime:0.0200s ]
+SQL: DELETE FROM `my_attachmentindex` WHERE `arcid` = 533 AND `modelid` = 1 [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `my_attachment` [ RunTime:0.0160s ]
+SQL: SELECT `id`,`filepath` FROM `my_attachment` WHERE `filepath` IN ('img1/20161019/5806de1bd50b7.jpg','img1/20161019/5806df03eaa2c.jpg','img1/20161019/5806df5e08737.jpg','img1/20161019/5806de7869819.jpg')  [ RunTime:0.0200s ]
+SQL: SELECT `id` FROM `my_attachment` WHERE `filepath` IN ('img1/20161019/5806de1bd50b7.jpg')  [ RunTime:0.0000s ]
+SQL: INSERT INTO `my_attachmentindex` (`attid`,`arcid`,`modelid`) VALUES ('212','533','1'),('213','533','1'),('214','533','1'),('215','533','1') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:25:46+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (45) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (45) ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:25:47+08:00 ] ::1 /yuanma_admin.php?s=/Tag/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_tag` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_tag` ORDER BY tag_id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:26:54+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:26:55+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit/id/533/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_article` WHERE `id` = 533 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:26:55+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477366015854
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:26:58+08:00 ] ::1 /yuanma_admin.php?s=/Article/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = '湖南都市职业学院' AND `tablename` = 'article' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%湖南都市职业学院%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `my_tag` SET `num`='1',`tag_click`='2',`tablename`='article' WHERE `tag_name` = '湖南都市职业学院' AND `tablename` = 'article' [ RunTime:0.0020s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = '学生死亡' AND `tablename` = 'article' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%学生死亡%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `my_tag` SET `num`='1',`tag_click`='2',`tablename`='article' WHERE `tag_name` = '学生死亡' AND `tablename` = 'article' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = '灵异事件' AND `tablename` = 'article' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%灵异事件%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `my_tag` SET `num`='1',`tag_click`='2',`tablename`='article' WHERE `tag_name` = '灵异事件' AND `tablename` = 'article' [ RunTime:0.0020s ]
+SQL: UPDATE `my_article` SET `title`='湖南都市职业学院4天内竟有3名学生死亡，是巧合还是灵异事件？',`shorttitle`='',`color`='',`jumpurl`='',`cid`='45',`litpic`='/uploads/img1/20161019/5806de1bd50b7.jpg!300X300.jpg',`keywords`='',`description`='摘要：湖南都市职业学院上头条了，原因竟是近几日内接连发生学生死亡案！据澎湃新闻，10月14日到17日，湖南都市职业学院三名学生死亡。三位死者中，2人系坠楼身亡，1人斗殴去世。这接连不断的死人，这不禁让人怀疑到底是巧合还是灵异事件？湖南都市职',`author`='管理员',`copyfrom`='凤凰网',`content`='<p style=\"line-height: 2em; text-indent: 2em;\"><strong>摘要：湖南都市职业学院上头条了，原因竟是近几日内接连发生学生死亡案！据澎湃新闻，10月14日到17日，湖南都市职业学院三名学生死亡。三位死者中，2人系坠楼身亡，1人斗殴去世。这接连不断的死人，这不禁让人怀疑到底是巧合还是灵异事件？</strong></p><p><br/></p><p style=\"text-align: center;\"><img src=\"/uploads/img1/20161019/5806de1bd50b7.jpg\" title=\"湖南都市职业学院\" alt=\"湖南都市职业学院\" width=\"600\" height=\"517\"/></p><p style=\"text-align: center;\"><strong>湖南都市职业学院</strong></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">据知情人士透露，10月14日，一名男生于宿舍楼跳楼身亡；15日，一名男生在校外KTV与他人斗殴时身亡；17日，另一名男生于宿舍楼跳楼身亡。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">学院理事长助理吴先生18日证实：第一个学生14日晚出事，事后查明该生生前两次到医院就诊查出精神分裂症；第二名学生出事时间为15日凌晨，该生与社会人员发生争执后被殴打致死；第三名学生因花钱问题，17日下午与家属在寝室发生争执后坠亡。三起学生死亡事件发生后，校方均对家属进行了安抚和积极协商，之后学校管理层召开了紧急会议。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\"><strong>学生死亡事件真相还原：</strong></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">第一名坠亡学生为10月14日晚上11点半左右坠楼，具体坠亡原因不明；第二名学生死亡时间为15日凌晨，疑因KTV与人斗殴而死。</p><p><br/></p><p style=\"text-align: center;\"><img src=\"/uploads/img1/20161019/5806df03eaa2c.jpg\" title=\"第一位跳楼死亡的学生\" alt=\"第一位跳楼死亡的学生\" width=\"348\" height=\"464\"/></p><p style=\"text-align: center;\"><strong>第一位跳楼死亡的学生，死因不明</strong></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">KTV斗殴致死学生的父亲郭界群告诉澎湃新闻，儿子郭睿棋今年17岁，是湖南都市职业学院五年制大专金融系学生。14日上午，郭睿棋受浏阳籍学长张某林的邀请前往长沙市浏阳市（县级市）游玩。当日傍晚，郭睿棋一行五男一女在浏阳市内一家KTV内唱歌。其间，女子拿手机与KTV外一名男子视频，女子手机摄像头照到KTV内男子遭遇阻止，因而引发与女子视频男子对KTV内男子的不满，并电话里起争执。</p><p><br/></p><p style=\"text-align: center;\"><img src=\"/uploads/img1/20161019/5806df5e08737.jpg\" title=\"KTV斗殴致死学生郭睿棋\" alt=\"KTV斗殴致死学生郭睿棋\" width=\"600\" height=\"800\"/></p><p style=\"text-align: center;\"><strong>KTV斗殴致死学生郭睿棋</strong></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">第三名死亡学生疑因花钱问题与父亲起争执后坠亡。他说，10月17日坠楼身亡的学生坠亡前，该学生的父母均在旁边。当时，学生要求父母给他买电脑，家里给他寄了5000元钱，后又给他汇款2000元，随后，父母觉得不对劲来到学校质问，引发争执。该生父亲提出让儿子请假回家休息三天，并开始为儿子整理行李。随后，情绪非常激动的儿子冲出寝室，坠楼身亡。</p><p><br/></p><p style=\"text-align: center;\"><img src=\"/uploads/img1/20161019/5806de7869819.jpg\" title=\"第三名死亡学生疑因花钱问题与父亲起争执后坠亡\" alt=\"第三名死亡学生疑因花钱问题与父亲起争执后坠亡\" width=\"434\" height=\"326\"/></p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">郭界群说，随后，争执双方约在KTV附近面谈，见面后很快由口角升级为互殴。打斗过程中，郭睿棋颅骨开裂，另有三人重伤。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">由此看来，这三个死亡事件都是事出有因，仅仅只是个巧合而已，并不是什么灵异事件，大家大可不必惊慌。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">从这个事件可以看出，越来越突显对青年一代的政治思想教育的重要性，没有政治思想，缺乏理想信仰，就容易产生极端情绪，及纪律观念淡薄。</p><p><br/></p><p style=\"line-height: 2em; text-indent: 2em;\">小时候千宠百娇，养成了唯我独尊的习性，长大后跟人一接触、感觉无法适应。于是，跳楼、喝药、上吊等全来了，全然不顾亲人的感受。“棍棒下面出孝子”，这句老话还是有一定道理的。</p><p><br/></p>',`tag`='湖南都市职业学院,学生死亡,灵异事件',`publishtime`='1476844953',`commentflag`='1',`status`='1',`updatetime`='1477366017',`flag`='5' WHERE `id` = 533 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_attachmentindex` [ RunTime:0.0080s ]
+SQL: DELETE FROM `my_attachmentindex` WHERE `arcid` = 533 AND `modelid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_attachment` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`filepath` FROM `my_attachment` WHERE `filepath` IN ('img1/20161019/5806de1bd50b7.jpg','img1/20161019/5806df03eaa2c.jpg','img1/20161019/5806df5e08737.jpg','img1/20161019/5806de7869819.jpg')  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `my_attachment` WHERE `filepath` IN ('img1/20161019/5806de1bd50b7.jpg')  [ RunTime:0.0000s ]
+SQL: INSERT INTO `my_attachmentindex` (`attid`,`arcid`,`modelid`) VALUES ('212','533','1'),('213','533','1'),('214','533','1'),('215','533','1') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:26:59+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (45) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (45) ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:27:00+08:00 ] ::1 /yuanma_admin.php?s=/Tag/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_tag` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `my_tag` ORDER BY tag_id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:32:55+08:00 ] ::1 /yuanma_admin.php?s=/Importimgs/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_category` ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\WWW\yuanma\App\Runtime\Cache\Manage\6b96f4445f10149cc70d90c2d0e6c6fc.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-10-25T11:38:27+08:00 ] ::1 /yuanma_admin.php?s=/Model/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `my_model` ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:39:12+08:00 ] ::1 /yuanma_admin.php?s=/Soft/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0460s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-10-25T11:41:02+08:00 ] ::1 /yuanma_admin.php?s=/Picture/index/pid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_picture` [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT picture.id AS id,picture.title AS title,picture.color AS color,picture.author AS author,picture.keywords AS keywords,picture.litpic AS litpic,picture.description AS description,picture.copyfrom AS copyfrom,picture.template AS template,picture.publishtime AS publishtime,picture.updatetime AS updatetime,picture.click AS click,picture.cid AS cid,picture.commentflag AS commentflag,picture.flag AS flag,picture.jumpurl AS jumpurl,picture.status AS status,picture.userid AS userid,picture.aid AS aid,picture.ding AS ding,picture.cai AS cai,picture.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8) ORDER BY picture.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:41:03+08:00 ] ::1 /yuanma_admin.php?s=/Picture/add/pid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:41:04+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477366863990
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:41:41+08:00 ] ::1 /yuanma_admin.php?s=/Topic/index/pid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_topic` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_topic topic LEFT JOIN my_category category ON topic.cid = category.id WHERE topic.status > 0 AND topic.cid IN (29,'40','41') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT topic.id AS id,topic.title AS title,topic.shorttitle AS shorttitle,topic.color AS color,topic.copyfrom AS copyfrom,topic.author AS author,topic.keywords AS keywords,topic.litpic AS litpic,topic.description AS description,topic.publishtime AS publishtime,topic.updatetime AS updatetime,topic.click AS click,topic.cid AS cid,topic.commentflag AS commentflag,topic.flag AS flag,topic.jumpurl AS jumpurl,topic.status AS status,topic.userid AS userid,topic.aid AS aid,topic.ding AS ding,topic.cai AS cai,topic.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_topic topic LEFT JOIN my_category category ON topic.cid = category.id WHERE topic.status > 0 AND topic.cid IN (29,'40','41') ORDER BY topic.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:41:46+08:00 ] ::1 /yuanma_admin.php?s=/Topic/edit/id/535/pid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_topic` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_topic` WHERE `id` = 535 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:41:46+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477366906376
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:41:52+08:00 ] ::1 /yuanma_admin.php?s=/Soft/index/pid/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-10-25T11:41:54+08:00 ] ::1 /yuanma_admin.php?s=/Soft/edit/id/20/pid/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_soft` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'softtype' ORDER BY sort,id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'softlanguage' ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0060s ]
+SQL: SELECT category.property AS property FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.id = 16 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:41:54+08:00 ] ::1 /yuanma_admin.php?s=/Ajax/get_proplist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_property` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `my_property` WHERE `id` IN ('1','35','33')  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `my_property_value` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_property_value` WHERE ( prop_id=1 )  [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_property_value` WHERE ( prop_id=35 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_property_value` WHERE ( prop_id=33 )  [ RunTime:0.0010s ]
+
+[ 2016-10-25T11:41:54+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1477366914856
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:42:00+08:00 ] ::1 /yuanma_admin.php?s=/Soft/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = 'Discuz!X3' AND `tablename` = 'soft' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%Discuz!X3%' LIMIT 1   [ RunTime:0.0120s ]
+SQL: INSERT INTO `my_tag` (`tag_name`,`typeid`,`tag_sort`,`tag_status`,`posttime`,`tag_click`,`tablename`,`num`) VALUES ('Discuz!X3','18','1','1','1477366920','1','soft','0') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = 'Discuz!仿ZCOOL' AND `tablename` = 'soft' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%Discuz!仿ZCOOL%' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `my_tag` (`tag_name`,`typeid`,`tag_sort`,`tag_status`,`posttime`,`tag_click`,`tablename`,`num`) VALUES ('Discuz!仿ZCOOL','18','1','1','1477366920','1','soft','0') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_tag` WHERE `tag_name` = 'Discuz!图片素材站模板' AND `tablename` = 'soft' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_article` WHERE `status` = 1 AND `tag` LIKE '%Discuz!图片素材站模板%' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `my_tag` (`tag_name`,`typeid`,`tag_sort`,`tag_status`,`posttime`,`tag_click`,`tablename`,`num`) VALUES ('Discuz!图片素材站模板','18','1','1','1477366920','1','soft','0') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0090s ]
+SQL: UPDATE `my_soft` SET `title`='价值498元的Discuz!X3仿ZCOOL图片素材站模板商业版免费下载',`color`='',`jumpurl`='',`version`='',`cid`='18',`litpic`='/uploads/img1/20161008/57f8bd5847ec0.png!300X300.jpg',`pictureurls`='/uploads/img1/20161008/57f8bd5847ec0.png$$$首页|||/uploads/img1/20161008/57f8bd5c4f3a4.png$$$文章列表页|||/uploads/img1/20161008/57f8bd5fa75a9.png$$$作品页',`filesize`='',`downlink`='http://pan.baidu.com/s/1pLPHISb',`demo`='http://www.zcool.com.cn/',`keywords`='',`description`='价值498元的Discuz!X3仿ZCOOL图片素材站模板商业版免费下载
+
+Discuz!X3仿ZCOOL图片素材站模板介绍：
+
+本模板是一款商业模板，其他网站售卖价格498元，现在本站免费分享给大家。
+
+这款Discuz!X3仿ZCOOL',`content`='<p>价值498元的Discuz!X3仿ZCOOL图片素材站模板商业版免费下载<br/><br/>Discuz!X3仿ZCOOL图片素材站模板介绍：<br/><br/>本模板是一款商业模板，其他网站售卖价格498元，现在本站免费分享给大家。<br/><br/>这款Discuz!X3仿ZCOOL图片素材站模板可以用来做素材、设计分享类网站使用，模板包含GBK和UTF8两个版，兼容IE6-IE10、谷歌、火狐等浏览器，模板一些功能可以自由开启与关闭，非常方便使用。<br/><br/>模版支持：Discuz!X2.5\\X3.0\\3.1。<br/><br/>百度云盘提取密码：c2sn</p>',`tag`='Discuz!X3,Discuz!仿ZCOOL,Discuz!图片素材站模板',`softtype`='1',`language`='1',`publishtime`='1475919202',`commentflag`='1',`status`='1',`scores`='0',`prop_value`='33,68,46,47',`updatelog`='',`os`='',`updatetime`='1477366920',`flag`='1' WHERE `id` = 20 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_attachmentindex` [ RunTime:0.0060s ]
+SQL: DELETE FROM `my_attachmentindex` WHERE `arcid` = 20 AND `modelid` = 5 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_attachment` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `my_attachment` WHERE `filepath` IN ('img1/20161008/57f8bd5847ec0.png')  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `my_attachment` WHERE `filepath` IN ('img1/20161008/57f8bd5847ec0.png$$$首页','img1/20161008/57f8bd5c4f3a4.png$$$文章列表页','img1/20161008/57f8bd5fa75a9.png$$$作品页')  [ RunTime:0.0010s ]
+SQL: INSERT INTO `my_attachmentindex` (`attid`,`arcid`,`modelid`) VALUES ('97','20','5') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T11:42:01+08:00 ] ::1 /yuanma_admin.php?s=/Soft/index/pid/18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (18) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (18) ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:42:03+08:00 ] ::1 /yuanma_admin.php?s=/Tag/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_tag` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `my_tag` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_tag` ORDER BY tag_id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `my_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:54:55+08:00 ] ::1 /yuanma_admin.php?s=/Soft/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-10-25T11:55:04+08:00 ] ::1 /yuanma_admin.php?s=/Picture/index/pid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_picture` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT picture.id AS id,picture.title AS title,picture.color AS color,picture.author AS author,picture.keywords AS keywords,picture.litpic AS litpic,picture.description AS description,picture.copyfrom AS copyfrom,picture.template AS template,picture.publishtime AS publishtime,picture.updatetime AS updatetime,picture.click AS click,picture.cid AS cid,picture.commentflag AS commentflag,picture.flag AS flag,picture.jumpurl AS jumpurl,picture.status AS status,picture.userid AS userid,picture.aid AS aid,picture.ding AS ding,picture.cai AS cai,picture.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8) ORDER BY picture.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-25T11:56:14+08:00 ] ::1 /yuanma_admin.php?s=/Category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0090s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-25T12:13:22+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configgroup' ORDER BY sort,id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configtype' ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

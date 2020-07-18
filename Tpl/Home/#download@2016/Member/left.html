@@ -1,0 +1,95 @@
+<div class="member_right">
+    <div class="member_per">
+        <div class="panel clearfix">
+            <div class="panel-info clearfix">
+                <a href="{:U('Member/avatar')}">
+                <if condition="$member['face']">
+                <img class="round-image" width="50" height="50" src="{$member.face}" alt="{$member.username}" />
+                <else />
+                <img class="round-image" width="50" height="50" src="__ROOT__/avatar/system/0.gif" alt="{$member.username}" />
+                </if>
+                </a>
+                <div class="name-job">
+                    <h4 class="myname"> <if condition="$member['nickname']">{$member.nickname}<else />{$member.username}</if> </h4>
+                    <p class="job-title"> {$member.groupname} </p>
+                </div>
+            </div>
+            <div class="sign-wrap">
+                <textarea id="signed_textarea" class="signed_textarea" disabled="" autocomplete="off"><if condition="!$member['signature']">这位童鞋很懒，什么也没有留下～～！<else />{$member.signature}</if>
+                </textarea>
+                <em id="signed_edit" class="signed_edit"></em>
+            </div>
+            <p id="signed_error" class="signed_error"></p>
+            <div class="rank-points">
+                <ul class="clearfix">
+                    <li class="mp-item">
+                        <a class="mp-atag" href="{:U('Member/logs')}">
+                            <span class="mp-title">积分</span>
+                            <span class="mp-num">{$member.score}</span>
+                        </a>
+                    </li>
+                    <li class="mp-item">
+                        <a class="mp-atag" href="{:U('Member/points')}">
+                            <span class="mp-title">金币</span>
+                            <span class="mp-num">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--<p class="personalInfo" style="margin:10px 0 0">
+                    <span class="label" style="color:#999">vip会员：</span>
+                    <span class="money">0天后到期</span>
+                    <a rel="nofollow" href="{:U('Member/pay')}" class="f-l blue" style="margin:0 0 0 10px;display:inline;">立即续费</a>
+                </p>-->
+            </div>
+        </div>
+    </div>
+    <div class="member_per">
+        <ul class="nav panel">
+            <li><a href="{:U('Member/index')}"><i class="icon-nav icon-home"></i>我的主页</a></li>
+            <li><a href="{:U('Member/person')}"><i class="icon-nav icon-set"></i>我的设置</a></li>
+            <li><a href="{:U('Member/article')}"><i class="icon-nav icon-note"></i>我的投稿</a></li>
+            <li><a href="{:U('Member/forum')}"><i class="icon-nav icon-tick"></i>我的帖子</a></li>
+            <li><a href="{:U('Member/topic')}"><i class="icon-nav icon-ques"></i>我的话题</a></li>
+            <li><a href="{:U('Member/comment')}"><i class="icon-nav icon-plan"></i>我的评论</a></li>
+            <li><a href="{:U('Member/reply')}"><i class="icon-nav icon-chat"></i>我的回复</a></li>
+            <li style="border-bottom: none"><a href="{:U('Member/order')}"><i class="icon-nav icon-statistic"></i>充值记录</a></li>
+            <!--<li style="border-bottom: none">
+                <a href="{:U('Member/index')}" class=""><i class="icon-nav icon-msg"></i>我的消息</a>
+            </li>-->
+        </ul>
+    </div>
+    <!--<div class="member_per">
+        <ul class="space-data panel">
+            <li>
+                <span class="icon-clock icon" title="下载"></span>
+                下载：
+                <a href="#">0次</a>
+            </li>
+            <li>
+                <span class="icon-tick icon" title="收藏"></span>
+                收藏：
+                <a href="#">0条</a>
+            </li>
+            <li>
+                <span class="icon-note icon" title="签到"></span>
+                签到：
+                <a class="countNote" href="#">0次</a>
+            </li>
+            <li>
+                <span class="icon-ques icon" title="发表"></span>
+                话题：
+                <a href="">0条</a>
+            </li>
+            <li>
+                <span class="icon-chat icon" title="回答"></span>
+                回答：
+                <a href="">0条</a>
+            </li>
+            <li>
+                <span class="icon-user icon" title="粉丝"></span>
+                粉丝：
+                <a href="">0个</a>
+            </li>
+        </ul>
+    </div>-->
+</div>

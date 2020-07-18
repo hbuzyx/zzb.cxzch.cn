@@ -1,0 +1,560 @@
+[ 2016-11-24T14:02:49+08:00 ] ::1 /yuanma_admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0190s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:02:49+08:00 ] ::1 /yuanma_admin.php?s=/Public/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT VERSION() as ver; [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant session - assumed 'session' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Undefined variable: Think D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+NOTIC: [8] Use of undefined constant yang_adm_superadmin - assumed 'yang_adm_superadmin' D:\WWW\yuanma\App\Runtime\Cache\Manage\189add388cdd1263d35cd37739affe0d.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014001s ]
+
+[ 2016-11-24T14:02:49+08:00 ] ::1 /yuanma_admin.php?s=/Index/getParentCate&pid=0&rnd=7632
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0490s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0010s ]
+
+[ 2016-11-24T14:02:51+08:00 ] ::1 /yuanma_admin.php?s=/Soft/index/pid/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (16,'17','22','20','18','19','21','30') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'flagtype' ORDER BY sort,id  [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.195011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.195011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:02:59+08:00 ] ::1 /yuanma_admin.php?s=/Soft/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-24T14:03:08+08:00 ] ::1 /yuanma_admin.php?s=/Soft/index/pid/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (31,'32','33','36','34','37','39','35','38') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (31,'32','33','36','34','37','39','35','38') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-24T14:03:10+08:00 ] ::1 /yuanma_admin.php?s=/Page/index/pid/28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_category` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:03:11+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1479967390791
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:03:12+08:00 ] ::1 /yuanma_admin.php?s=/Topic/index/pid/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_topic` [ RunTime:0.1030s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_topic topic LEFT JOIN my_category category ON topic.cid = category.id WHERE topic.status > 0 AND topic.cid IN (29,'40','41') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT topic.id AS id,topic.title AS title,topic.shorttitle AS shorttitle,topic.color AS color,topic.copyfrom AS copyfrom,topic.author AS author,topic.keywords AS keywords,topic.litpic AS litpic,topic.description AS description,topic.publishtime AS publishtime,topic.updatetime AS updatetime,topic.click AS click,topic.cid AS cid,topic.commentflag AS commentflag,topic.flag AS flag,topic.jumpurl AS jumpurl,topic.status AS status,topic.userid AS userid,topic.aid AS aid,topic.ding AS ding,topic.cai AS cai,topic.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_topic topic LEFT JOIN my_category category ON topic.cid = category.id WHERE topic.status > 0 AND topic.cid IN (29,'40','41') ORDER BY topic.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\9c973587044a718e6f5b8681944ba20f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\9c973587044a718e6f5b8681944ba20f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:03:15+08:00 ] ::1 /yuanma_admin.php?s=/Article/index/pid/42
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT article.id AS id,article.title AS title,article.shorttitle AS shorttitle,article.color AS color,article.copyfrom AS copyfrom,article.author AS author,article.keywords AS keywords,article.litpic AS litpic,article.description AS description,article.publishtime AS publishtime,article.updatetime AS updatetime,article.click AS click,article.cid AS cid,article.commentflag AS commentflag,article.flag AS flag,article.jumpurl AS jumpurl,article.status AS status,article.userid AS userid,article.aid AS aid,article.ding AS ding,article.cai AS cai,article.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_article article LEFT JOIN my_category category ON article.cid = category.id WHERE article.status > 0 AND article.cid IN (42,'44','43','45') ORDER BY article.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\f69c6ef39b3ba6d5c1d51b7a72eb971f.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-24T14:03:17+08:00 ] ::1 /yuanma_admin.php?s=/Page/index/pid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `my_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-24T14:03:17+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1479967397426
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-24T14:03:20+08:00 ] ::1 /yuanma_admin.php?s=/Picture/index/pid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_picture` [ RunTime:0.0820s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT picture.id AS id,picture.title AS title,picture.color AS color,picture.author AS author,picture.keywords AS keywords,picture.litpic AS litpic,picture.description AS description,picture.copyfrom AS copyfrom,picture.template AS template,picture.publishtime AS publishtime,picture.updatetime AS updatetime,picture.click AS click,picture.cid AS cid,picture.commentflag AS commentflag,picture.flag AS flag,picture.jumpurl AS jumpurl,picture.status AS status,picture.userid AS userid,picture.aid AS aid,picture.ding AS ding,picture.cai AS cai,picture.tag AS tag,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_picture picture LEFT JOIN my_category category ON picture.cid = category.id WHERE picture.status > 0 AND picture.cid IN (8) ORDER BY picture.id DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:03:23+08:00 ] ::1 /yuanma_admin.php?s=/Picture/add/pid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0090s ]
+SQL: SELECT category.property AS property FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.id = 8 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: vo D:\WWW\yuanma\App\Runtime\Cache\Manage\e735b34bbda92fb6e9e8705ed583d449.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-24T14:03:23+08:00 ] ::1 /yuanma_admin.php?s=/Public/editorMethod&action=config&&noCache=1479967403699
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:03:26+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configgroup' ORDER BY sort,id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'configtype' ORDER BY sort,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:03:36+08:00 ] ::1 /yuanma_admin.php?s=/System/site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `my_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `my_config` ORDER BY groupid,sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:03:45+08:00 ] ::1 /yuanma_admin.php?s=/Soft/index/pid/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `my_soft` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT soft.id AS id,soft.title AS title,soft.color AS color,soft.keywords AS keywords,soft.litpic AS litpic,soft.description AS description,soft.version AS version,soft.softtype AS softtype,soft.copytype AS copytype,soft.language AS language,soft.os AS os,soft.filesize AS filesize,soft.officialurl AS officialurl,soft.publishtime AS publishtime,soft.updatetime AS updatetime,soft.click AS click,soft.cid AS cid,soft.commentflag AS commentflag,soft.flag AS flag,soft.jumpurl AS jumpurl,soft.status AS status,soft.userid AS userid,soft.aid AS aid,soft.tag AS tag,soft.demo AS demo,soft.downnum AS downnum,soft.scores AS scores,soft.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_soft soft LEFT JOIN my_category category ON soft.cid = category.id WHERE soft.status > 0 AND soft.cid IN (23,'24','25','26','27') ORDER BY soft.id DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\WWW\yuanma\App\Runtime\Cache\Manage\d300b279c4e10217698ed5a15f81b880.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-24T14:03:50+08:00 ] ::1 /yuanma_admin.php?s=/Sitemap/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`keywords`,`litpic`,`publishtime`,`click`,`cid` FROM `my_article` WHERE ( status=1 ) UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_topic WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_picture WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_soft WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_special WHERE status=1 ORDER BY id desc LIMIT 10000 [ RunTime:0.1700s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0180s ]
+SQL: SELECT `id`,`title`,`keywords`,`litpic`,`publishtime`,`click`,`cid` FROM `my_article` WHERE ( status=1 ) UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_topic WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_picture WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_soft WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_special WHERE status=1 ORDER BY id desc LIMIT 10000 [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `my_article` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`title`,`keywords`,`litpic`,`publishtime`,`click`,`cid` FROM `my_article` WHERE ( status=1 ) UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_topic WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_picture WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_soft WHERE status=1 UNION ALL SELECT id,title,keywords,litpic,publishtime,click,cid FROM my_special WHERE status=1 ORDER BY id desc LIMIT 10000 [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+NOTIC: [8] Undefined index: description D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 142 行.
+NOTIC: [8] Undefined index: url D:\WWW\yuanma\App\Manage\Controller\SitemapController.class.php 第 147 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+

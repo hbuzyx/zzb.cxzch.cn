@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>{$title} - <tp:sitename /></title>
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" type="image/x-icon" /> 
+    <link rel="stylesheet" href="__PUBLIC__/css/style_version1.css" type="text/css" /> 
+    <link rel="stylesheet" href="__PUBLIC__/css/article.css" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.js" ></script>
+  <style>
+  .home {
+    margin-top: 15px;
+    padding-left: 15px;
+    background: #eee;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #eee;
+}
+ .left {
+    float: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+    .right {
+    float: right;
+}
+
+.clear_fix {
+    zoom: 1;
+}
+/*导航*/
+
+
+/*导航*/
+
+.nav {
+    height: 60px;
+    line-height: 60px;
+    background: #379be9;
+}
+
+.nav li {
+    float: left;
+    background: #379be9;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav li a {
+    padding: 0 27px;
+}
+
+.nav li:hover {
+    background: #2986cf;
+}
+
+.nav .active {
+    background: #2986cf;
+}
+
+.nav li a {
+    color: #fff;
+}
+
+.nav .nav-focus a {
+    color: #fff711;
+}
+
+
+/*导航广告*/
+
+.navBottom {
+    height: 45px;
+    background: #f8f8f8;
+}
+
+.navBottom li {
+    float: left;
+    background: #f8f8f8;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+}
+
+.navBottom_bg .zj {
+    display: block;
+    width: 12px;
+    height: 17px;
+    background-position: -106px 0;
+}
+
+
+/*导航文字广告*/
+
+
+/* .nav_textAd table{
+    padding: 6px 10px;
+} */
+
+.nav_textAd td {
+    font-size: 12px;
+    width: 220px;
+    height: 21px;
+    line-height: 21px;
+    overflow: hidden;
+}
+
+.headerAd {
+    margin-top: 5px;
+}
+
+.headerAd a {
+    display: block;
+    height: 53px;
+    width: 1100px;
+}
+
+
+/*搜索广告*/
+
+.search {
+    margin-top: 10px;
+    background: #f8f8f8;
+    height: 45px;
+    line-height: 45px;
+}
+
+
+/*滚动文字*/
+
+.notice {
+    width: 387px;
+    height: 26px;
+    overflow: hidden;
+    background: url(../images/bg.gif) no-repeat;
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+.noticTipTxt {
+    color: #ff7300;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    margin: 0 0 0 35px;
+}
+
+.noticTipTxt li {
+    height: 22px;
+    line-height: 25px;
+}
+
+.noticTipTxt a {
+    color: #0075E8;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.noticTipTxt a:hover {
+    color: #ff7300;
+    text-decoration: underline;
+}
+
+
+/*4图标*/
+
+.btnText {
+    margin-left: 10px;
+}
+
+.btnText ul li {
+    float: left;
+    padding: 0 15px;
+}
+
+.btnText ul li:hover a {
+    color: #fff;
+}
+
+.btnText ul li:hover {
+    background: #379be9;
+}
+
+.btnText ul li a {
+    padding-left: 6px;
+}
+
+.btnText .tg {
+    display: block;
+    width: 16px;
+    height: 18px;
+    background-position: -125px 0;
+    margin-top: 12px;
+}
+
+.btnText ul li:hover .tg {
+    background-position: 0 -24px;
+}
+
+.btnText .zl {
+    display: block;
+    width: 16px;
+    height: 18px;
+    background-position: -152px 0;
+    margin-top: 12px;
+}
+
+.btnText ul li:hover .zl {
+    background-position: -26px -24px;
+}
+
+.btnText .bd {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-position: -177px 0;
+    margin-top: 14px;
+}
+
+.btnText ul li:hover .bd {
+    background-position: -51px -24px;
+}
+
+.btnText .xx {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-position: -202px 0;
+    margin-top: 15px;
+}
+
+.btnText ul li:hover .xx {
+    background-position: -76px -24px;
+}
+
+
+/*搜索*/
+
+.searchBox {
+    position: relative;
+}
+
+.searchBox a {
+    background: #289bf5;
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.searchBox a span {
+    color: #fff;
+}
+
+.searchBox i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: -22px -481px;
+    margin-right: 5px;
+    margin-top: 12px;
+}
+
+
+/*幻灯一栏*/
+
+.hdList {
+    margin-top: 15px;
+}
+
+
+/*幻灯*/
+
+.hd {
+    width: 390px;
+}
+
+.orbit-wrapper {
+    position: relative;
+}
+
+#featured {
+    position: relative;
+    width: 390px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.orbit>img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0 none;
+}
+
+.orbit>a {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 0;
+    border: 0 none;
+}
+
+.orbit>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.orbit-item {
+    background-color: #f5f5f5;
+}
+
+
+/* 标题 */
+
+.orbit-caption {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 49px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+}
+
+
+/* 导航 */
+
+
+    .tabactive{background-color:#1E8AE7;}
+    .wenda-tab.tabactive a{font-size:12px;color:#fff;}
+
+  </style>
+</head> 
+<body> 
+        
+    <include file="Public:header" />
+
+	<div class="wenda clearfix"> 
+  <div class="home clear_fix">
+<h2 class="left"><em>当前位置：</em><span><tp:position />
+</span></h2>
+<div class="home-right right clear_fix">
+<div class="left" style="width:auto;max-width:300px;padding-left:unset;">
+<a style="color: red; font-weight: bold;" href="{:U('Member/article_add')}" target="_blank">软文发布1元起，百度霸屏首选</a>
+</div>
+<div class="btnText left">
+<ul>
+
+<li><i class="left xx sprite"></i><a href="/tag-lists.html" target="_blank">标签</a></li>
+
+</ul>
+</div>
+<div class="right searchBox">
+<a href="http://ym.cxzch.cn/news" target="_blank"><i class="sprite znss left"></i><span>站内搜索</span></a>
+</div>
+</div>
+</div>
+
+    <div class="wenda-main">
+    
+        <ul class="wenda-tab clearfix">
+        
+        	<li <eq name="cid" value="42">class="tabactive"</eq> >
+            <if condition="$pid gt 0">
+            <tp:type typeid='$pid'><a href="{$type.url}">全部资讯</a></tp:type>
+            <else />
+            <tp:type typeid='$cid'><a href="{$type.url}">全部资讯</a></tp:type>
+            </if>
+            </li>
+            
+        	<if condition="$flag_son">
+            <tp:catlist typeid='$cid' type='son' flag='1'>
+            <li <eq name="cid" value="$catlist['id']">class="tabactive"</eq> ><a href="{$catlist.url}">{$catlist.name}</a></li>
+            </tp:catlist>
+            <else/>
+            <if condition = "$cate['pid'] gt 0">
+            <tp:catlist typeid="$cate['pid']" type='son' flag='1'>
+            <li <eq name="cid" value="$catlist['id']">class="tabactive"</eq> ><a href="{$catlist.url}">{$catlist.name}</a></li>
+            </tp:catlist>
+            </if>
+            </if>
+            
+        </ul>
+        <!--左侧列表内容-->
+        <div class="article-list">
+            
+            <tp:list pagesize='15' pageroll='5' infolen='150'>
+            <div class="news1"> 
+            <a title="{$list.title}" href="{$list.url}" target="_blank">
+            	<empty name="list.litpic">
+                <img src="__PUBLIC__/images/nopic.jpg" alt="暂无图片" />
+                <else />
+                <img src="{$list.litpic}" alt="{$list.title}" />
+                </empty>
+            </a>
+            <div class="news_title">
+                <h4><a title="{$list.title}" href="{$list.url}" target="_blank">{$list.title}</a> </h4>
+                <em><img src="__PUBLIC__/images/icon3.png" alt="阅读">{$list.click}</em>
+                <div class="clear"></div>
+            </div>
+            <p>{$list.description}...</p>
+            <span class="news_span1">{$list.publishtime|date='Y-m-d H:i:s',###}</span>
+            <if condition="$list['tag']">
+            <div class="keyword-list">
+            <php>$tag = explode(',',$list['tag']);</php>
+                <volist name="tag" id="vo">
+                    <a class="list-tag" href="/news?tagname={$vo}">{$vo}</a>
+                </volist>
+            </div>
+            </if>
+            </div>
+            </tp:list>
+        
+            <div class="pager">{$page}</div>
+
+            <!--page-->
+        </div>
+    </div>
+    <div class="wenda-slider">
+        <!-- pub new ques -->
+		<div class="newques-container">
+            <a  id="js-newques" class="newques-btn" href="{:U('Member/article_add')}"><i class="icon-addques"></i>发表文章</a>
+        </div>
+        <div class="panel wenda-form clearfix">
+            <div class="panel-body clearfix">
+            <volist name="tags" id="vo">
+                <a class="hot-label" href="/news?tagname={$vo['tag_name']}" style="margin:0 6px 10px 0">{$vo.tag_name}</a>
+            </volist>
+            </div>
+        </div>
+        <div class="panel hot">
+            <div class="panel-heading">
+                <h2 class="panel-title">热门资讯</h2>
+            </div>
+            <div class="panel-body clearfix">
+                <ul class="weekly-hot">
+                
+                <tp:list limit='20' orderby='click DESC'>
+                <li <if condition="$autoindex eq 0">class="padtop"<elseif condition="count($_list) gt 1 and ($autoindex+1) eq count($_list)" />class="bordbottom"</if> ><em class="hoticon hot{$autoindex+1}">热</em><a class="hottalk" href="{$list.url}">{$list.title}</a>
+                </li>
+                </tp:list>
+                
+                </ul>
+            </div>
+        </div>
+        </div>
+     </div>
+
+<include file="Public:footer" />
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://j.hbxuwe.cn/a/youxiugongcheng/ -->
+<html class="js cssanimations"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="order by /">
+<title>{$title}-<tp:sitename /></title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="__PUBLIC__/list/amazeui.min.css">
+<link rel="stylesheet" href="__PUBLIC__/list/app.css">
+<link rel="stylesheet" href="__PUBLIC__/list/index.css">
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="__PUBLIC__/list/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="__PUBLIC__/list/amazeui.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/list/index.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+        href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]--> 
+<!-- 代码区 -->
+<div class="head">
+ <include file="Public:header" />
+<!--<div class="sbanner"><ul class="am-slides"><li>
+        <div class="ddsgg" style="background: url(/skin/img/banner.jpg) no-repeat center;"> </div>
+      </li></ul></div>
+ <div class="sbanner"> 
+ <div class="banner_top"></div> 
+ <div data-am-widget="slider" class="am-slider am-slider-a2" data-am-slider='{"directionNav":false,"slideshowSpeed": 3000,"animationSpeed": 1000,"animation": "fade"}' > 
+  <ul class="am-slides">
+  
+   <li>
+        <div class="ddsgg" style="background: url(/uploads/191027/1-19102H20101619.jpg) no-repeat center;">
+        
+        </div>
+      </li>
+<li>
+        <div class="ddsgg" style="background: url(/uploads/191027/1-19102H20032134.jpg) no-repeat center;">
+        
+        </div>
+      </li>
+
+    </li>
+	
+  </ul>
+  </div>
+</div>
+-->
+
+
+<div class="n_cont c">
+  <div class="jz c">
+    <div class="ny_nav" id="my_sticky" style="top: 0px; bottom: auto;">
+      <div class="wjssbt c">{$cate.name}</div>
+
+      <ul class="wjsndh c">
+      	<if condition="$flag_son">
+
+		<tp:catlist typeid='$cid' type='son' flag='1'>
+             <li class="c"> <a href="{$catlist.url}"> {$catlist.name} <span> &gt; </span> </a> </li>
+	
+		</tp:catlist>
+	
+	<else/>
+	<if condition = "$cate['pid'] gt 0">
+	
+		<tp:catlist typeid="$cate['pid']" type='son' flag='1'>
+		   <li class="c"> <a href="{$catlist.url}"> {$catlist.name} <span> &gt; </span> </a> </li>
+		</tp:catlist>
+
+	</if>
+	</if>
+     
+      
+          
+      </ul>
+        <img src="__PUBLIC__/list/fqfm_051.jpg">
+    </div>
+    <script>
+            $(window).bind('scroll', function () {
+                var div_h = $('.ny_nav').height(); // div的高度
+                var foot_h = $(".foot").offset().top - $(window).scrollTop(); // foot到顶部的距离
+                var con_h = $('.ny_zqw_chb').offset().top - $(window).scrollTop(); // con到顶部的距离
+                if(con_h <= 0){
+                    $('#my_sticky').addClass('ny_nav_chb');
+                    if(foot_h - div_h <= 0){
+                        $('#my_sticky').css({
+                            'top':'auto',
+                            'bottom':$(window).height() - foot_h
+                        })
+                    }else{
+                        $('#my_sticky').css({
+                            'top':'0',
+                            'bottom':'auto'
+                        })
+                    }
+                }else{
+                    $('#my_sticky').removeClass('ny_nav_chb');
+                }
+            });
+        </script>
+    <div class="ny_zqw ny_zqw_chb">
+      <div class="nw_top"> <span class="top_tzbt l">{$cate.name}</span> <span class="top_mbx r">您的位置：<tp:position /> &gt; </span> </div>
+      <!--main--> 
+      
+      <!--内页正文-->
+      <div class="bjbld">
+        <ul class="jsanl">
+          	<tp:list typeid="$cid" pagesize='15'>
+
+
+          <li> <a href="{$list.url}"> 
+            <span class="dpdzfd"> 
+            	<img src="{$list.litpic}" alt="{$list.title}"> 
+            </span> <span class="jsalnr"> 
+            <span class="jsrbt" style="display: block; width: 100%; text-align: center;">{$list.title}</span>
+            <!--<span class="jsrnr">{$list.content}...</span>  
+            <span class="jsrgd">查看详情</span> </span> </a> </li>-->
+          
+          	</tp:list>
+                </ul>
+        <div class="yemmm"> <div class="pager">{$page}</div>
+</div>
+      </div>
+      <!--内页正文--> 
+    </div>
+  </div>
+</div>
+ <include file="Public:footer" />

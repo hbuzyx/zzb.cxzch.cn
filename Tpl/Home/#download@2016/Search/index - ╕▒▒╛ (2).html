@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>{$title}-<tp:sitename /></title>
+<meta name="keywords" content="<tp:sitekeywords />" />
+<meta name="description" content="<tp:sitedescription />" />
+<include file='Public:headcommon'/>
+</head>
+<body>
+<include file="Public:header" />
+<div class="mainWrap">
+    <div class="main">
+        <div class="leftBar mT15">
+            <div class="box">
+                <div class="content">
+                    <h2>搜索&nbsp;<b>{$keyword}</b>&nbsp;的结果...</h2>
+                    <if condition='empty($keyword)'>
+                    <ul class="articleList">
+                    请输入关键词，然后点搜索！
+                    </ul>
+                    <else/>	
+                    <ul class="articleList">
+                        <foreach name="vlist" item="v">
+                        <li>
+                            <div class="info">
+                                <span>{$v.click}</span>
+                                <strong><a href="{$v.curl}" class="title">{$v.catename}</a></strong>                               
+                            </div>
+                            <h4><a href="{$v.url}" class="title">{$v.title}</a></h4>
+                            <div class="text">
+                                <empty name="v['litpic']">
+                                <img src="__PUBLIC__/Images/default.gif"/>
+                                <else/>
+                                <img src="{$v.litpic}"/>
+                                </empty>
+                                <p>{$v.description}...</p>
+                            </div>
+                        </li>
+                        </foreach>
+                        <if condition='count($vlist) eq 0'>无数据</if>
+                    </ul>
+                    </if>
+                    <div class="pagesize">{$page}</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="rightBar mT15">
+            <include file="Public:right"/>
+        </div>
+    </div>
+</div>
+
+<include file="Public:footer"/>

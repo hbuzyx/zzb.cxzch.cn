@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+      <meta name="baidu-site-verification" content="GCFHEAyzFF" />
+        <title><tp:sitename /> - <tp:sitetitle/></title>
+        <meta name="keywords" content="<tp:sitekeywords />" />
+        <meta name="description" content="<tp:sitedescription />" />
+        <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" type="image/x-icon" /> 
+        <link rel="stylesheet" href="__PUBLIC__/css/style_version1.css" type="text/css" />
+        <script src="__PUBLIC__/js/jquery.js" type="text/javascript"></script>
+ 
+    </head> 
+    <body> 
+    
+    <include file="Public:header" />
+    
+	<div class="container">
+    <div class="index_per index_first clearfix">
+        <div class="sidebar_per sidebar_first">
+            <dl>
+                <dt>
+                <strong>最新更新 <span class="name-en">/New</span></strong>
+                </dt>
+                <tp:soflist typeid='0' flag='' limit='8'>
+                <dd class="sidebar_articles"><span>{$soflist.publishtime|date='m-d',###}</span><a target="_blank"  href="{$soflist.url}">{$soflist.title}</a></dd>
+                </tp:soflist>
+            </dl>
+        </div>
+        <div class="index_left clearfix">
+        <!--幻灯片-->
+            <div class="banner" id="banner">
+                <ul id="index_banner">
+                    <tp:abc id='1' limit='5'>
+                    <li><a target="_blank" href="{$abc.url}" title="{$abc.title}"><img src=" {$abc.content}" alt="{$abc.title}" /></a></li>
+                    </tp:abc>
+                </ul>
+                <div class="banner_page" id="banner_page"></div>
+                <a class="banner_page_btn banner_page_left" id="banner_page_left"></a>
+                <a class="banner_page_btn banner_page_right" id="banner_page_right"></a>
+            </div>
+            <div class='merchant_cats'>
+                <div class='head'><h3>网站快速导航</h3></div>
+                <div class="content" id="merchant_cats_menus"> 
+                    <a href="weixinxiaochengxu"><i class="merchant_arrow merchant_arrow_right"></i><span class="icon_merchant icon_merchant_fire"></span><span class="name">小程序开发教程</span><i class="merchant_arrow_left"></i> </a> 
+                    <a href="divcss"><i class="merchant_arrow merchant_arrow_right"></i><span class="icon_merchant icon_merchant_mobile"></span><span class="name">web前端教程</span><i class="merchant_arrow_left"></i></a>
+                   <a href="Vuexjs"><i class="merchant_arrow merchant_arrow_right"></i><span class="icon_merchant icon_merchant_png"></span><span class="name">Vue.js教程</span><i class="merchant_arrow_left"></i></a>
+                  <a href="phpjiaocheng"><i class="merchant_arrow merchant_arrow_right"></i><span class="icon_merchant icon_merchant_code"></span><span class="name">PHP教程</span><i class="merchant_arrow_left"></i></a>
+          
+                    <a href="wordpress"><i class="merchant_arrow merchant_arrow_right"></i><span class="icon_merchant icon_merchant_js"></span><span class="name">wordpress主题</span><i class="merchant_arrow_left"></i></a>
+                      <a href="thinkphp"><i class="merchant_arrow merchant_arrow_right"></i><span class="icon_merchant icon_merchant_typeface"></span><span class="name">thinkphp源码</span><i class="merchant_arrow_left"></i></a>
+                         </div> 
+            </div>
+        </div>
+    </div>
+      <div style="width:1120px;height100px; margin-top:5px;">
+        <tp:abc id='4' limit=''>
+          <a href="{$abc.url}"><img src="{$abc.content}" width="{$abc.width}" height="{$abc.height}">
+
+
+
+</tp:abc>
+       </div>
+    <div class="index_per clearfix">
+        <tp:catlist typeid='0' flag='1' modelid='3'>
+        
+        <div class="sidebar_per sidebar_second">
+            <dl>
+                <dt>
+                <a href="{$catlist.url}" class="more" target="_blank">更多&nbsp;<span class="more-sign">&gt;</span></a>
+                <strong>推荐{$catlist.name}<span class="name-en">/{$catlist.ename}</span></strong>
+                </dt>
+                <tp:list typeid='$catlist["id"]' flag='c' limit='14'>
+                <dd class="sidebar_articles">
+                    <span>{$list.publishtime|date='m-d',###}</span><a target="_blank"  href="{$list.url}">{$list.title}</a>
+                </dd>
+                </tp:list>
+            </dl>
+        </div>
+        <div class="index_recommend" id='index_recommend_{$k}'>
+            <div class="head clearfix">
+                <strong>{$catlist.name}</strong><a class="more" href="{$catlist.url}" target="_blank">更多&nbsp;<span class="more-sign">&gt;</span></a>
+                
+                <ul class="clearfix index-coupon-menus">
+                	
+                    <li class="current index-coupon-menus-first">全部<span class="arrow-up-menu arrow"></span></li>
+                    
+                    <volist name='catlist["child"]' id='v' offset='0' length='6'>
+                    <li>{$v.name}<span class="arrow-up-menu arrow"></span></li>
+                    </volist>
+                    
+               </ul>
+            </div>
+            <div class="content clearfix">
+                <div class="per current">
+                    <ul class="ul_pics">
+                    	
+                        <tp:list typeid='$catlist["id"]' flag='a' limit='0,3'>
+                        <li><a target="_blank" href="{$list.url}" title="{$list.title}">
+                        <div>
+                        <empty name="list.litpic">
+                        <img src="__PUBLIC__/images/nopic.jpg" original="__PUBLIC__/images/nopic.jpg" alt="暂无图片" class="lazy" />
+                        <else />
+                        <img src="__PUBLIC__/images/grey.gif" original="{$list.litpic}" alt="{$list.title}" class="lazy"  />
+                        </empty>
+                        </div>
+                        {$list.title}</a></li>
+                        </tp:list>
+                        
+                    </ul>
+                    <ul class="ul_words">
+                    
+                    	<tp:list typeid='$catlist["id"]' flag='a' limit='3,18'>
+                        <li><a target="_blank" href="{$list.url}">{$list.title}</a></li>
+                        </tp:list>
+                        
+                   </ul>
+                </div>
+                
+                <volist name='catlist["child"]' id='v' offset='0' length='8'>
+                <div class="per">
+                        <ul class="ul_pics">
+                        
+                        	<tp:list typeid='$v["id"]' flag='a' limit='0,3'>
+                        	<li><a target="_blank" href="{$list.url}" title="{$list.title}"><div><img src="__PUBLIC__/images/grey.gif" original="{$list.litpic}" alt="{$list.title}" class="lazy"  /></div>{$list.title}</a></li>
+                        	</tp:list>
+                        
+                        </ul>
+                        <ul class="ul_words">
+                            <tp:list typeid='$v["id"]' flag='a' limit='3,18'>
+                            <li><a target="_blank"  href="{$list.url}">{$list.title}</a></li>
+                            </tp:list>
+                        </ul>
+                    </div>
+                </volist>
+           </div>
+        </div>
+        
+        <php>$k++;</php>
+        
+        </tp:catlist>
+    	
+        <php>$k = 0;</php>
+        
+    	<tp:catlist typeid='0' flag='1' modelid='5'>
+        
+        <div class="sidebar_per sidebar_second">
+            <dl>
+                <dt>
+                <a href="{$catlist.url}" class="more" target="_blank">更多&nbsp;<span class="more-sign">&gt;</span></a>
+                <strong>推荐{$catlist.name}<span class="name-en">/{$catlist.ename}</span></strong>
+                </dt>
+                <tp:soflist typeid='$catlist["id"]' flag='c' limit='14'>
+                <dd class="sidebar_articles">
+                    <span>{$soflist.publishtime|date='m-d',###}</span><a target="_blank"  href="{$soflist.url}">{$soflist.title}</a>
+                </dd>
+                </tp:soflist>
+            </dl>
+        </div>
+        <div class="index_recommend" id='index_recommend_{$k}'>
+            <div class="head clearfix">
+                <strong>{$catlist.name}</strong><a class="more" href="{$catlist.url}" target="_blank">更多&nbsp;<span class="more-sign">&gt;</span></a>
+                
+                <ul class="clearfix index-coupon-menus">
+                	
+                    <li class="current index-coupon-menus-first">全部<span class="arrow-up-menu arrow"></span></li>
+                    
+                    <volist name='catlist["child"]' id='v' offset='0' length='6'>
+                    <li>{$v.name}<span class="arrow-up-menu arrow"></span></li>
+                    </volist>
+                    
+               </ul>
+            </div>
+            <div class="content clearfix">
+                <div class="per current">
+                    <ul class="ul_pics">
+                    	
+                        <tp:soflist typeid='$catlist["id"]' flag='a' limit='0,3'>
+                        <li><a target="_blank" href="{$soflist.url}" title="{$soflist.title}">
+                        <div>
+                        <empty name="soflist.litpic">
+                        <img src="__PUBLIC__/images/nopic.jpg" original="__PUBLIC__/images/nopic.jpg" alt="暂无图片" class="lazy" />
+                        <else />
+                        <img src="__PUBLIC__/images/grey.gif" original="{$soflist.litpic}" alt="{$soflist.title}" class="lazy"  />
+                        </empty>
+                        </div>
+                        {$soflist.title}</a></li>
+                        </tp:soflist>
+                        
+                    </ul>
+                    <ul class="ul_words">
+                    
+                    	<tp:soflist typeid='$catlist["id"]' flag='a' limit='3,18'>
+                        <li><a target="_blank" href="{$soflist.url}">{$soflist.title}</a></li>
+                        </tp:soflist>
+                        
+                   </ul>
+                </div>
+                
+                <volist name='catlist["child"]' id='v' offset='0' length='6'>
+                <div class="per">
+                        <ul class="ul_pics">
+                        
+                        	<tp:soflist typeid='$v["id"]' flag='a' limit='0,3'>
+                        	<li><a target="_blank" href="{$soflist.url}" title="{$soflist.title}"><div><img src="__PUBLIC__/images/grey.gif" original="{$soflist.litpic}" alt="{$soflist.title}" class="lazy"  /></div>{$soflist.title}</a></li>
+                        	</tp:soflist>
+                        
+                        </ul>
+                        <ul class="ul_words">
+                            <tp:soflist typeid='$v["id"]' flag='a' limit='3,18'>
+                            <li><a target="_blank"  href="{$soflist.url}">{$soflist.title}</a></li>
+                            </tp:soflist>
+                        </ul>
+                    </div>
+                </volist>
+           </div>
+        </div>
+        
+        <php>$k++;</php>
+        
+        </tp:catlist>
+        
+        <tp:catlist typeid='0' flag='1' modelid='1'>
+        
+        <div class="sidebar_per sidebar_second">
+            <dl>
+                <dt>
+                <a href="{$catlist.url}" class="more" target="_blank">更多&nbsp;<span class="more-sign">&gt;</span></a>
+                <strong>推荐{$catlist.name}<span class="name-en">/{$catlist.ename}</span></strong>
+                </dt>
+                <tp:list typeid='$catlist["id"]' flag='c' limit='14'>
+                <dd class="sidebar_articles">
+                    <span>{$list.publishtime|date='m-d',###}</span><a target="_blank"  href="{$list.url}">{$list.title}</a>
+                </dd>
+                </tp:list>
+            </dl>
+        </div>
+        <div class="index_recommend" id='index_recommend_{$k}'>
+            <div class="head clearfix">
+                <strong>{$catlist.name}</strong><a class="more" href="{$catlist.url}" target="_blank">更多&nbsp;<span class="more-sign">&gt;</span></a>
+                
+                <ul class="clearfix index-coupon-menus">
+                	
+                    <li class="current index-coupon-menus-first">全部<span class="arrow-up-menu arrow"></span></li>
+                    
+                    <volist name='catlist["child"]' id='v' offset='0' length='6'>
+                    <li>{$v.name}<span class="arrow-up-menu arrow"></span></li>
+                    </volist>
+                    
+               </ul>
+            </div>
+            <div class="content clearfix">
+                <div class="per current">
+                    <ul class="ul_pics">
+                    	
+                        <tp:list typeid='$catlist["id"]' flag='a' limit='0,3'>
+                        <li><a target="_blank" href="{$list.url}" title="{$list.title}">
+                        <div>
+                        <empty name="list.litpic">
+                        <img src="__PUBLIC__/images/nopic.jpg" original="__PUBLIC__/images/nopic.jpg" alt="暂无图片" class="lazy" />
+                        <else />
+                        <img src="__PUBLIC__/images/grey.gif" original="{$list.litpic}" alt="{$list.title}" class="lazy"  />
+                        </empty>
+                        </div>
+                        {$list.title}</a></li>
+                        </tp:list>
+                        
+                    </ul>
+                    <ul class="ul_words">
+                    
+                    	<tp:list typeid='$catlist["id"]' flag='a' limit='3,18'>
+                        <li><a target="_blank" href="{$list.url}">{$list.title}</a></li>
+                        </tp:list>
+                        
+                   </ul>
+                </div>
+                
+                <volist name='catlist["child"]' id='v' offset='0' length='6'>
+                <div class="per">
+                        <ul class="ul_pics">
+                        
+                        	<tp:list typeid='$v["id"]' flag='a' limit='0,3'>
+                        	<li><a target="_blank" href="{$list.url}" title="{$list.title}"><div><img src="__PUBLIC__/images/grey.gif" original="{$list.litpic}" alt="{$list.title}" class="lazy"  /></div>{$list.title}</a></li>
+                        	</tp:list>
+                        
+                        </ul>
+                        <ul class="ul_words">
+                            <tp:list typeid='$v["id"]' flag='a' limit='3,18'>
+                            <li><a target="_blank"  href="{$list.url}">{$list.title}</a></li>
+                            </tp:list>
+                        </ul>
+                    </div>
+                </volist>
+           </div>
+        </div>
+        
+        <php>$k++;</php>
+        
+        </tp:catlist>
+        
+    </div>
+    
+    <div class="block clearfix">
+        <div class="title">
+            <span><strong>友情链接</strong></span>
+        </div>
+        <div class="flink clearfix">
+            <tp:flink limit='20'>
+                <a href="{$flink.url}" target="_blank">{$flink.name}</a>
+            </tp:flink>
+        </div>
+    </div>
+    
+</div>
+<div style="display:none"><a href="http://bbs.52jscn.com">源码论坛</a></div>
+<include file="Public:footer" />
+
+</body>
+</html>

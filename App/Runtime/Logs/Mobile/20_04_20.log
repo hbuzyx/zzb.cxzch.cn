@@ -1,0 +1,9 @@
+[ 2020-04-20T23:36:45+08:00 ] 110.254.39.188 /Mobile/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+ERR: 模板不存在:./Tpl/Mobile/default/Index/index.html
+

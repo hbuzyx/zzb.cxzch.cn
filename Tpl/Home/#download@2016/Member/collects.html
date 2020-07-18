@@ -1,0 +1,44 @@
+<include file="Public:head" />
+<link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+<div  class="container w clearfix">
+    <include file="Member:right" />
+    <div class="member_main">
+        <div class="perInfo">
+            <div class="titleInfoBorder">
+                <span>{$title}</span>
+            </div>
+        </div>
+        <notempty name='collects'>
+            <foreach name="collects" item="row">
+                <div class="infoPerBlock <if condition='$key%10 eq 9 or $key eq $collects_num-1'>last</if>">
+                    <div class="leftPicBlock wh40">
+                        <a href="{$row.tid|getMtypeHref=###,$row['mtype']}" target="_blank">
+                            <img width="50px"  alt="{$row.title}" src="{$row.tid|getMtypeLogo=###,$row['mtype']}"/>
+                        </a>
+                    </div>
+                    <div class="centerBlock w490">
+                        <a title="{$row.title}" target="_blank" href="{$row.tid|getMtypeHref=###,$row['mtype']}">{$row.title}</a>
+                        <p class="tags">{$row.tags|getTags=###,'',$row['mtype']}</p>
+                    </div>
+                    <div class="rightBlock">
+                        <span class="time">{$row.addtime|tranTime}</span>
+                        <div class="infoEdit">
+                            <a class="cancelFav"  title="取消收藏" href="javascript:void(0)"  onclick="getCollect($(this), '{$row.tid}', '{$row.mtype}')">取消收藏</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </foreach>
+            <div class="pager">{$page}</div>
+            <else/>
+            <div class="infoNoData">
+                你还没有收藏过呢，快去
+                <a target="_blank" href="__APP__">收藏</a>
+                吧。
+            </div>
+        </notempty>
+        <include file="Member:menu" />
+    </div>
+</div>
+
+<include file="Member:foot" />

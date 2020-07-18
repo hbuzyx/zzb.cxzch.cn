@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://j.hbxuwe.cn/a/jianzhujienen/ -->
+<html class="js cssanimations"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="order by dede58.com/">
+  <title>{$title} - <tp:sitename /></title>
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="__PUBLIC__/list/amazeui.min.css">
+<link rel="stylesheet" href="__PUBLIC__/list/app.css">
+<link rel="stylesheet" href="__PUBLIC__/list/index.css">
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="__PUBLIC__/zzb/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="__PUBLIC__/zzb/amazeui.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/list/index.css">
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+        href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]--> 
+<!-- 代码区 -->
+   <include file="Public:header" />
+<div class="n_cont c">
+ <div class="jz c">
+    <div class="ny_nav" id="my_sticky" style="top: 0px; bottom: auto;">
+        <div class="wjssbt c"> <if condition="$pid gt 0">
+        
+{$cate.name}            <else />
+            <tp:type typeid='$cid'>{$cate.name} </tp:type>
+            </if></div>
+      
+      <ul class="wjsndh c">
+        	<if condition="$flag_son">
+            <tp:catlist typeid='$cid' type='son' flag='1'>
+              <li class="c <eq name="cid" value="$catlist['id']">tabactive</eq>" ><a href="{$catlist.url}">{$catlist.name}<span> &gt; </span></a></li>
+            </tp:catlist>
+            <else/>
+            <if condition = "$cate['pid'] gt 0">
+            <tp:catlist typeid="$cate['pid']" type='son' flag='1'>
+            <li class="c <eq name="cid" value="$catlist['id']">tabactive</eq>" ><a href="{$catlist.url}">{$catlist.name}<span> &gt; </span></a></li>
+            </tp:catlist>
+            </if>
+            </if>
+      </ul>
+      <img src="__PUBLIC__/list/fqfm_051.jpg">
+    </div>
+    <script>
+            $(window).bind('scroll', function () {
+                var div_h = $('.ny_nav').height(); // div的高度
+                var foot_h = $(".foot").offset().top - $(window).scrollTop(); // foot到顶部的距离
+                var con_h = $('.ny_zqw_chb').offset().top - $(window).scrollTop(); // con到顶部的距离
+                if(con_h <= 0){
+                    $('#my_sticky').addClass('ny_nav_chb');
+                    if(foot_h - div_h <= 0){
+                        $('#my_sticky').css({
+                            'top':'auto',
+                            'bottom':$(window).height() - foot_h
+                        })
+                    }else{
+                        $('#my_sticky').css({
+                            'top':'0',
+                            'bottom':'auto'
+                        })
+                    }
+                }else{
+                    $('#my_sticky').removeClass('ny_nav_chb');
+                }
+            });
+        </script>
+    <div class="ny_zqw ny_zqw_chb">
+      <div class="nw_top"> <span class="top_tzbt l">{$cate.name} </span> <span class="top_mbx r">您的位置：    <tp:position delimiter='&nbsp;&gt;&nbsp;' />&nbsp;&gt; </span> </div>
+      <!--内页正文-->
+      <div class="bjbld">
+        <div class="xqbt">{$content.title}</div>
+        <div class="xqbtnm">
+          <div class="xqbrq"> <span class="rqds l">{$content.publishtime|date='Y-m-d H:i:s',###}</span> <span class="ckrs l"><b style="font-weight:100;"><script src="__PUBLIC__/list/count.php" type="text/javascript" language="javascript"></script></b></span> <a href="/" class="ybfh r">返回</a> </div>
+        </div>
+        <div class="xqxq">
+      
+<div style="text-align: left">{$content.content}<br>
+<br>
+　　附件：　<a href="http://j.hbxuwe.cn/_data/2018/01/04/a09b5471_a2a0_4700_a47b_be56bab1da0a/file/%E9%83%A8%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E8%BF%9B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E5%8B%98%E5%AF%9F%E8%AE%BE%E8%AE%A1%E8%B5%84%E8%B4%A8%E8%B5%84%E6%A0%BC%E7%94%B5%E5%AD%90%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%80%9A%E7%9F%A5.pdf">《住房城乡建设部办公厅关于进一步推进勘察设计资质资格电子化管理工作的通知》（建办市〔2017〕67号）</a><br>
+<br>
+<br>
+<br>
+
+        </div>
+        <div class="xypxq"> 
+        <div class="sypa l"><b>上一篇：</b><tp:next /></div> <div class="xypa r" id='left'><b>下一篇：</b> <tp:prev /></div> 
+        </div>
+          <div style="" title="分享" class="cli-share j-sharebox auto-1390289261253-parent" id="auto-id-Wgv0KyQS2q5GtCJz">
+                    
+                    <div data-bd-bind="1591772493996" class="bdsharebuttonbox bdshare-button-style1-16" style="display: inline-block;">
+                      <span class="l">分享到：</span>  
+                      <!-- <a data-cmd="more" class="bds_more " href="http://zs.hbxuwe.cn/index.php?app=classroom&amp;mod=Album&amp;act=watch&amp;aid=293&amp;type=1#"></a> -->
+                        <a title="分享到微信" data-cmd="weixin" class="bds_weixin" href="http://zs.hbxuwe.cn/index.php?app=classroom&amp;mod=Album&amp;act=watch&amp;aid=293&amp;type=1#"></a>
+                        <!-- <a title="分享到QQ好友" data-cmd="sqq" class="bds_sqq" href="http://zs.hbxuwe.cn/index.php?app=classroom&amp;mod=Album&amp;act=watch&amp;aid=293&amp;type=1#"></a> -->
+                        <a title="分享到QQ空间" data-cmd="qzone" class="bds_qzone" href="http://zs.hbxuwe.cn/index.php?app=classroom&amp;mod=Album&amp;act=watch&amp;aid=293&amp;type=1#"></a>
+                        <a title="分享到新浪微博" data-cmd="tsina" class="bds_tsina" href="http://zs.hbxuwe.cn/index.php?app=classroom&amp;mod=Album&amp;act=watch&amp;aid=293&amp;type=1#"></a>
+                        <a title="分享到腾讯微博" data-cmd="tqq" class="bds_tqq" href="http://zs.hbxuwe.cn/index.php?app=classroom&amp;mod=Album&amp;act=watch&amp;aid=293&amp;type=1#"></a>
+                        <!-- <a title="分享到人人网" data-cmd="renren" class="bds_renren" href="http://zs.hbxuwe.cn/index.php?app=classroom&amp;mod=Album&amp;act=watch&amp;aid=293&amp;type=1#"> -->
+                        <!-- </a><a title="分享到开心网" data-cmd="kaixin001" class="bds_kaixin001" href="http://zs.hbxuwe.cn/index.php?app=classroom&amp;mod=Album&amp;act=watch&amp;aid=293&amp;type=1#"> -->
+                    <!-- </a><a title="分享到豆瓣网" data-cmd="douban" class="bds_douban" href="http://zs.hbxuwe.cn/index.php?app=classroom&amp;mod=Album&amp;act=watch&amp;aid=293&amp;type=1#"> -->
+                    </a>
+                    </div>
+                    <script>
+                        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","sqq","qzone","tsina","tqq","renren","kaixin001","douban"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                    </script>
+      </div>
+                        
+                </div>
+
+      <!--内页正文--> 
+    </div>
+  </div>
+</div>
+  
+<script language="JavaScript" src="__PUBLIC__/list/api.js"></script> 
+
+   <include file="Public:footer" />
+
+</body></html>

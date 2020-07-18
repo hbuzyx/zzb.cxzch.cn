@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>{$title}{$ptitle} - <tp:sitename /></title>
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" type="image/x-icon" /> 
+    <link rel="stylesheet" href="__PUBLIC__/css/style_version1.css" type="text/css" /> 
+    <script src="__PUBLIC__/js/jquery.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<include file="Public:header" />
+        
+	<div id="classify" class="tg_classify">
+        <div class="tg_tab_box on">
+            <div class="tg_classify_wrap clearfix">
+                <dl class="tg_classify_all tg_classify_flat dl_left">
+                    <dt><i class="icon_order"></i>栏目分类</dt>
+                </dl>
+                <dl class="tg_classify_all tg_classify_flat clearfix dl_right">
+                    <dd <if condition="$cid eq 16 OR $cid eq 23 OR $cid eq 31">class='on'</if> >
+                    <if condition="$pid gt 0">
+                    <tp:type typeid='$pid'><a href="{$type.url}"><span>不限</span></a></tp:type>
+                    <else />
+                    <tp:type typeid='$cid'><a href="{$type.url}"><span>不限</span></a></tp:type>
+                    </if>
+                    </dd>
+                    
+                    <if condition="$flag_son">
+                    <tp:catlist typeid='$cid' type='son' flag='1'>
+                    <dd <php>if($catlist['id'] == $cid){echo 'class="on"';}</php>>
+                        <a href="{$catlist.url}"><span>{$catlist.name}</span></a>
+                    </dd>
+                    </tp:catlist>
+                    <else/>
+                    <if condition = "$cate['pid'] gt 0">
+                    <tp:catlist typeid="$cate['pid']" type='son' flag='1'>
+                    <dd <php>if($catlist['id'] == $cid){echo 'class="on"';}</php>>
+                        <a href="{$catlist.url}"><span>{$catlist.name}</span></a>
+                    </dd>
+                    </tp:catlist>
+                    </if>
+                    </if>
+                    
+               	</dl>
+            </div>
+            
+            <notempty name="proplist">
+            <php>$k=1;</php>
+            <volist name="proplist" id="vo">
+            <php>
+            $purl = '?';
+            $comurl='?';
+            $pnum = count($proplist)+1;
+            for($j=1;$j<$pnum;$j++){
+            	$vid = 0;
+            	if($j!=$k){
+                	//$vid = isset($_GET['q'.$j])?$_GET['q'.$j]:0;
+                    $vid = I('q'.$j, 0, 'intval');
+                }
+                //$comid = isset($_GET['q'.$j])?$_GET['q'.$j]:0;
+                $comid = I('q'.$j, 0, 'intval');
+                if($j==1){
+                	$purl .= 'q'.$j.'='.$vid;
+                    $comurl .= 'q'.$j.'='.$comid;
+                }else{
+                	$purl .= '&q'.$j.'='.$vid;
+                    $comurl .= '&q'.$j.'='.$comid;
+                }
+            }
+            </php>
+            <div class="tg_classify_wrap clearfix">
+                <dl class="tg_classify_all tg_classify_flat dl_left">
+                    <dt><i class="icon_order"></i>{$vo.name}</dt>
+                </dl>
+                <dl class="tg_classify_all tg_classify_flat clearfix dl_right">
+                    <dd <if condition="I('q'.$k, 0, 'intval') eq 0">class="on"</if> ><a href="/{$cate['ename']}{$purl}"><span>不限</span></a></dd>
+                    
+                    <volist name=":get_propvalue($vo['id'])" id="v">
+                    <php>
+                    $vurl = '?';
+                    for($n=1;$n<$pnum;$n++){
+                        if($n==$k){
+                            $vid1 = $v['id'];
+                        }else{
+                        	//$vid1 = isset($_GET['q'.$n])?$_GET['q'.$n]:0;
+                            $vid1 = I('q'.$n, 0, 'intval');
+                        }
+                        if($n==1){
+                            $vurl .= 'q'.$n.'='.$vid1;
+                        }else{
+                            $vurl .= '&q'.$n.'='.$vid1;
+                        }
+                    }
+                    </php>
+                    <dd <if condition="$v['id'] eq I('q'.$k, 0, 'intval')">class="on"</if> ><a href="/{$cate['ename']}{$vurl}"><span>{$v.vname}</span></a></dd>
+                    </volist>
+                    
+                 </dl>
+            </div>
+            <php>$k++;</php>
+            </volist>
+            </notempty>
+            
+        </div>
+    </div>
+    <div id="container"> 
+    <div id="sort" class="tg_sort clearfix">
+            <div class="tg_classify_wrap">
+                <dl class="tg_classify_toggle">
+                    <dt <if condition="I('order', 0, 'intval') eq 1">class="on"</if> >
+                    <a href="{$comurl}&order=1">
+                        <i class="icon_order"></i>
+                        <span>默认</span>
+                        <b class="icon_order"></b>
+                    </a>
+                    </dt>
+                </dl>
+            </div>
+            <div class="tg_classify_wrap">
+                <dl class="tg_classify_toggle">
+                    <dt <if condition="I('order', 0, 'intval') eq 2">class="on"</if> >
+                    <a href="{$comurl}&order=2">
+                        <i class="icon_order"></i>
+                        <span>人气</span>
+                        <b class="icon_order"></b>
+                    </a>
+                    </dt>
+                </dl>
+            </div>
+            
+        </div>
+    <div class="list">
+        <div class="list_main clearfix">
+        
+            <foreach name="vlist" item="v" key="autoindex">
+            <div class="per" <if condition="($autoindex+1)%4 eq 0">style="margin-right:0"</if> > 
+                <a href="{$v.url}" class="img_link" title="{$v.title}" target="_blank" >
+                    <empty name="v.litpic">
+                    <img src="__PUBLIC__/images/nopic.jpg" original="__PUBLIC__/images/nopic.jpg" alt="暂无图片" class="lazy" />
+                    <else />
+                    <img src="__PUBLIC__/images/grey.gif" original="{$v.litpic}" alt="{$v.title}" class="lazy"  />
+                    </empty>
+                </a>
+                <div class="foot">
+                    <p class="title"><a href="{$v.url}" title="{$v.title}" target="_blank" >{$v.title}</a> </p> 
+                    <div class="statics">
+                        <span class='download citecommon'>下载 <em>{$v.downnum}次</em></span>
+                        <span class='comment citecommon'>评论 <em>{$v.comment}条</em></span>
+                        <span class='scores citecommon'>浏览 <em>{$v.click}次</em></span>
+                    </div>
+                </div> 
+                <!--<span class="icon_recommend"></span>
+                <span class="icon_original"></span>-->
+            </div>
+            </foreach>
+            
+            
+        </div>
+        <div class="pager">{$page1}</div>
+  	</div>
+	</div>
+<include file="Public:footer" />
+
+</body>
+</html>

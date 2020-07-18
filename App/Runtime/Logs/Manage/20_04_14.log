@@ -1,0 +1,61 @@
+[ 2020-04-14T21:19:27+08:00 ] 110.254.39.188 /xn_admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `my_menu` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 ORDER BY sort,id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `my_menu` WHERE `status` = 1 AND `quick` = 1 ORDER BY sort,id  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2020-04-14T21:19:30+08:00 ] 110.254.39.188 /xn_admin.php?s=/Product/index/pid/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `my_product` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_product product LEFT JOIN my_category category ON product.cid = category.id WHERE product.status > 0 AND product.cid IN (24) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT product.id AS id,product.title AS title,product.color AS color,product.keywords AS keywords,product.litpic AS litpic,product.description AS description,product.price AS price,product.marketprice AS marketprice,product.brand AS brand,product.units AS units,product.specification AS specification,product.publishtime AS publishtime,product.updatetime AS updatetime,product.click AS click,product.cid AS cid,product.commentflag AS commentflag,product.flag AS flag,product.jumpurl AS jumpurl,product.status AS status,product.userid AS userid,product.aid AS aid,product.tag AS tag,product.scores AS scores,product.demo AS demo,product.downlink AS downlink,product.downnum AS downnum,product.prop_value AS prop_value,category.name AS catename,category.ename AS ename,category.modelid AS modelid FROM my_product product LEFT JOIN my_category category ON product.cid = category.id WHERE product.status > 0 AND product.cid IN (24) ORDER BY product.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `my_iteminfo` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `my_iteminfo` WHERE `group` = 'flagtype' ORDER BY sort,id  [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2020-04-14T21:19:30+08:00 ] 110.254.39.188 /xn_admin.php?s=/Index/getParentCate&pid=0&rnd=7133
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `my_category` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `my_model` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT category.id AS id,category.name AS name,category.ename AS ename,category.catpic AS catpic,category.pid AS pid,category.modelid AS modelid,category.type AS type,category.seotitle AS seotitle,category.keywords AS keywords,category.description AS description,category.template_category AS template_category,category.template_list AS template_list,category.template_show AS template_show,category.status AS status,category.sort AS sort,category.property AS property,model.name AS modelname,model.tablename AS tablename FROM my_category category LEFT JOIN my_model model ON category.modelid = model.id WHERE category.pid = 0 AND category.type = 0 ORDER BY category.sort ASC,category.id ASC  [ RunTime:0.0006s ]
+

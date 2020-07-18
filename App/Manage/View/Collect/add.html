@@ -1,0 +1,157 @@
+<extend name="Public:base" />
+<block name="header_js">
+	
+</block>
+
+<block name="content">
+	<div class="row">
+		<div class="col-lg-12">
+			<h3 class="page-header"><em class="glyphicon glyphicon-plus"></em> 
+			添加采集规则
+		    </h3>
+		</div>
+		
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-12">
+
+				<form method="post" class="form-horizontal" id="form_do" name="form_do" action="{:U('add')}">											
+
+					<div class="form-group">
+						<label for="inputName" class="col-sm-2 control-label">网站名称</label>
+						<div class="col-sm-9">
+							<input type="text" name="title" id="inputName" class="form-control" placeholder="网站名称" required="required" />									
+						</div>
+					</div>
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">网站域名</label>
+						<div class="col-sm-9">
+							<input type="text" name="url" id="inputUrl" value="http://" class="form-control" placeholder="网站域名" />									
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">列表页面地址</label>
+						<div class="col-sm-9">
+							<input type="text" name="listurl" id="inputUrl" value="http://" class="form-control" placeholder="列表页面地址" />									
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">所属栏目</label>
+						<div class="col-sm-9">
+						<select name="cid" >
+                            <option value="0">请选择</option>
+                            <foreach name='cate' item='v'>
+                            <option value="{$v.id}">{$v.delimiter}{$v.name}</option>
+                            </foreach>
+                        </select>								
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">列表区域匹配规则</label>
+						<div class="col-sm-9">
+							<textarea name="listpreg" id="inputDescription" class="form-control"></textarea>	
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">url列表匹配规则</label>
+						<div class="col-sm-9">
+							<textarea name="listapreg" id="inputDescription" class="form-control"></textarea>	
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">分页参数</label>
+						<div class="col-sm-9">
+							<input type="text" name="page" id="inputColor" value="" class="form-control  iColorPicker" placeholder="分页参数">
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">页面后缀</label>
+						<div class="col-sm-9">
+							<input type="text" name="ext" id="inputColor" value="" class="form-control  iColorPicker" placeholder="页面后缀，例如：.html">
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">标题匹配规则</label>
+						<div class="col-sm-9">
+							<textarea name="titlepreg" id="inputDescription" class="form-control"></textarea>		
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">关键词匹配规则</label>
+						<div class="col-sm-9">
+							<textarea name="keypreg" id="inputKeypreg" class="form-control"></textarea>		
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">正文匹配规则</label>
+						<div class="col-sm-9">
+							<textarea name="contentpreg" id="inputDescription" class="form-control"></textarea>	
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">图片采集方式</label>
+						<div class="col-sm-9">
+							<label class="radio-inline">
+							 	<input type="radio" name="type" value="1" checked="checked">curl方式				
+							 </label>
+							<label class="radio-inline">
+							 	<input type="radio" name="type" value="0">ob_get_contents方式&nbsp;&nbsp;
+                                （提示：如果采集不到图片或者采集的图片损坏请选用ob_get_contents方式）
+							 </label>	
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">图片匹配规则</label>
+						<div class="col-sm-9">
+							<textarea name="picpreg" id="inputDescription" class="form-control"></textarea>	
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">图片分页参数</label>
+						<div class="col-sm-9">
+							<input type="text" name="picpage" id="inputColor" value="" class="form-control iColorPicker" placeholder="图片分页参数">
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+						<label for="inputUrl" class="col-sm-2 control-label">采集起始页设置</label>
+						<div class="col-sm-9">
+							<input type="text" name="firstpage" id="inputColor" value="1" class="form-control  iColorPicker" placeholder="开始页">
+                            ~
+                            <input type="text" name="lastpage" id="inputColor" value="1" class="form-control  iColorPicker" placeholder="结束页"> 页
+						</div>
+					</div>		
+					
+					<div class="row margin-botton-large">
+						<div class="col-sm-offset-2 col-sm-9">
+							<div class="btn-group">
+								<button type="submit" class="btn btn-primary"> <i class="glyphicon glyphicon-saved"></i>
+									保存
+								</button>
+                                <button type="button" onclick="goUrl('{:U('index')}')" class="btn btn-default"> <i class="glyphicon glyphicon-chevron-left"></i>
+									返回
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+		</div>
+	</div>
+
+		
+
+
+</block>

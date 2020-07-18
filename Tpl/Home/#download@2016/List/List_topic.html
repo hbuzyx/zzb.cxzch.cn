@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>{$title}-<tp:sitename /></title>
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" type="image/x-icon" /> 
+    <link rel="stylesheet" href="__PUBLIC__/css/style_version1.css" type="text/css" /> 
+    <link rel="stylesheet" href="__PUBLIC__/css/topic.css" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.js" ></script>
+</head> 
+<body> 
+        
+    <include file="Public:header" />
+
+	<div class="wenda clearfix"> 
+
+    <div class="wenda-main">
+        <ul class="wenda-tab clearfix">
+        
+        	<li <eq name="cid" value="29">class="tabactive"</eq> >
+            <if condition="$pid gt 0">
+            <tp:type typeid='$pid'><a href="{$type.url}">全部问题</a></tp:type>
+            <else />
+            <tp:type typeid='$cid'><a href="{$type.url}">全部问题</a></tp:type>
+            </if>
+            </li>
+            
+        	<if condition="$flag_son">
+            <tp:catlist typeid='$cid' type='son' flag='1'>
+            <li <eq name="cid" value="$catlist['id']">class="tabactive"</eq> ><a href="{$catlist.url}">{$catlist.name}</a></li>
+            </tp:catlist>
+            <else/>
+            <if condition = "$cate['pid'] gt 0">
+            <tp:catlist typeid="$cate['pid']" type='son' flag='1'>
+            <li <eq name="cid" value="$catlist['id']">class="tabactive"</eq> ><a href="{$catlist.url}">{$catlist.name}</a></li>
+            </tp:catlist>
+            </if>
+            </if>
+            
+        </ul>
+        
+        <div class="newpost clearfix">
+            <a class="quealltab <if condition="$_GET['order'] eq 1 or !$_GET['order']">onactive</if>" href="?order=1">最新</a>
+            <a class="quealltab <if condition="$_GET['order'] eq 2">onactive</if>" href="?order=2">热门</a>
+        </div>
+        <!--左侧列表内容-->
+        <div class="wenda-list">
+			<php>
+            $order = 'id DESC';
+            if(isset($_GET['order'])){
+            	if($_GET['order'] == '1'){
+                	$order = 'id DESC';
+                }
+                if($_GET['order'] == '2'){
+                	$order = 'click DESC';
+                }
+            }
+            </php>
+            <tp:list typeid="$cid" pagesize='15' pageroll='4' orderby='$order'>
+            <div class="wenda-listcon clearfix">
+                <div class="headslider">
+                    <a title="{$list.author}" target="_blank" class="wenda-head" href="{:U('Space/index?uid='.$list['userid'])}">
+                        <img width="40" height="40" src="{:get_avatar('',30)}" alt='{$list.author}'/>
+                    </a>
+                    <a class="wenda-nickname" title="{$list.author}" target="_blank" href="{:U('Space/index?uid='.$list['userid'])}">{$list.author}</a>
+                </div>
+                <div class="wendaslider">
+                    <a class="replynumber hasanswernum" target="_blank" href="{$list.url}#comments">
+                        <div class="ys">
+                            <div class="number"><span>{$list.comment}</span></div><div>回答</div>
+                        </div>
+                        <div class="browsenum">
+                            <div class="number"><span>{$list.click}</span></div><div>浏览</div>
+                        </div>
+                    </a>
+
+                    <h2 class="wendaquetitle">
+                        <i class="icon-ques-revert"></i>
+                        <div class="wendatitlecon">
+                            <a class="wendatitle" href="{$list.url}" title="{$list.title}" target="_blank">{$list.title}</a>
+                        </div>
+                    </h2>
+                   
+                   	<if condition="$list['comment'] gt 0">
+                    <div class="replycont clearfix">
+                        <i class="icon-msg-revert"></i>
+                        <div class="l replydes">
+                            <span class="replysign praise">[最新回答]</span>
+                            <php>
+                            $comment_info = get_comment_info($list['id'],$list['modelid']);
+                            //dump($comment_info);
+                            </php>
+                            <a class="replyuserhead" title="caonim" target="_blank" href="{:U('Space/index?uid='.$comment_info['userid'])}"><img width="20" height="20" src="{:get_avatar('',30)}" alt='{$comment_info['username']}'> </a>
+                            <a class="nickname" title="caonim" target="_blank" href="{:U('Space/index?uid='.$comment_info['userid'])}">{$comment_info['username']}: </a>
+                            <span class="replydet">{$comment_info['content']}</span>
+                            
+                        </div>
+                     </div>
+                     </if>
+                            
+                    <div class="replymegfooter clearfix">
+                      <div class="wenda-time"><em>提问时间：{$list.updatetime|date='Y-m-d H:i:s',###}</em></div>
+                      <if condition="$list['tag']">
+                      <div class="keyword-list">
+                      <php>$tag = explode(',',$list['tag']);</php>
+                      	<volist name="tag" id="vo">
+                            <a class="list-tag" href="/wenda?tagname={$vo}" target="_blank">{$vo}</a>
+                        </volist>
+                      </div>
+                      </if>
+                    </div>
+                </div>
+            </div>
+            
+            </tp:list>
+                
+            <div class="pager">{$page}</div>
+
+            <!--page-->
+        </div>
+    </div>
+    <div class="wenda-slider">
+        <!-- pub new ques -->
+        <div class="newques-container">
+            <a  id="js-newques" class="newques-btn" href="{:U('Member/topic_add')}"><i class="icon-addques"></i>发表疑问</a>
+        </div>
+
+        <div class="panel wenda-form clearfix">
+            <div class="panel-body clearfix">
+            <volist name="tags" id="vo">
+                <a class="hot-label" href="/wenda?tagname={$vo['tag_name']}" style="margin:0 6px 10px 0">{$vo.tag_name}</a>
+            </volist>
+            </div>
+        </div>
+        <div class="panel hot">
+            <div class="panel-heading">
+                <h2 class="panel-title">热门问答</h2>
+            </div>
+            <div class="panel-body clearfix">
+                <ul class="weekly-hot">
+                
+                <tp:list limit='20' orderby='click DESC'>
+                <li <if condition="$autoindex eq 0">class="padtop"<elseif condition="count($_list) gt 1 and ($autoindex+1) eq count($_list)" />class="bordbottom"</if> ><em class="hoticon hot{$autoindex+1}">热</em><a class="hottalk" href="{$list.url}">{$list.title}</a><i class="rankingnum">{$list.comment}<br>回答</i>
+                </li>
+                </tp:list>
+                
+                </ul>
+            </div>
+        </div>
+        </div>
+     </div>
+
+<include file="Public:footer" />
+
+</body>
+</html>
