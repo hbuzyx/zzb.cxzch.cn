@@ -22,6 +22,3 @@ location / {
     rewrite ^(.*?/?)(.*\.php)(.*)$ /$2?s=$3 last;
     break;
   }
-
-
-
