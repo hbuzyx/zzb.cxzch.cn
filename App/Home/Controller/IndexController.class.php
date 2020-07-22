@@ -20,7 +20,10 @@ class IndexController extends HomeCommonController
 
 
         $cat['contet']= mb_substr(strip_tags($ar['content']), 0, 150);
+        //时政要闻
+        $shizhengyaowen = M('article')->where('cid=53')->order("id desc")->find();
 
+        $this->assign('shizhengyaowen', $shizhengyaowen);
         $this->assign('ar', $ar);
         $this->assign('cat', $cat);
         $this->assign('tags', $tags);

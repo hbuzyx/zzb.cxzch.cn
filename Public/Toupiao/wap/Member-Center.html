@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>会员中心</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="./static/common.css">
+<link rel="stylesheet" href="./static/style.css">
+<script src="./static/jquery-1.9.1.min.js"></script>
+<script src="./static/TouchSlide.1.1.js"></script>
+<!--<base target="_self">--><base href="." target="_self">
+<script language="javascript" type="text/javascript">
+function check_file0(type) 
+{
+	if (document.loginForm.txtUserName.value=="")
+	{
+	  alert("请输入用户名。")
+	  document.loginForm.txtUserName.focus()
+	  return false
+	 }
+	if (document.loginForm.txtPassword.value=="")
+	{
+	  alert("请输入密码。")
+	  document.loginForm.txtPassword.focus()
+	  return false
+	 }
+
+}
+</script>
+</head>
+<body>
+<div id="warmp" class="warmp">
+
+<header class="header">
+	<section class="fix navbar">
+        <a class="ico-home" href="http://tp.hbxuwe.cn/wap/"><span>返回首页</span></a>
+        <h1 id="title">会员中心</h1>
+        <span class="ico-nav navHome">网站导航</span>
+    </section>
+</header>
+<div class="path"> <a href="http://tp.hbxuwe.cn/wap/">首页</a> &gt; <a href="http://tp.hbxuwe.cn/wap/login.asp">会员中心</a></div>
+<div id="afui">
+<div class="form-box">
+	   <form method="post" action="http://tp.hbxuwe.cn/wap/login.asp" id="loginForm" name="loginForm" onsubmit="return check_file0(&#39;login&#39;)" style="margin:0px auto;width:100%;">
+         <li>&nbsp;&nbsp;&nbsp;登陆帐号： <input id="txtUserName" name="txtUserName" type="text" placeholder="用户名"></li>
+         <li>&nbsp;&nbsp;&nbsp;登录密码：  <input id="txtPassword" name="txtPassword" type="password" placeholder="登录密码"></li>
+         <input id="submit" type="submit" name="Submit" value="登录" class="btn red full">
+       </form>
+ </div>
+	  
+</div>
+    <div class="copyright">
+      <p>
+         Copyright &#169; <a href="http://tp.hbxuwe.cn/">tp.hbxuwe.cn/</a> <a href="http://www.miibeian.gov.cn/" rel="nofollow"></a><br>
+      </p>
+    </div>
+</div>
+<footer class="footer">
+	<menu class="footer-con">
+    	<ul class="fix">
+        	<li class="zx"><a href="./index.html">参与投票</a></li>
+        	<li class="yy"><a href="./elegant.html">投票排行</a></li>
+        	<li class="tel"><a href="./search.html">搜索选手</a></li>
+        	<li class="yy"><a href="./../index.html">电脑版</a></li>
+			</ul>
+	</menu>
+</footer>
+<nav id="nav" class="nav home">
+	<h3><a href="./index.html">网站首页</a></h3>
+	<div id="scrollerBox" class="scrollerBox">
+		<div class="scroller">
+			<ul>
+				<li><a href="./index.html"><span></span>参与投票</a></li>
+				<li><a href="./news.html"><span></span>活动资讯</a></li>
+				<li><a href="./elegant.html"><span></span>投票排行</a></li>
+				<li><a href="./contact-information.html"><span></span>联系方式</a></li>
+				<li><a href="./Member-Center.html"><span></span>会员中心</a></li>
+				<li><a href="./Message-consultation.html"><span></span>留言咨询</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<script src="./static/history.js"></script>
+<script>	
+	$(".search").bind("click",function(){
+		$("#search-over").fadeIn(50);
+		$("#search-warmp").show();
+		$("html,body").animate({scrollTop:0},200);
+		searchBtn();			
+		//TouchSlide({ slideCell:"#search-tab",titCell:".search-tab-hd li",mainCell:".search-tab-bd"});	//搜索切换
+		//搜索切换
+		$("#search-tab .search-tab-hd li").each(function(i) {$(this).click(function(){$(this).addClass("on").siblings().removeClass("on");$("#search-tab .search-tab-con").eq(i).show().siblings().hide();})
+        });
+		
+		$("#search-over").bind("touchmove",function(e){e.preventDefault()}, false);
+	});			
+	$("#search-clear").bind("click",function(){
+		$("#search-button").text("取消");
+		$("#search-button").removeClass("search-go").addClass("search-cancel");
+		$("#keywords").val("");
+		$(this).hide();		
+	});		
+	$("#keywords").bind("keyup input keywords",function(){
+		searchBtn()
+	});
+	$("#search-button").bind("click",function(){
+		if($(this).hasClass("search-go")){
+			searchGo()//搜索
+		}else{
+			searchCancle();//取消搜索 
+		}
+	});	
+	
+	$("#history .search-change").click(function(){
+		clearCookie('history');
+		getHistory("history",$("#history p"));
+	})
+	function searchBtn(){
+		if($("#keywords").val()==""){
+			$("#search-clear").hide();
+			$("#search-button").text("取消");
+			$("#search-button").removeClass("search-go");
+		}else{
+			$("i#search-clear").show();
+			$("#search-button").text("搜索");
+			$("#search-button").addClass("search-go");
+		}
+	}
+	function searchCancle(){
+		$("#search-over").fadeOut(50);
+		$("#search-warmp").hide();
+	}
+	function searchGo(){
+		//设置最近搜索
+		setHistory("history",$("#keywords").val());
+		getHistory("history",$("#history p"));
+		var k = $("#keywords").val();
+		var url = "search.php@keyword="+k;
+		window.location = url;
+	}
+	//获取历史浏览记录
+	getHistory("history",$("#history p"));	
+</script>
+<script src="./static/index.js"></script>
+<script src="./static/foot.js"></script><div class="gotop" id="gotop"><div></div></div>
+
+
+	</body></html>

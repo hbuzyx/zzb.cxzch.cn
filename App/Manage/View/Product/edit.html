@@ -114,27 +114,27 @@ $(function () {
 				<form method='post' class="form-horizontal" id="form_do" name="form_do" action="{:U('edit')}">											
 
 					<div class="form-group">
-						<label for="inputTtitle" class="col-sm-2 control-label">产品名称</label>
+						<label for="inputTtitle" class="col-sm-2 control-label">姓名</label>
 						<div class="col-sm-9">
-							<input type="text" name="title" id="inputTtitle" value="{$vo.title}" class="form-control" placeholder="产品名称" required="required" />									
+							<input type="text" name="title" id="inputTtitle" value="{$vo.title}" class="form-control" placeholder="姓名" required="required" />
 						</div>
 					</div>
 
-					<div class="form-group">
-						<label for="inputColor" class="col-sm-2 control-label">标题颜色</label>
-						<div class="col-sm-5">
-							<input type="text" name="color" id="inputColor" value="{$vo.color}" class="form-control  iColorPicker" placeholder="标题颜色" />									
-						</div>
-					</div>
+					<!--<div class="form-group">-->
+						<!--<label for="inputColor" class="col-sm-2 control-label">标题颜色</label>-->
+						<!--<div class="col-sm-5">-->
+							<!--<input type="text" name="color" id="inputColor" value="{$vo.color}" class="form-control  iColorPicker" placeholder="标题颜色" />									-->
+						<!--</div>-->
+					<!--</div>-->
 
-					<div class="form-group">
-						<label for="inputColor" class="col-sm-2 control-label">自定义属性</label>
-						<div class="col-sm-9">
-							<foreach name='flagtypelist' item='v'>
-							<label class="checkbox-inline"><input type='checkbox' name='flags[]' value='{$key}' <if condition="$key eq B_JUMP">id="CK_JumpUrl"</if>  <if condition="($vo['flag'] & $key) eq $key">checked="checked"</if> /> {$v}</label>
-							</foreach>								
-						</div>
-					</div>
+					<!--<div class="form-group">-->
+						<!--<label for="inputColor" class="col-sm-2 control-label">自定义属性</label>-->
+						<!--<div class="col-sm-9">-->
+							<!--<foreach name='flagtypelist' item='v'>-->
+							<!--<label class="checkbox-inline"><input type='checkbox' name='flags[]' value='{$key}' <if condition="$key eq B_JUMP">id="CK_JumpUrl"</if>  <if condition="($vo['flag'] & $key) eq $key">checked="checked"</if> /> {$v}</label>-->
+							<!--</foreach>								-->
+						<!--</div>-->
+					<!--</div>-->
 
 					<div class="form-group" id="JumpUrlDiv" <if condition="($vo.flag & B_JUMP) eq 0">style="display:none;"</if>>
 						<label for="inputJumpurl" class="col-sm-2 control-label">跳转网址</label>
@@ -155,7 +155,7 @@ $(function () {
 					</div>
 
 					<div class="form-group">
-						<label for="BrowerPicture" class="col-sm-2 control-label">产品图片</label>	
+						<label for="BrowerPicture" class="col-sm-2 control-label">图片</label>
 						<div class="col-sm-9">
 								<div class="btn btn-success up-picture-btn">
 							        <span><em class="glyphicon glyphicon-plus-sign"></em>上传多图</span>										        
@@ -235,12 +235,12 @@ $(function () {
 							<input type="text" name="demo" id="demo" class="form-control" value="{$vo.demo}" placeholder="演示地址" />						
 						</div>
 					</div>
-                   <div class="form-group">
-						<label for="inputKeywords" class="col-sm-2 control-label">下载积分</label>
-						<div class="col-sm-9">
-							<input type="text" name="scores" id="scores" class="form-control" value="{$vo.scores}" placeholder="所需积分" />						
-						</div>
-					</div>
+                   <!--<div class="form-group">-->
+						<!--<label for="inputKeywords" class="col-sm-2 control-label">下载积分</label>-->
+						<!--<div class="col-sm-9">-->
+							<!--<input type="text" name="scores" id="scores" class="form-control" value="{$vo.scores}" placeholder="所需积分" />						-->
+						<!--</div>-->
+					<!--</div>-->
 
 					<div class="form-group">
 						<label for="inputContent" class="col-sm-2 control-label">内容</label>
@@ -268,17 +268,17 @@ $(function () {
 					</div>
 
 
-					<div class="form-group">
-						<label for="inputName" class="col-sm-2 control-label">评论</label>
-						<div class="col-sm-9">
-							<label class="radio-inline">
-							 	<input type="radio" name="commentflag" value="1" <if condition='$vo.commentflag eq 1'>checked="checked"</if> />允许				
-							 </label>
-							<label class="radio-inline">
-							 	<input type="radio" name="commentflag" value="0" <if condition='$vo.commentflag eq 0'>checked="checked"</if> />禁止		
-							 </label>	
-						</div>
-					</div>
+					<!--<div class="form-group">-->
+						<!--<label for="inputName" class="col-sm-2 control-label">评论</label>-->
+						<!--<div class="col-sm-9">-->
+							<!--<label class="radio-inline">-->
+							 	<!--<input type="radio" name="commentflag" value="1" <if condition='$vo.commentflag eq 1'>checked="checked"</if> />允许				-->
+							 <!--</label>-->
+							<!--<label class="radio-inline">-->
+							 	<!--<input type="radio" name="commentflag" value="0" <if condition='$vo.commentflag eq 0'>checked="checked"</if> />禁止		-->
+							 <!--</label>	-->
+						<!--</div>-->
+					<!--</div>-->
                     
                     <div class="form-group">
 						<label for="inputName" class="col-sm-2 control-label">审核</label>
@@ -291,9 +291,9 @@ $(function () {
 							 </label>	
 						</div>
 					</div>
-					 <div class="form-group" id="soft_prop">
-                    
-					</div>
+					 <!--<div class="form-group" id="soft_prop">-->
+                    <!---->
+					<!--</div>-->
                     <script type="text/javascript">
 					$(function(){
 						var proids = '{:get_catProperty($pid)}';

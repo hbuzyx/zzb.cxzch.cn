@@ -56,8 +56,8 @@
 
 <div class="hot">
   <div class="jz">
-	  <div class="hot_gz l"> 先锋头条 <span><?php echo date('Y-m-d', time()); ?></span> </div>
-    <div class="hot_news l"> <a href="http://j.hbxuwe.cn/a/tongzhigonggao/xingyedongtai/60.html" class="h_bt">王东峰主持召开“不忘初心、牢记使命”主题教育座谈会就加强党的建设特别是政治建设征求意见建议</a> <a href="http://j.hbxuwe.cn/a/tongzhigonggao/xingyedongtai/60.html" class="h_nr">座谈会上，来自省党建研究会、省委党史研究室、省社会科学院、省委宣传部、省委政研室、省委党校（河北行政学院）、河北大学马克思主义学院、河北经贸大学马克...</a>
+	  <div class="hot_gz l"> 先锋头条  <span><?php echo date("Y-m-d",$shizhengyanwen['publishtime']); ?></span> </div>
+    <div class="hot_news l"> <a href="/index.php?s=/shizhengyaowen-<?php echo $shizhengyaowen['id']; ?>" class="h_bt"><?php echo $shizhengyaowen['title']; ?></a> <a href="/index.php?s=/shizhengyaowen-<?php echo $shizhengyaowen['id']; ?>" class="h_nr"><?php echo $shizhengyaowen['description']; ?>...</a>
  </div>
   </div>
 </div>
@@ -409,8 +409,8 @@
 <div class="bottom_tools" style="bottom: 40px;">
     <div class="float_ico"><a target="_blank" href="http://zzb.cxzch.cn/search.html" title="站内搜索"><img src="__PUBLIC__/zzb/1.png"></a></div>
     <div class="float_ico qr_tool"><img src="__PUBLIC__/zzb/2.png"></div>
-	 <div class="float_ico"><a target="_blank" href="http://tp.hcxyw.cn" title="在线投票"><img src="__PUBLIC__/zzb/5.png"></a></div>
-	 <div class="float_ico"><a target="_blank" href="http://zzb.cxzch.cn/kaoshi.php" title="在线考试"><img src="__PUBLIC__/zzb/6.png"></a></div>
+	 <div class="float_ico"><a target="_blank" href="/toupiao.php" title="在线投票"><img src="__PUBLIC__/zzb/5.png"></a></div>
+	 <div class="float_ico"><a target="_blank" href="/kaoshi.php" title="在线考试"><img src="__PUBLIC__/zzb/6.png"></a></div>
     <div class="float_ico" id="scrollUp" style="display: none;"><a href="javascript:;" title="飞回顶部"><img src="__PUBLIC__/zzb/4.png"></a></div>
     <img class="qr_img" src="__PUBLIC__/zzb/ewm.jpg" alt="" style="display: none;">
 </div>

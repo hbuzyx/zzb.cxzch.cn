@@ -404,7 +404,7 @@ div.flip-3d .figure:after{ content:" "; display:block; height:8vw; width:100%; t
 .c_bkebt{ height:40px; background:url("../img/ddbx_14.jpg") no-repeat left bottom; width:1200px; font-size:18px; font-weight:bold; color:#000;background:#F5F5F5;height:46px;}
 .c_bkebt .ywfb{ font-size:12px; color:#999999; font-weight:normal; line-height:30px;}
 .c_bkebt a{ width:12px; height:30px;/*  background:url("../img/edjt_03.jpg") no-repeat center; */}
-.c_bkebt a.more{ display:block; width:28px; height:44px; background:url("../img/1_22.png") center no-repeat; float:right;}
+.c_bkebt a.more{ display:block; width:28px; height:46px; background:url("../img/1_22.png") center no-repeat; float:right;}
 .c_bkebt a.ywfr{ width:12px; height:30px; background:url("../img/1_22.jpg") no-repeat center;}
 .c_bke{ padding:0 0;}
 .myzs{ margin-top:40px;}
@@ -570,6 +570,8 @@ div.flip-3d .figure:after{ content:" "; display:block; height:8vw; width:100%; t
 .llxwc{ color:#B0151A; margin-top:20px;}
 .am-slider-a2 .am-control-nav{ width:100px; right:10px; bottom:20px;}
 .am-slider .am-slides img{ width:auto;}
+.c_bka .am-slider .am-slides li{height:340px;}
+.c_bka .am-slider .am-slides li .am-slider-desc{bottom: 0px;right: 0px; height:40px; line-height:40px; left:0px;padding-right:0px;}
 .am-slider-a2 .am-control-nav li{ margin:0 4px;}
 .am-slider-a2 .am-control-nav li a{ width:0px; height:0px;}
 .p_sjb{ display:none;}
@@ -768,7 +770,7 @@ div.flip-3d .figure:after{ content:" "; display:block; height:8vw; width:100%; t
 
 
 
-
+.am-slider-c3 .am-direction-nav a{line-height:24px;}
 
 
 
