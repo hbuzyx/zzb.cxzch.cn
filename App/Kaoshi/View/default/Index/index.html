@@ -50,7 +50,7 @@
             id="form1"
             name="form1"
             method="post"
-            action=""
+            action="{:U('Kaoshi/Index/saveUserAnswer',1,'')}"
             class="split"
             style="padding:0px;"
           >
@@ -62,7 +62,7 @@
               id="questype_1"
               style="display: block;"
             >
-              <blockquote class="questype">一、单选题</blockquote>
+              <blockquote class="questype">单选题</blockquote>
             </div>
             <volist name="ti" id="vo" key="key2" >
             <!--<foreach name="ti" item="vo" key="key2">-->
@@ -109,14 +109,14 @@
                           class="btn btn-default"
                           onclick="javascript:gotoindexquestion({$key2-2});"
                   ><span class="glyphicon glyphicon-chevron-left"></span
-                  >上一题{$key2-1}</a
+                  >上一题</a
                   >
                   </if>
                   <if condition="$key2 lt $num">
                   <a
                           class="pull-right btn btn-primary"
                           onclick="javascript:gotoindexquestion({$key2});"
-                  >下一题{$key2}{$num}<span class="glyphicon glyphicon-chevron-right"></span
+                  >下一题<span class="glyphicon glyphicon-chevron-right"></span
                   ></a>
                   </if>
                 </div>
