@@ -51,8 +51,8 @@ $(document).ready(function() {
 <table width="1200" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="Votehead">
  <tr>
  	<div class="toupiao_btn" style="width: 380px; margin:0 auto; position: relative;top: -80px;">
-		<div style="display: inline-block; float:right; font-size: 24px;color:white;padding: 25px 10px 20px;"><a href="http://tp.hcxyw.cn/result.html" style="color:white;">投票结果</a></div>
-  		<div style="display: inline-block; float:left; font-size: 24px;color: white;background-color:#970000;padding: 25px 10px 20px;"><a style="color:white;" href="http://tp.hcxyw.cn/">在线投票</a></div>
+		<div style="display: inline-block; float:right; font-size: 24px;color:white;padding: 25px 10px 20px;"><a href="{:U('Toupiao/Index/result2',1,'')}" style="color:white;">投票结果</a></div>
+  		<div style="display: inline-block; float:left; font-size: 24px;color: white;background-color:#970000;padding: 25px 10px 20px;"><a style="color:white;" href="{:U('Toupiao/Index/index',1,'')}">在线投票</a></div>
 </div>
   </tr>
   <tr>
@@ -74,7 +74,7 @@ $(document).ready(function() {
 			<h2>{$vo2.title}</h2>
 			<p>{$vo2.description}</p>
 			<span>累计票数：<i>{$vo2.piao}</i></span>
-			<input class="loginsmt" type="button" value="投票" onclick="tp('投票成功');">
+			<input class="loginsmt" type="button" value="投票" onclick="tp({$vo2.id});">
 		</div>
 		</li>
 	</volist>
@@ -88,7 +88,7 @@ $(document).ready(function() {
 		</div>
 -->
 		<div class="link_a">
-			<a href="result.html">所有投票结果</a></div>
+			<a href="toupiao.php/index/result.html">所有投票结果</a></div>
 		</div></td>
         <td width="280" valign="top">
 		  <table style="margin-top: 4px;" width="100%" border="0" cellpadding="0" cellspacing="0" >
@@ -114,14 +114,28 @@ $(document).ready(function() {
   </tr>
 </table>
 <script>
-  var num = 0 ;
  function tp(tip){
- 	if(num == 0){
-    	alert('投票成功');
-    }else{
-    	alert('请勿重复投票');
-    }
-   num++;
+	 $.ajax({
+		 url:'http://zzb.cxzch.cn/toupiao.php/index/toupiao',
+		 // url:"{:U('Toupiao/Index/toupiao',1,'')}",
+		 async:false,
+		 type:'post',
+		 dataType:'json',
+		 data:{id:tip},
+		 //请求成功
+		 success : function(result) {
+		 	console.log(result);
+			 if(result.status == 1){
+				 alert(result.msg);
+			 }else{
+				 alert(result.msg)
+			 }
+		 },
+		 //请求失败，包含具体的错误信息
+		 error : function(e){
+			 alert('投票失败！')
+		 }
+	 });
  }
   </script>
 </body>

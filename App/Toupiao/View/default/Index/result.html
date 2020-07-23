@@ -6,26 +6,26 @@
 <title>欢迎光临紫塞先锋</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="static/css/vote.css" rel="stylesheet" type="text/css" />
-<link href="static/css/thickbox.css" rel="stylesheet" type="text/css" />
-<script language="javascript" src="static/js/zhirui.js"></script>
-<script language="javascript" src="static/js/jquery-1.4.2.min.js"></script>
-<script language="javascript" src="static/js/thickbox.js"></script>
-<script src="static/js/uaredirect.js" type="text/javascript"></script>
+<link href="__TOUPIAO__/css/vote.css" rel="stylesheet" type="text/css" />
+<link href="__TOUPIAO__/css/thickbox.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="__TOUPIAO__/js/zhirui.js"></script>
+<script language="javascript" src="__TOUPIAO__/js/jquery-1.4.2.min.js"></script>
+<script language="javascript" src="__TOUPIAO__/js/thickbox.js"></script>
+<script src="__TOUPIAO__/js/uaredirect.js" type="text/javascript"></script>
 <script type="text/javascript">uaredirect("./wap/index.html");</script>
 </head>
 <style>
 
             body {
 
-                background:url("static/images/pic5.jpg") top center no-repeat;
+                background:url("__TOUPIAO__/images/pic5.jpg") top center no-repeat;
 
             }
 
         </style>
 <body >
 <div class='banner'  align='center' ><!--<img src=static/picture/head.png />--></div>
-<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="__TOUPIAO__/js/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {	
 	$("#topnav li").prepend("<span></span>"); //Throws an empty span tag right before the a tag
@@ -48,8 +48,8 @@ $(document).ready(function() {
 <table width="999" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="Votehead">
   <tr>
     <div style="position: relative;top: -80px; width:380px; margin:0 auto;">
-       <div style="display: inline-block;float:right; font-size: 24px;color:white;background-color:#970000;padding: 25px 10px 20px;"><a href="http://tp.hcxyw.cn/result.html" style="color:white;">投票结果</a></div> 
- 		<div style="display: inline-block;float:left; font-size: 24px;color: white;padding: 25px 10px 20px;"><a style="color:white;" href="http://tp.hcxyw.cn/">在线投票</a></div>
+       <div style="display: inline-block;float:right; font-size: 24px;color:white;background-color:#970000;padding: 25px 10px 20px;"><a href="http://zzb.cxzch.cn/toupiao.php/index/result" style="color:white;">投票结果</a></div>
+ 		<div style="display: inline-block;float:left; font-size: 24px;color: white;padding: 25px 10px 20px;"><a style="color:white;" href="http://zzb.cxzch.cn/toupiao.php">在线投票</a></div>
      
     </div>
       </tr>
@@ -65,28 +65,24 @@ $(document).ready(function() {
 	<td>
 	<table class="table_vpte" border="0" cellspacing="" cellpadding="" width="100%">
 		 	<tr><th align="left">序号</th><th>选项</th><th>比例</th><th>票数</th></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
-		 	<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>
+			<volist name="info" id="vo">
+				<tr><td align="left">{$i}</td><td>{$vo.title}</td><td><span><i style="width: {$vo.baifenbi};"></i></span>{$vo.baifenbi}</td><td>{$vo.piao}</td></tr>
+			</volist>
+		 	<!--<tr><td align="left">001</td><td>老北京四合院</td><td><span><i style="width: 50%;"></i></span>20%</td><td>22</td></tr>-->
 		 </table>
+
 		 <div class="pages">
-		 	<a href="">上一页</a>
-		 	<a href="" class="pages_active">1</a>
-		 	<a href="" class="no_style">...</a>
-		 	<a href="">4</a>
-		 	<a href="">下一页</a>
+			 {$page}
+		 	<!--<a href="">上一页</a>-->
+		 	<!--<a href="" class="pages_active">1</a>-->
+		 	<!--<a href="" class="no_style">...</a>-->
+		 	<!--<a href="">4</a>-->
+		 	<!--<a href="">下一页</a>-->
 		 </div>
 	</div>
 	    <div class="copyright">
 	      <p>
-	        共有<span>2891200</span>人参与，共有<span>44411256</span>票
+	        共有<span>{$ren}</span>人参与，共有<span>{$piao}</span>票
 	      </p>
 	    </div>
 		</td>
