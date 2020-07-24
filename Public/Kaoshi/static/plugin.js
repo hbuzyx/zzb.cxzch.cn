@@ -18,25 +18,70 @@ function clearStorage()
 
 function submitPaper()
 {
-
 	// $.zoombox.show('confirm',{"msg":"交卷成功","time":1000});
+	// $('#form1').submit();
+	var params = $(':input').serialize();
+	$.ajax({
+		url:'kaoshi.php/index/saveUserAnswer',
+		async:false,
+		type:'post',
+		dataType:'json',
+		data:params,
+		success:function(da){
+			//请求成功时处理
+			if(da.status == 1){
+				clearStorage();
+				$('#submodal').modal('hide');
+				document.location.href = 'kaoshi.php/index/result';
+			}else{
+				alert(da.msg);
+			}
+		},
+		complete:function(){
+			//请求完成的处理
 
-
-	clearStorage();
-	$('#submodal').modal('hide');
-	$('#form1').submit();
-	document.location.href = 'kaoshi.php/index/result';
+		},
+		error:function(xhr, textStatus, errorThrown){
+			//请求出错处理
+			alert("原生ajax：" + xhr + textStatus + "详细错误：" + errorThrown);
+		}
+	})
 }
 
 function saveanswer(){
 	var params = $(':input').serialize();
 	$.ajax({
-	   url:'kaoshi.php/index/saveUserAnswer',
-	   async:false,
-	   type:'post',
-	   dataType:'json',
-	   data:params
-	});
+		url:'kaoshi.php/index/saveUserAnswer',
+		async:false,
+		type:'post',
+		dataType:'json',
+		data:params,
+		success:function(da){
+			//请求成功时处理
+			if(da.status == 1){
+				clearStorage();
+				$('#submodal').modal('hide');
+				document.location.href = 'kaoshi.php/index/result';
+			}else{
+				alert(da.msg);
+			}
+		},
+		complete:function(){
+			//请求完成的处理
+
+		},
+		error:function(xhr, textStatus, errorThrown){
+			//请求出错处理
+			alert("原生ajax：" + xhr + textStatus + "详细错误：" + errorThrown);
+		}
+	})
+	// ).done(function (da) {
+	//
+	// }).fail(function (xhr, textStatus, errorThrown) {
+	// 	alert("原生ajax：" + xhr + textStatus + "详细错误：" + errorThrown);
+	// }).always(function () {
+	// 	console.log("完成任务流程结束");
+	// }
 }
 
 function markQuestion(rel,isTextArea)

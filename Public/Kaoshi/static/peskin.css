@@ -362,35 +362,38 @@ input[type="checkbox"] {
 .thumbuper .thumbnail {
 	min-height: 150px;
 }
-.choice p{ margin-bottom: 20px;}
-.checkbox-inline,.radio-inline,.radio-inline{
-		border: 1px solid #ccc;
+.choice p{ margin-bottom: 10px;}
+.choice p label{
+	padding:0 10px;
+	border: 1px solid transparent;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+}
+.input_active{
+		border-color: #ccc;
 		background: #eee;
-	padding:0 30px;
 }
-.radio-inline.glyphicon {
-	border: 1px solid #eee;
+label.glyphicon {
+	border: 1px solid transparent;
 	background: #ebffeb;
-	padding: 10px;
 }
-
-.radio-inline.glyphicon::before {
+label.glyphicon::before {
 	margin-right: 5px;
 }
 
-.radio-inline.glyphicon input {
+label.glyphicon input {
 	display: none;
 }
-
-.radio-inline.glyphicon.glyphicon-ok-circle::before {
+label.glyphicon.glyphicon-ok-circle::before {
 	color: #66d28c;
 }
 
-.radio-inline.glyphicon.glyphicon-remove-circle {
+label.glyphicon.glyphicon-remove-circle {
 	background: #fff1f1;
 }
 
-.radio-inline.glyphicon.glyphicon-remove-circle::before {
+label.glyphicon.glyphicon-remove-circle::before {
 	color: #FF0000;
 }
 

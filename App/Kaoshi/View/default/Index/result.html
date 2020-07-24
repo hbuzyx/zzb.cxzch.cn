@@ -40,13 +40,13 @@
 				<legend class="text-center"><h3>党建知识测试</h3></legend>
 								<div class="col-xs-4">
             		<div class="boardscore">
-            			<h1 class="text-center text-danger">0.00 分</h1>
+            			<h1 class="text-center text-danger">{$kaoshi.score} 分</h1>
             			<p>分数评价</p>
             		</div>
             	</div>
             	<div class="col-xs-8">
             		<div><b class="text-info">考试详情：</b></div>
-          			<p>总分：<b class="text-warning">100</b>分 合格分数线：<b class="text-warning">60</b>分 答卷耗时：<b class="text-warning">2分钟</b></p>
+          			<p>总分：<b class="text-warning">100</b>分 合格分数线：<b class="text-warning">60</b>分 答卷耗时：<b class="text-warning">{$kaoshi.elapsed}</b></p>
               		<table class="table table-hover table-bordered">
                       <tbody><tr class="success">
                         <th>题型</th>
@@ -57,31 +57,17 @@
                       </tr>
                                                                   <tr>
                         <td>单选题</td>
-                        <td>70</td>
-                        <td>0</td>
-                        <td>70.0</td>
-                        <td>0.0</td>
-                      </tr>
-                                                                                        <tr>
-                        <td>多选题</td>
                         <td>10</td>
-                        <td>0</td>
-                        <td>10.0</td>
-                        <td>0.0</td>
-                      </tr>
-                                                                                        <tr>
-                        <td>判断题</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>5.0</td>
-                        <td>0.0</td>
+                        <td>{$kaoshi.yes_num}</td>
+                        <td>100</td>
+                        <td>{$kaoshi.score}</td>
                       </tr>
                                                                                                                                                                                                       <tr>
-                        <td colspan="5" align="left">本次考试共<b class="text-warning">85</b>道题，总分<b class="text-warning">100</b>分，您做对<b class="text-warning">0</b>道题，得到<b class="text-warning">0.00</b>分</td>
+                        <td colspan="5" align="left">本次考试共<b class="text-warning">10</b>道题，总分<b class="text-warning">100</b>分，您做对<b class="text-warning">{$kaoshi.yes_num}</b>道题，得到<b class="text-warning">{$kaoshi.score}</b>分</td>
                       </tr>
                    </tbody></table>
-                                      <div class="text-center"><a href="answer.html" class="btn btn-info">查看答案和解析</a>
-                   <!--&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php?exam-app-history&ehtype=1" class="btn btn-info">进入我的考试记录2</a>--></div>
+                                      <!--<div class="text-center"><a href="answer.html" class="btn btn-info">查看答案和解析</a>-->
+                   <!--&lt;!&ndash;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php?exam-app-history&ehtype=1" class="btn btn-info">进入我的考试记录2</a>&ndash;&gt;</div>-->
             	               	</div>
             	            </div>
 		</div>
