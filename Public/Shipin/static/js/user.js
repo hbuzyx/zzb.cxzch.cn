@@ -201,7 +201,35 @@ function getPhoneVerify(){
 	    }); 
 }
 }
-	
+function setUserInfo2(){
+	var uname=$.trim($("#prphone").val());//获取用户昵称
+	var psw=$.trim($("#prpassword").val());//获取用户昵称
+	if(user=="" || password==""){
+		return;
+	}
+	if(uname=="" || uname.length>11){//检查昵称
+		console.log(uname);
+		notes('对不起，昵称长度不正确!!','failure');
+		return;
+	}else{
+		$.ajax({
+			type: "POST",
+			url:REG_LOGIN,
+			data:"username="+uname+"&password="+psw,
+			dataType:"json",
+			success:function(data){
+				if(data.status==0){
+					notes(data.msg,'failure');
+					return;
+				}else{
+					notes(data.msg,'success');
+					location.reload();
+				}
+
+			}
+		});
+	}
+}
 //用户信息
 function setUserInfo(){
 	var uname=$.trim($("#uname").val());//获取用户昵称
@@ -225,7 +253,6 @@ function setUserInfo(){
 			 notes('对不起，请选择所在城市!','failure');
 			 return;
 		}*/
-		
 		var udata;
 		if(type==1){
 			udata="&email="+user;
@@ -275,11 +302,6 @@ function setUserInfo(){
 	        }
 	    });
 	}
-	
-	
-	
-	
-	
 }
 /**
  * 用户头像设置
@@ -539,16 +561,16 @@ function logSub(){
     $.ajax({
         type: "POST",
         url:LOGIN_ADDRESS,
-        data:"log_username="+$.trim($("#log_username").val())+"&log_pwd="+ $.trim($("#log_pwd").val()),
+        data:"username="+$.trim($("#log_username").val())+"&password="+ $.trim($("#log_pwd").val()),
         dataType:"json",
         success:function(data){
             if(data.status=='0'){
                 $("#logSub").val("登录");
                 $("#logSub").css("disabled","false");
-                notes(data.info,'failure');
+                notes(data.msg,'failure');
                 return;
             }else{
-                notes(data.info,'success');
+                notes(data.msg,'success');
                 location.reload();
             }
         }
