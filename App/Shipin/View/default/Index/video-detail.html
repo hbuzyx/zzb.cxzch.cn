@@ -111,7 +111,7 @@
     <div class="m-ctb">
         <!--右边上面第一部分-->
         <div class="courseintro">
-            <h2>{$info.title}</h2>
+            <h2>{$info.title}{$info.downlink}</h2>
             <div class="video_rinfo">
                 <img src="{$info.litpic}">
                 <div class="video_rinfo-con">
@@ -210,31 +210,31 @@
 
 
 <script type="text/javascript">
-    alert(22222);
-    var vediotest = document.getElementById("ckvideo");
-    var timespan = 0;
-    var isCountTime = false;
-    vediotest.onplaying = function () {
-        isCountTime = true;
-        console.log("playing");
-        alert(111111);
-    }
-    vediotest.onwaiting = function () {
-        isCountTime = false;
-        console.log("waiting");
-    }
-    vediotest.onpause = function () {
-        isCountTime = false;
-        console.log("pasused");
-    }
-    setInterval(function () {
-        if (isCountTime) {
-            timespan += 0.1;
-            console.log(timespan);
-        }
-    }, 100);
+    // alert(22222);
+    // var vediotest = document.getElementById("ckvideo");
+    // var timespan = 0;
+    // var isCountTime = false;
+    // vediotest.onplaying = function () {
+    //     isCountTime = true;
+    //     console.log("playing");
+    //     alert(111111);
+    // }
+    // vediotest.onwaiting = function () {
+    //     isCountTime = false;
+    //     console.log("waiting");
+    // }
+    // vediotest.onpause = function () {
+    //     isCountTime = false;
+    //     console.log("pasused");
+    // }
+    // setInterval(function () {
+    //     if (isCountTime) {
+    //         timespan += 0.1;
+    //         console.log(timespan);
+    //     }
+    // }, 100);
     var flashvars={
-        f:"http://zs.hbxuwe.cn/data/upload/2019/1210/20/5def8f46e9e45.mp4",
+        f:"http://zzb.local/{$info.downlink}",
         c:'0',
         p:1,
         loaded:'loadedHandler'
@@ -270,7 +270,7 @@
     var ispause=false;
     var test_time=10;
     function timeHandler(t){
-		        if (!ispause && t>test_time){
+        if (!ispause && t>test_time){
             ispause=true;
             CKobject.getObjectById('ckvideo').videoPause();
             $("#video_play").remove();
@@ -280,7 +280,7 @@
     }
 
     var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:"transparent"};
-    var video=["http://zs.hbxuwe.cn/data/upload/2019/1210/20/5def8f46e9e45.mp4"];
+    var video=["http://zzb.local/{$info.downlink}"];
     CKobject.embed('http://zs.hbxuwe.cn/player/ckplayer/ckplayer.swf','video_play','ckvideo','100%','100%',false,flashvars,video,params);
 
     //收藏课程
