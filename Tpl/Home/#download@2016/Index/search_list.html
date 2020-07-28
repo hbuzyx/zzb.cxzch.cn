@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://j.hbxuwe.cn/a/jianzhujienen/ -->
+<html class="js cssanimations"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="order by dede58.com/">
+  <title>搜索列表页 - 紫塞先锋</title>
+    <meta name="keywords" content="搜索列表页" />
+    <meta name="description" content="搜索列表页" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/Public/Home/sucai/list/amazeui.min.css">
+<link rel="stylesheet" href="/Public/Home/sucai/list/app.css">
+<link rel="stylesheet" href="/Public/Home/sucai/list/index.css">
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="/Public/Home/sucai/zzb/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="/Public/Home/sucai/zzb/amazeui.min.js"></script>
+<link rel="stylesheet" href="/Public/Home/sucai/list/index.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+        href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]--> 
+<!-- 代码区 --> 
+<div class="head" style="position:relative">
+    <div class="wap_logo">
+       <a href="http://j.hbxuwe.cn/"><img src="/Public/Home/sucai/zzb/logo.png"/></a>
+    </div>
+    <div class="banner">
+    <!-- <div class="banner_top"></div> -->
+        <div  data-am-widget="slider" class="am-slider am-slider-a2 am-no-layout"  data-am-slider='{"directionNav":false,"slideshowSpeed": 5000,"animationSpeed": 1000,"animation": "fade","slideshow:":false}'>
+          <ul class="am-slides">
+              <li class="am-active-slide" data-thumb-alt="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+                 <div class="ddsgg" style="background: url(/uploads/img1/banner1.png);background-size: 100% 100%;"></div>
+              </li>
+              <li  class="am-active-slide" data-thumb-alt=""  style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 2;">
+                 <div class="ddsgg" style="background: url(/uploads/img1/banner2.png);background-size: 100% 100%;"></div>
+              </li>
+          </ul>
+          <ol class="am-control-nav am-control-paging">
+            <li><a href="#" class="">1</a><i></i></li>
+          </ol>
+          <div style="background: url(/uploads/img1/tc.png);width: 100%; height: 238px; margin-right: -100%; top: 0px; position: absolute;; z-index: 9;"></div>
+      </div>
+   </div>
+</div>
+<div class="n_cont c">
+  <div class="jz c">
+    <div class="ny_zqw_chb">
+      <div class="nw_top"> <span class="top_tzbt l">搜索列表</span> <span class="top_mbx r">您的位置：<a href="http://zzb.cxzch.cn/">首页</a>&gt;<a href="{:U('index/search')}">搜索列表</a></span> </div>
+      <!--main--> 
+      
+      <!--内页正文-->
+      <div class="bjbld">
+          <ul class="wjzlb">
+          <volist name="list" id="vo" key="key2" >
+            <li class="c"> <a href="#"> <span class="wjll l"> <span class="wjlbt">{$vo.title}</span> <span class="wjlrq">{$vo.publishtime|date="Y-m-d H:i:s",###}</span> </span> </a> </li>
+          </volist>
+          </ul>
+          <div class="yemmm">
+              <div class="pager">
+                  <div>
+                      <span class="rows">共 <font class="red">{$count}</font> 条记录 </span>
+                  </div>
+              </div>
+          </div>
+          <div class="yemmm">
+              <div class="pager">
+                  <div>{$page}</div>
+              </div>
+          </div>
+      </div>
+      <!--内页正文--> 
+    </div>
+  </div>
+</div>
+  <div align="center"><div class="foot">
+  <div align="center"><div class="footjz">
+<div div="" style="LINE-HEIGHT: 60%"><br></div>
+    <div align="center"><div class="egwm"> <img src="/Public/Home/sucai/list/ewm.jpg" class="ewmtpw" alt="二维码">
+      <div class="lxfsa"> <span class="ytbts">紫塞先锋网</span> <span class="ytbta">电话：0314-2050747</span> <span class="ytbta">传真：0314-2050747</span> <span class="ytbta">邮箱：cdycb@126.com</span> <span class="ytbta">地址：河北省承德市政府行政中心 </span> </div>
+    </div></div>
+    <br>
+    <div class="dbxx">Copyright © 2002-2019 紫塞先锋党建网 版权所有     备案号：冀ICP备1325325253 &nbsp;&nbsp;</div>
+  </div>
+</div></div></div>
+<script src="/Public/Home/sucai/js/common_version1.js" type="text/javascript"></script>
+<script src="/Public/Home/sucai/js/other/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<div class="mmsg-box mmsg-box-info" id="msg-box" style="margin-top: -23.5px; margin-left: -96.5px;">
+    <div class="mmsg-content">
+        <i class="mmsg-icon"></i>
+        <p id="msg-box-content"></p>
+    </div>
+    <div class="mmsg-background"></div>
+</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+
+</script>
+<script type="text/javascript">
+  var aList = document.getElementsByTagName('a');//获取所有的标签a
+	for(var i=0;i<aList.length;i++){
+		   aList[i].target='_blank';//定义成打开新窗口
+		}
+</script>
+
+
+</body></html>
