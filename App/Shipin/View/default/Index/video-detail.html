@@ -104,7 +104,7 @@
         </div>
         
     </div>
-    
+
 
 <!------------右边------------>
 <div id="course-toolbar-box" class="g-sd2">
@@ -210,12 +210,35 @@
 
 
 <script type="text/javascript">
+    alert(22222);
+    var vediotest = document.getElementById("ckvideo");
+    var timespan = 0;
+    var isCountTime = false;
+    vediotest.onplaying = function () {
+        isCountTime = true;
+        console.log("playing");
+        alert(111111);
+    }
+    vediotest.onwaiting = function () {
+        isCountTime = false;
+        console.log("waiting");
+    }
+    vediotest.onpause = function () {
+        isCountTime = false;
+        console.log("pasused");
+    }
+    setInterval(function () {
+        if (isCountTime) {
+            timespan += 0.1;
+            console.log(timespan);
+        }
+    }, 100);
     var flashvars={
         f:"http://zs.hbxuwe.cn/data/upload/2019/1210/20/5def8f46e9e45.mp4",
         c:'0',
         p:1,
         loaded:'loadedHandler'
-    }; 
+    };
 	var vid = '293';
 	var aid = '293';
 	var endtime =0;
@@ -224,17 +247,17 @@
         //说明使用html5播放器
             CKobject.getObjectById('ckvideo').addListener('time',timeHandler);
 			 CKobject.getObjectById('ckvideo').addListener('ended',endedHandler);
-			// var videostatus = CKobject.getObjectById('ckvideo').getMetaDate(); 
-			// var videototalTime  = videostatus.totalTime;	
+			// var videostatus = CKobject.getObjectById('ckvideo').getMetaDate();
+			// var videototalTime  = videostatus.totalTime;
         }else{
             CKobject.getObjectById('ckvideo').addListener('time','timeHandler');
             CKobject.getObjectById('ckvideo').addListener('ended','endedHandler');
-			//var videostatus = CKobject.getObjectById('ckvideo').getMetaDate(); 
-			//var videototalTime  = videostatus.totalTime;	
+			//var videostatus = CKobject.getObjectById('ckvideo').getMetaDate();
+			//var videototalTime  = videostatus.totalTime;
         }
 		//console.log(videostatus);
     }
-	
+
 	//播放结束执行函数
 	function endedHandler(){
 		$.ajax({
@@ -243,23 +266,23 @@
 			data:{time:endtime,vid:vid,aid:aid,ended:1}
 		});
 	}
-	
+
     var ispause=false;
     var test_time=10;
     function timeHandler(t){
 		        if (!ispause && t>test_time){
             ispause=true;
             CKobject.getObjectById('ckvideo').videoPause();
-            $("#video_play").remove(); 
+            $("#video_play").remove();
             $(".vedioPlay-msg").css("display","block");
 
         }
-		    }
-   
+    }
+
     var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:"transparent"};
     var video=["http://zs.hbxuwe.cn/data/upload/2019/1210/20/5def8f46e9e45.mp4"];
     CKobject.embed('http://zs.hbxuwe.cn/player/ckplayer/ckplayer.swf','video_play','ckvideo','100%','100%',false,flashvars,video,params);
-	
+
     //收藏课程
     function collectVideo(cate,vid){
     	if(UID=='0'){
@@ -278,14 +301,14 @@
 				} else {
 					$(cate).removeClass().addClass("wenda-gz-Toggle");
 				}
-				
+
 			},
-			
+
 		});
     }
-    
+
     $(function(){
-    	$('#myxuebinum').html(parseFloat(1)); 
+    	$('#myxuebinum').html(parseFloat(1));
     	//获取上一个兄弟节点的href
     	var prevhref=$('.section-cur').prev().children('a').attr("href");
     	$("#j-prev").attr("href",prevhref);
@@ -314,10 +337,10 @@
             if(type == 'no-agree'){
                 $(this).attr('class','agree');
             }else{
-                $(this).attr('class','no-agree');   
+                $(this).attr('class','no-agree');
             }
         });
-    }); 
+    });
 	var status=1;//1为展开  0为收缩
 	var width=$("#course-toolbar-box").width();
 	var vwidth=$(".m-courselearn").width();
@@ -337,22 +360,22 @@
     	  status=1;
       }
     });
-  
+
     //目录点击
     function muluBang(cate){
     	$("#tagcontent_box").children().css("display","none");
     	$("#tags").children().removeClass("current");
     	$("#tagcontent0").css("display","block");
     	$(cate).parent().addClass("current");
-    	
-    } 
+
+    }
 	//目录点击
     function fileBang(cate){
     	$("#tagcontent_box").children().css("display","none");
     	$("#tags").children().removeClass("current");
     	$("#tagcontentfile").css("display","block");
     	$(cate).parent().addClass("current");
-    	
+
     }
     //笔记点击
     function noteBang(cate,aid,type,vid){
@@ -372,9 +395,9 @@
 					$(".video-list").append(data.data);
 					$("#txtmydianbonote").css("display","none");
 				}
-				
+
 			},
-			
+
 		});
     }
     //提问点击
@@ -395,9 +418,9 @@
 					$(".video-list").append(data.data);
 					$("#txtmydianbonote").css("display","none");
 				}
-				
+
 			},
-			
+
 		});
     }
     //添加笔记
@@ -413,7 +436,7 @@
   		isopen=1;
   	  }
   	  $(cate).val("保存中..");
-  	  $(cate).attr("disabled",true); 
+  	  $(cate).attr("disabled",true);
 	  if(type==2){
 		var kzid = vid;
 	  }else{
@@ -428,21 +451,21 @@
 		success: function(data){
 			if(data.status == '0'){
 				$(cate).val("保存");
-				$(cate).attr("disabled",false); 
+				$(cate).attr("disabled",false);
 				notes(data.info,'failure');
 			} else {
 				$("#notecont").val("");
 				$(cate).val("保存");
-				$(cate).attr("disabled",false); 
+				$(cate).attr("disabled",false);
 				noteBang("#note",aid,type);
 			}
-			  
-			
+
+
 		},
-		
+
 	   });
     }
-    
+
     //添加提问
     function addquestionBang(cate,aid,type,vid){
     	 if(MID=='0'){
@@ -454,7 +477,7 @@
 	  var title= $("#questiontitle").val();
 
   	  $(cate).val("保存中..");
-  	  $(cate).attr("disabled",true); 
+  	  $(cate).attr("disabled",true);
 	  if(type==2){
 		var kzid = vid;
 	  }else{
@@ -469,18 +492,18 @@
 		success: function(data){
 			if(data.status == '0'){
 				$(cate).val("保存");
-				$(cate).attr("disabled",false); 
+				$(cate).attr("disabled",false);
 				notes(data.info,'failure');
 			} else {
 				$("#questioncont").val("");
 				$(cate).val("保存");
-				$(cate).attr("disabled",false); 
+				$(cate).attr("disabled",false);
 				questionBang("#question",aid,type);
 			}
-			  
-			
+
+
 		},
-		
+
 	});
     }
     //购买操作
@@ -506,7 +529,7 @@
                 window.location.href = window.location.href;
             }
         },'json');
-} 
+}
     
     
     

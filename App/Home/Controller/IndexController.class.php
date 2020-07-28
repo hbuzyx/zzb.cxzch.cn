@@ -65,10 +65,11 @@ class IndexController extends HomeCommonController
     public function detail()
     {
         $id = I('id','','htmlspecialchars');
-        $list = M('article')->where('id='.$id)->find();
+//        dump($id);die;
+        $list = M('article')->where('id ='.$id)->find();
 //        $this->ajaxReturn(['status'=>1,'msg'=>'成功','data'=>$tags],json);
         $this->assign('title', C('CFG_WEBNAME'));
         $this->assign('list', $list);
-        $this->display('search_detail');
+        $this->display('');
     }
 }

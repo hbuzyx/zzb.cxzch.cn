@@ -57,7 +57,7 @@
       <div class="bjbld">
           <ul class="wjzlb">
           <volist name="list" id="vo" key="key2" >
-            <li class="c"> <a href="#"> <span class="wjll l"> <span class="wjlbt">{$vo.title}</span> <span class="wjlrq">{$vo.publishtime|date="Y-m-d H:i:s",###}</span> </span> </a> </li>
+            <li class="c"> <a href="{:U('detail',array('id'=>$vo['id']))}"> <span class="wjll l"> <span class="wjlbt">{$vo.title}</span> <span class="wjlrq">{$vo.publishtime|date="Y-m-d H:i:s",###}</span> </span> </a> </li>
           </volist>
           </ul>
           <div class="yemmm">
