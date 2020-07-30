@@ -56,7 +56,7 @@
 
 <div class="hot">
   <div class="jz">
-	  <div class="hot_gz l"> 先锋头条  <span><?php echo date("Y-m-d",$shizhengyanwen['publishtime']); ?></span> </div>
+	  <div class="hot_gz l"> 先锋头条  <span><?php echo $shizhengyaowen['publishtime']; ?></span> </div>
     <div class="hot_news l"> <a href="/index.php?s=/shizhengyaowen-<?php echo $shizhengyaowen['id']; ?>" class="h_bt"><?php echo $shizhengyaowen['title']; ?></a> <a href="/index.php?s=/shizhengyaowen-<?php echo $shizhengyaowen['id']; ?>" class="h_nr"><?php echo $shizhengyaowen['description']; ?>...</a>
  </div>
   </div>
@@ -162,90 +162,69 @@
     </div>
   </div>
 	<!------------------------------------------------>
-
-     <!---------------->
-
+    <!--------先锋视频-------->
   <div class="c_bke">
     <div class="jz">
        <tp:catlist typeid='0' flag='1' modelid='5' limit='1'>
-      <div class="c_bkebt"> <div class="zwbtz l"  style="background-color: #710006;line-height: 46px; color: white;font-size: 16px;padding-left:20px;padding-right:20px;font-weight:normal;">{$catlist.name}</div>
-      <div align="right" style="line-height:46px;"><span class="zwbtz r">
-
-
-
-					  <volist name='catlist["child"]' id='v' offset='0' length='6'>
-
-                    <a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
-
-				<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-					</volist>
-
-
-
-      <a href="{$catlist.url}" target="_blank">&nbsp;&nbsp;</a>
-      </span></div>
-
-      </div>
-      <ul class="myzs">
-        	<tp:list typeid='$catlist["id"]' flag='a' limit='7'>
-               <li>
-        <a href="{$list.url}"><img src="{$list.litpic}" width="100%" alt="{$list.title}"></a>
-        </li>
-
-
-              </tp:list>
-
-
-
-
-
-      </ul>
-      <!--<ul class="myzs sszzd">
-        <li>
-        <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/jicengfaxian/jiemuliebiao/2019/1222/184.html"><img src="__PUBLIC__/zzb/1-1P30GH4520-L.jpg" alt="2019年第四期"></a>
-        </li>
-<li style="margin-right: 0">
-        <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/jicengfaxian/jiemuliebiao/2019/1222/185.html"><img src="__PUBLIC__/zzb/1-1P30GH4520-L.jpg" alt="2019年第五期"></a>
-        </li>
-<li>
-        <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/168.html"><img src="__PUBLIC__/zzb/1-1ZG51144343H.jpg" alt="展示四"></a>
-        </li>
-<li style="margin-right: 0">
-        <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/167.html"><img src="__PUBLIC__/zzb/1-1ZG51144343H.jpg" alt="展示三"></a>
-        </li>
-<li>
-        <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/166.html"><img src="__PUBLIC__/zzb/1-1ZG51144343H.jpg" alt="展示二"></a>
-        </li>
-<li style="margin-right: 0">
-        <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/165.html"><img src="__PUBLIC__/zzb/1-1ZG51144343H.jpg" alt="展示一"></a>
-        </li>
-
-      </ul>-->
-            </tp:catlist>
+          <div class="c_bkebt"> <div class="zwbtz l"  style="background-color: #710006;line-height: 46px; color: white;font-size: 16px;padding-left:20px;padding-right:20px;font-weight:normal;">{$catlist.name}</div>
+          <div align="right" style="line-height:46px;">
+              <span class="zwbtz r">
+              <volist name='catlist["child"]' id='v' offset='0' length='6'>
+                  <a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
+                  <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              </volist>
+              <a href="{$catlist.url}" target="_blank">&nbsp;&nbsp;</a>
+              </span>
+          </div>
+          </div>
+          <ul class="myzs">
+                <tp:list typeid='$catlist["id"]' flag='a' limit='7'>
+                   <li>
+                       <?php if(in_array($list["cid"],[82,83,84,85,86,87])){ ?>
+                    <a href="shipin.php/index/detail?id={$list['id']}"><img src="{$list.litpic}" width="100%" alt="{$list.title}"></a>
+                       <?php }else{ ?>
+                       <a href="{$list.url}"><img src="{$list.litpic}" width="100%" alt="{$list.title}"></a>
+                       <?php } ?>
+                    </li>
+                </tp:list>
+          </ul>
+       </tp:catlist>
     </div>
   </div>
-
+    <!--<ul class="myzs sszzd">
+      <li>
+      <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/jicengfaxian/jiemuliebiao/2019/1222/184.html"><img src="__PUBLIC__/zzb/1-1P30GH4520-L.jpg" alt="2019年第四期"></a>
+      </li>
+<li style="margin-right: 0">
+      <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/jicengfaxian/jiemuliebiao/2019/1222/185.html"><img src="__PUBLIC__/zzb/1-1P30GH4520-L.jpg" alt="2019年第五期"></a>
+      </li>
+<li>
+      <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/168.html"><img src="__PUBLIC__/zzb/1-1ZG51144343H.jpg" alt="展示四"></a>
+      </li>
+<li style="margin-right: 0">
+      <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/167.html"><img src="__PUBLIC__/zzb/1-1ZG51144343H.jpg" alt="展示三"></a>
+      </li>
+<li>
+      <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/166.html"><img src="__PUBLIC__/zzb/1-1ZG51144343H.jpg" alt="展示二"></a>
+      </li>
+<li style="margin-right: 0">
+      <a href="http://j.hbxuwe.cn/a/mingyuanzhanshi/165.html"><img src="__PUBLIC__/zzb/1-1ZG51144343H.jpg" alt="展示一"></a>
+      </li>
+    </ul>-->
   <!---------------->
   <div class="jz">
   	<!----------------------两列--------------------------->	<br>
 	<div class="boxon">
-
        <tp:catlist typeid='0' flag='1' modelid='1' limit='4,2'>
 		<div class="con">
-
 		<dl>
 				<dt>{$catlist.name}<!-- 基层党建工作 --></dt>
 				<dd>
                   <a class="more" href="{$catlist.url}"></a>
-
 					  <volist name='catlist["child"]' id='v' offset='0' length='6'>
-
-
 					<a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
 					<span>|</span>
 					</volist>
-
-
 					<!-- <a href="" target="_blank">城市基层</a>
 					<span>|</span>
 					<a href="" target="_blank">非公有制经济组织</a>
@@ -255,12 +234,8 @@
 			</dl>
 			<ul>
               	<tp:list typeid='$catlist["id"]' flag='4' limit='7'>
-
-
 			 <li><span>{$list.publishtime|date='y-m-d',###}</span><a href="{$list.url}">{$list.title}</a></li>
               </tp:list>
-
-
 			</ul>
 
 		</div>
@@ -271,35 +246,28 @@
   <!---------------->
   <div class="c_bke">
       <tp:catlist typeid='0' flag='1' modelid='4' limit='1'>
-    <div class="jz">
-      <div class="c_bkebt"> <div class="zwbtz l" style="background-color: #710006;line-height: 46px; color: white;font-size:16px;font-weight: normal;padding-left:20px;padding-right:20px;">{$catlist.name}</div>
-      <div align="right"><span class="zwbtz r" style="line-height: 46px;">
+            <div class="jz">
+              <div class="c_bkebt"> <div class="zwbtz l" style="background-color: #710006;line-height: 46px; color: white;font-size:16px;font-weight: normal;padding-left:20px;padding-right:20px;">{$catlist.name}</div>
+              <div align="right"><span class="zwbtz r" style="line-height: 46px;">
 
-      <a class="more" href="{$catlist.url}"></a>
+              <a class="more" href="{$catlist.url}"></a>
+                  <volist name='catlist["child"]' id='v' offset='0' length='6'>
+                            <a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
+                            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                  </volist>
 
-					   <volist name='catlist["child"]' id='v' offset='0' length='6'>
+              <a class="ddson" href="{$catlist.url}" target="_blank">&nbsp;&nbsp;</a>
+              </span></div>
 
-
-					<a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
-					<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-					</volist>
-
-      <a class="ddson" href="{$catlist.url}" target="_blank">&nbsp;&nbsp;</a>
-      </span></div>
-
-      </div>
-      <ul class="myzs">
-       	<tp:list typeid='$catlist["id"]' flag='a' limit='7'>
-               <li>
-        <a href="{$list.url}"><img src="{$list.litpic}" width="100%" alt="{$list.title}"></a>
-        </li>
-
-
-              </tp:list>
-
-      </ul>
-
-    </div>
+              </div>
+              <ul class="myzs">
+                <tp:list typeid='$catlist["id"]' flag='a' limit='7'>
+                    <li>
+                        <a href="{$list.url}"><img src="{$list.litpic}" width="100%" alt="{$list.title}"></a>
+                    </li>
+                </tp:list>
+              </ul>
+            </div>
        </tp:catlist>
   </div>
   <!---------------->
@@ -307,42 +275,39 @@
 	<!----------------------两列--------------------------->
  <div class="jz">
 <div class="boxon">
-
-		  <tp:catlist typeid='0' flag='1' modelid='1' limit='6,2'>
+    <tp:catlist typeid='0' flag='1' modelid='1' limit='6,2'>
 		<div class="con">
-
-		<dl>
-				<dt>{$catlist.name}<!-- 基层党建工作 --></dt>
-				<dd>
+            <dl>
+                <dt>{$catlist.name}<!-- 基层党建工作 --></dt>
+                <dd>
                   <a class="more" href="{$catlist.url}"></a>
 
-					  <volist name='catlist["child"]' id='v' offset='0' length='6'>
+                      <volist name='catlist["child"]' id='v' offset='0' length='6'>
 
 
-					<a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
-					<span>|</span>
-					</volist>
+                    <a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
+                    <span>|</span>
+                    </volist>
 
 
-					<!-- <a href="" target="_blank">城市基层</a>
-					<span>|</span>
-					<a href="" target="_blank">非公有制经济组织</a>
-					<span>|</span>
-					<a href="" target="_blank">其他领域</a> -->
-				</dd>
-			</dl>
-			<ul>
-              	<tp:list typeid='$catlist["id"]' flag='4' limit='7'>
+                    <!-- <a href="" target="_blank">城市基层</a>
+                    <span>|</span>
+                    <a href="" target="_blank">非公有制经济组织</a>
+                    <span>|</span>
+                    <a href="" target="_blank">其他领域</a> -->
+                </dd>
+            </dl>
+            <ul>
+                <tp:list typeid='$catlist["id"]' flag='4' limit='7'>
 
 
-			 <li><span>{$list.publishtime|date='y-m-d',###}</span><a href="{$list.url}">{$list.title}</a></li>
+             <li><span>{$list.publishtime|date='y-m-d',###}</span><a href="{$list.url}">{$list.title}</a></li>
               </tp:list>
 
 
-			</ul>
-
+            </ul>
 		</div>
-          </tp:catlist>
+    </tp:catlist>
 	</div>
 	<!---------------------两列--------------------------->
 

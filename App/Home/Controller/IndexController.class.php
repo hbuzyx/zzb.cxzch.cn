@@ -22,11 +22,12 @@ class IndexController extends HomeCommonController
         $cat['contet']= mb_substr(strip_tags($ar['content']), 0, 150);
         //时政要闻
         $shizhengyaowen = M('article')->where('cid=53')->order("id desc")->find();
-
+        $shizhengyaowen['publishtime'] = date("Y-m-d",$shizhengyaowen['publishtime']);
         $this->assign('shizhengyaowen', $shizhengyaowen);
         $this->assign('ar', $ar);
         $this->assign('cat', $cat);
         $this->assign('tags', $tags);
+//        dump($catlist);die;
         // $this->display();
         $this->display();
     }
