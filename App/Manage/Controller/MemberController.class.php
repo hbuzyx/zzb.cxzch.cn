@@ -25,6 +25,10 @@ class MemberController extends CommonController
         $page->setConfig('theme', '%HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
         $limit = $page->firstRow . ',' . $page->listRows;
         $list  = D('MemberView')->nofield('password,encrypt')->where($where)->order('member.id desc')->limit($limit)->select();
+        $logModel = M('video_log');
+        foreach ($list as $key =>$vo){
+            $list[$key]['shichang'] = gmdate('H:i:s',round(($logModel->where(array('user_id' => $vo['id']))->sum('shichang'))/1000));
+        }
 
         $this->assign('page', $page->show());
         $this->assign('vlist', $list);

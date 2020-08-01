@@ -13,7 +13,7 @@
     <div class="row margin-botton">
         <div class="col-sm-6 column">
             <div class="btn-group btn-group-md">           
-                <button class="btn btn-primary" type="button" onclick="goUrl('{:U('add')}')"><em class="glyphicon glyphicon-plus-sign"></em> 添加会员</button>              
+                <button class="btn btn-primary" type="button" onclick="goUrl('{:U('add')}')"><em class="glyphicon glyphicon-plus-sign"></em> 添加会员</button>
                  <button class="btn btn-default" type="button" onclick="doConfirmBatch('{:U('del', array('batchFlag' => 1))}', '确实要删除选择项吗？')"><em class="glyphicon glyphicon-remove-circle"></em> 删除</button>
             </div>
         </div>
@@ -41,9 +41,10 @@
                                 <th>编号</th>
                                 <th>邮箱</th>
                                 <th>用户名</th>
-                                <th>会员组</th>
+                                <!--<th>会员组</th>-->
                                 <th>登录时间</th>
                                 <th>登录ip</th>
+                                <th>视频观看时长(秒)</th>
                                 <th>状态</th>
                                 <th class="text-right">操作</th>
                             </tr>
@@ -55,9 +56,10 @@
                             <td>{$v.id}</td>
                             <td>{$v.email}</td>
                             <td>{$v.username}</td>
-                            <td>{$v.groupname}</td>
+                            <!--<td>{$v.groupname}</td>-->
                             <td><empty name="v['logintime']">--<else/>{$v.logintime|date='Y-m-d H:i:s',###}</empty></td>
                             <td>{$v.loginip}</td>
+                            <td>{$v.shichang}</td>
                             <td><if condition="$v['islock']"><span class="label label-default">锁定</span><else/><span class="label label-success">正常</span></if></td>
                             <td class="text-right">
                             <a href="{:U('person',array('id' => $v['id']), '')}" class="label label-info">详情</a>

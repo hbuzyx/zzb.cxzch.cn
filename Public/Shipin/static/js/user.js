@@ -203,19 +203,20 @@ function getPhoneVerify(){
 }
 function setUserInfo2(){
 	var uname=$.trim($("#prphone").val());//获取用户昵称
+	var name=$.trim($("#prphone2").val());//获取用户昵称
 	var psw=$.trim($("#prpassword").val());//获取用户昵称
 	if(user=="" || password==""){
 		return;
 	}
-	if(uname=="" || uname.length>11){//检查昵称
+	if(uname=="" || uname.length!=11){//检查昵称
 		console.log(uname);
-		notes('对不起，昵称长度不正确!!','failure');
+		notes('对不起，手机号长度不正确!!','failure');
 		return;
 	}else{
 		$.ajax({
 			type: "POST",
 			url:REG_LOGIN,
-			data:"username="+uname+"&password="+psw,
+			data:"username="+uname+"&password="+psw+"&name="+name,
 			dataType:"json",
 			success:function(data){
 				if(data.status==0){
