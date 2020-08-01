@@ -150,31 +150,20 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
+        var time = 0;
         var user_id="{$Think.session.id}";
         var video_id="{$info.id}";
-        $.ajax({
-            type: 'POST',
-            url:"{:U('shijiandian')}",
-            data:{user_id:user_id,video_id:video_id},
-            success:function (data) {
-                $("#ckvideo").currentTime = data.data;
-            },
-            error:function (xhr) {
-                console.log('shichang_error:',xhr);
-            }
+        publicBusi();
+        $("#ckvideo").on('timeupdate', function(e) {
+            console.log('提示该视频正在播放中'+time);
+            time = time +250;
         });
-        $("#ckvideo").on("timeupdate", function(event){
-                onTrackedVideoFrame(this.currentTime, this.duration);
-        });
-        function onTrackedVideoFrame(currentTime, duration){
-            $("#current").text(currentTime);
-            $("#duration").text(duration);
-            //登录用户记录播放时长
-            if (video_id && user_id){
+        function publicBusi() {
+            setTimeout(publicBusi,1000*30);
                 $.ajax({
                     type: 'POST',
                     url:"{:U('shichang')}",
-                    data:{user_id:user_id,video_id:video_id,timestamp:currentTime},
+                    data:{user_id:user_id,video_id:video_id,shichang:time},
                     success:function (data) {
                         console.log('shichang_success:',data);
                     },
@@ -182,9 +171,6 @@
                         console.log('shichang_error:',xhr);
                     }
                 });
-            }else{
-                console.log('else:',user_id+'--'+video_id);
-            }
         }
     });
 
