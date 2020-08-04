@@ -56,10 +56,10 @@ class MemberController extends CommonController
         $password = I('password', '');
         //M验证
         $validate = array(
-            array('email', 'email', '邮箱格式不正确'), // 内置正则验证邮箱
-            array('groupid', 'require', '请选择会员组！'),
+//            array('email', 'email', '邮箱格式不正确'), // 内置正则验证邮箱
+//            array('groupid', 'require', '请选择会员组！'),
             array('password', 'require', '密码必须填写！'),
-            array('email', '', '邮箱已经存在！', 0, 'unique', 1), //使用这个是否存在，auto就不能自动完成
+            array('email', '', '用户名或电子邮箱已经存在！', 0, 'unique', 1), //使用这个是否存在，auto就不能自动完成
         );
 
         $db = M('member');
@@ -68,7 +68,9 @@ class MemberController extends CommonController
         }
 
         $data             = I('post.');
-        $passwordinfo     = I('password', '', 'get_password');
+        $data['groupid'] = I('groupid', 0, 'intval');
+        $passwordinfo     = I('password', '', 'get_password2');
+//        dump($passwordinfo);die;
         $data['regtime']  = time();
         $data['password'] = $passwordinfo['password'];
         $data['encrypt']  = $passwordinfo['encrypt'];
@@ -109,21 +111,21 @@ class MemberController extends CommonController
         $data['email'] = trim($data['email']);
 
         if (empty($data['email'])) {
-            $this->error('电子邮箱必须填写！');
+            $this->error('用户名或电子邮箱必须填写！');
         }
-        if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-            $this->error('电子邮箱格式不正确！');
-        }
+//        if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+//            $this->error('电子邮箱格式不正确！');
+//        }
 
         if (M('member')->where(array('email' => $data['email'], 'id' => array('neq', $id)))->find()) {
-            $this->error('失败，邮箱已经存在！');
+            $this->error('失败，用户名或电子邮箱已经存在！');
         }
 
         $data['groupid'] = I('groupid', 0, 'intval');
         $data['islock']  = I('islock', 0, 'intval');
 
         if (!empty($data['password'])) {
-            $passwordinfo     = I('password', '', 'get_password');
+            $passwordinfo     = I('password', '', 'get_password2');
             $data['password'] = $passwordinfo['password'];
             $data['encrypt']  = $passwordinfo['encrypt'];
         } else {
