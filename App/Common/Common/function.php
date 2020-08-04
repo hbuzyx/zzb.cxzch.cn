@@ -816,6 +816,13 @@ function get_password($password, $encrypt = '')
     $pwd['password'] = md5(md5(trim($password)) . $pwd['encrypt']);
     return $encrypt ? $pwd['password'] : $pwd;
 }
+function get_password2($password, $encrypt = '')
+{
+    $pwd             = array();
+    $pwd['encrypt']  = $encrypt ? $encrypt : get_randomstr();
+    $pwd['password'] =md5(trim($password));
+    return $encrypt ? $pwd['password'] : $pwd;
+}
 
 /**
  * 生成随机字符串
