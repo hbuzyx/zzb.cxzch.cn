@@ -56,7 +56,7 @@
 
 <div class="hot">
   <div class="jz">
-	  <div class="hot_gz l"> 先锋头条  <span><?php echo $shizhengyaowen['publishtime']; ?></span> </div>
+	  <div class="hot_gz l"> 先锋头条  <span><?php echo date('Y-m-d H:i:s',time()); ?></span> </div>
     <div class="hot_news l"> <a href="/index.php?s=/shizhengyaowen-<?php echo $shizhengyaowen['id']; ?>" class="h_bt"><?php echo $shizhengyaowen['title']; ?></a> <a href="/index.php?s=/shizhengyaowen-<?php echo $shizhengyaowen['id']; ?>" class="h_nr"><?php echo $shizhengyaowen['description']; ?>...</a>
  </div>
   </div>
@@ -173,7 +173,7 @@
                   <a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
                   <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
               </volist>
-              <a href="{$catlist.url}" target="_blank">&nbsp;&nbsp;</a>
+              <a class="more" href="{$catlist.url}" target="_blank">&nbsp;&nbsp;</a>
               </span>
           </div>
           </div>
@@ -367,15 +367,16 @@
       <div class="lxfsa"> <span class="ytbts">紫塞先锋网</span> <span class="ytbta">电话：0314-2050747</span> <span class="ytbta">传真：0314-2050747</span> <span class="ytbta">邮箱：cdycb@126.com</span> <span class="ytbta">地址：河北省承德市政府行政中心 </span> </div>
     </div></div>
     <br>
-    <div class="dbxx">Copyright © 2002-2019 紫塞先锋党建网 版权所有     备案号：冀ICP备1325325253 &nbsp;&nbsp;</div>
+    <div class="dbxx">Copyright © 2002-2019 紫塞先锋党建网 版权所有     备案号：冀ICP备1325325253 &nbsp;&nbsp;kkk</div>
   </div>
 </div></div></div>
     <!--{:U('search/index',array('keyword'=>'人民'))}-->
 <div class="bottom_tools" style="bottom: 40px;">
     <div class="float_ico"><a target="" href="{:U('index/search')}" title="站内搜索"><img src="__PUBLIC__/zzb/1.png"></a></div>
     <div class="float_ico qr_tool"><img src="__PUBLIC__/zzb/2.png"></div>
-	 <div class="float_ico"><a target="_blank" href="/toupiao.php?s=/index/index.html" title="在线投票"><img src="__PUBLIC__/zzb/5.png"></a></div>
-	 <div class="float_ico"><a target="_blank" href="/kaoshi.php" title="在线考试"><img src="__PUBLIC__/zzb/6.png"></a></div>
+    <!--http://zzb.cxzch.cn/toupiao.php-->
+	 <div class="float_ico"><a target="_blank" href="http://zzb.cxzch.cn/toupiao.php" title="在线投票"><img src="__PUBLIC__/zzb/5.png"></a></div>
+	 <div class="float_ico"><a target="_blank" href="http://zzb.cxzch.cn/kaoshi.php" title="在线考试"><img src="__PUBLIC__/zzb/6.png"></a></div>
     <div class="float_ico" id="scrollUp" style="display: none;"><a href="javascript:;" title="飞回顶部"><img src="__PUBLIC__/zzb/4.png"></a></div>
     <img class="qr_img" src="__PUBLIC__/zzb/ewm.jpg" alt="" style="display: none;">
 </div>

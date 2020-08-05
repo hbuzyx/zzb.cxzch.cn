@@ -16,6 +16,14 @@
 <!--<![endif]-->
 <script src="__PUBLIC__/list/amazeui.min.js"></script>
 <link rel="stylesheet" href="__PUBLIC__/list/index.css">
+    <style>
+        .yemmm span {
+             background-color: snow!important;
+             border: none!important;
+             color: #000000!important;
+        }
+        .pager a:hover,.pager .current{color: #fff; border: solid 1px #c30000; background-color: #c30000;}
+    </style>
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -60,24 +68,25 @@
 
       <ul class="wjsndh c">
       	<if condition="$flag_son">
-
-		<tp:catlist typeid='$cid' type='son' flag='1'>
-             <li class="c"> <a href="{$catlist.url}"> {$catlist.name} <span> &gt; </span> </a> </li>
-	
-		</tp:catlist>
-	
-	<else/>
-	<if condition = "$cate['pid'] gt 0">
-	
-		<tp:catlist typeid="$cate['pid']" type='son' flag='1'>
-		   <li class="c"> <a href="{$catlist.url}"> {$catlist.name} <span> &gt; </span> </a> </li>
-		</tp:catlist>
-
-	</if>
-	</if>
-     
-      
-          
+            <tp:catlist typeid='$cid' type='son' flag='1'>
+                 <!--<li class="c"> <a href="{$catlist.url}"> {$catlist.name} <span> &gt; </span> </a> </li>-->
+                <?php if($catlist['id']==58){ ?>
+                <li class="c"> <a href="http://zzb.cxzch.cn/shipin.php"> {$catlist.name} <span> &gt; </span> </a> </li>
+                <?php }else{ ?>
+                <li class="c"> <a href="{$catlist.url}"> {$catlist.name} <span> &gt; </span> </a> </li>
+                <?php } ?>
+            </tp:catlist>
+        <else />
+            <if condition = "$cate['pid'] gt 0">
+                <tp:catlist typeid="$cate['pid']" type='son' flag='1'>
+                    <?php if($catlist['id']==58){ ?>
+                   <li class="c"> <a href="http://zzb.cxzch.cn/shipin.php"> {$catlist.name} <span> &gt; </span> </a> </li>
+                    <?php }else{ ?>
+                        <li class="c"> <a href="{$catlist.url}"> {$catlist.name} <span> &gt; </span> </a> </li>
+                    <?php } ?>
+                </tp:catlist>
+            </if>
+        </if>
       </ul>
         <img src="__PUBLIC__/list/fqfm_051.jpg">
     </div>
@@ -112,19 +121,28 @@
       <div class="bjbld">
         <ul class="jsanl">
           	<tp:list typeid="$cid" pagesize='15'>
+                <?php if(in_array($list["cid"],[82,83,84,85,86,87])){ ?>
+                <li style="text-align: center;"> <a href="shipin.php/api/detail?id={$list['id']}"> <span class="dpdzfd"> <img src="{$list.litpic}" alt="{$list.title}">
+                </span>
+                    <span class="jsalnr">
+                  <span class="jsrbt">{$list.title}</span>
+                </span>
+                </a>
+                </li>
+                <?php }else{ ?>
+                <li style="text-align: center;"> <a href="{$list.url}"> <span class="dpdzfd"> <img src="{$list.litpic}" alt="{$list.title}">
+                </span>
+                    <span class="jsalnr">
+                  <span class="jsrbt">{$list.title}</span>
+                        <!--<span class="jsrnr">{$list.content}...</span>
+                        <span class="jsrgd">查看详情</span> -->
+                </span>
+                </a>
+                </li>
+                <?php } ?>
 
-
-          <li style="text-align: center;"> <a href="{$list.url}"> <span class="dpdzfd"> <img src="{$list.litpic}" alt="{$list.title}"> 
-            </span> 
-            <span class="jsalnr"> 
-              <span class="jsrbt">{$list.title}</span> 
-              <!--<span class="jsrnr">{$list.content}...</span>  
-              <span class="jsrgd">查看详情</span> -->
-            </span> 
-            </a> </li>
-          
           	</tp:list>
-                </ul>
+        </ul>
         <div class="yemmm"> <div class="pager">{$page}</div>
 </div>
       </div>

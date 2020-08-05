@@ -1,4 +1,5 @@
 <?php
+
 namespace Toupiao\Controller;
 
 use Think\Controller;
