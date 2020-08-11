@@ -18,14 +18,14 @@ $(document).ready(function(){
 
 //add thickbox to href & area elements that have a class of .thickbox
 function tb_init(domChunk){
-	$(domChunk).click(function(){
-	var t = this.title || this.name || null;
-	var a = this.href || this.alt;
-	var g = this.rel || false;
-	tb_show(t,a,g);
-	this.blur();
-	return false;
-	});
+	// $(domChunk).click(function(){
+	// var t = this.title || this.name || null;
+	// var a = this.href || this.alt;
+	// var g = this.rel || false;
+	// tb_show(t,a,g);
+	// this.blur();
+	// return false;
+	// });
 }
 
 function tb_show(caption, url, imageGroup) {//function called when the user clicks on a thickbox link
