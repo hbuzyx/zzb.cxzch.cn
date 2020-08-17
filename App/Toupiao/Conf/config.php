@@ -23,6 +23,7 @@ $config_base = array(
         '__DATA__' => __ROOT__. '/Data',
         '__AVATAR__' => __ROOT__. '/avatar',
         '__TOUPIAO__' => __ROOT__ . '/Public/'.MODULE_NAME.'/static',
+        '__TOUPIAO2__' => __ROOT__ . '/Public/'.MODULE_NAME.'/wap/static',
     ),
 
 );

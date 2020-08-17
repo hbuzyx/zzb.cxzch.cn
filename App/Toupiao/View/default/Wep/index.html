@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://kaoshi.hbxuwe.cn/index.php?exam-app-exampaper-makescore&ehid=55 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>欢迎光临紫塞先锋</title>
+<link href="__TOUPIAO2__/common.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="__TOUPIAO2__/style.css">
+<script src="__TOUPIAO2__/jquery-1.9.1.min.js"></script>
+<script src="__TOUPIAO2__/TouchSlide.1.1.js"></script>
+<!--<base target="_self">--><base href="." target="_self">
+</head>
+<body>
+<div id="warmp" class="warmp">
+<header class="header">
+	<section class="fix navbar">
+        <span class="ico-nav navHome">网站导航</span>
+    </section>
+</header>
+<div  class="slider-focus">
+	<div><img src="__TOUPIAO2__/images/pci1.jpg" width="100%"></div>
+	<!-- <div class="bd">
+    	<div class="tempWrap" style="overflow:hidden; position:relative;"><ul style="width: 1500px; position: relative; overflow: hidden; padding: 0px; margin: 0px; transition-duration: 0ms; transform: translate(-375px, 0px) translateZ(0px);">
+<li style="display: table-cell; vertical-align: top; width: 375px;"><a class="pic" href="image-detail.html" title="行业领先评选服务品牌"><img src="__TOUPIAO2__/photo.jpg" alt="行业领先评选服务品牌" border="0"></a></li><li style="display: table-cell; vertical-align: top; width: 375px;"><a class="pic" href="image-detail.html" title="行业领先评选服务品牌"><img src="__TOUPIAO2__/photo.jpg" alt="行业领先评选服务品牌" border="0"></a></li>
+<li style="display: table-cell; vertical-align: top; width: 375px;"><a class="pic" href="image-detail.html" title="行业领先评选服务品牌"><img src="__TOUPIAO2__/photo.jpg" alt="行业领先评选服务品牌" border="0"></a></li>
+
+<li style="display: table-cell; vertical-align: top; width: 375px;"><a class="pic" href="image-detail.html" title="行业领先评选服务品牌"><img src="__TOUPIAO2__/photo.jpg" alt="行业领先评选服务品牌" border="0"></a></li></ul></div>
+	</div>
+    <div class="hd">
+        <ul><li class="on">1</li><li class="">2</li></ul>
+    </div> -->
+</div>
+
+<article class="topic-con article"><div class="article-con">	公告：网站程序设计完毕，资料与内容请在后台自行添加。....详细</div></article>
+
+
+<!--<table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="MainRight">投票搜索</td>
+        </tr>
+		 <tr>
+          <td >
+		  <div style="margin-left:10px; margin-top:10px; margin-bottom:10px;">
+		  <form action="/Vote_list.asp" method="post" name="photo" id="photo">
+		  <input name="ResultSea" type="hidden" value="Search" />
+		  <input name="PhotoN" type="text" class="input1"  style="width:140px;"/>
+		  <input name="提交" type="submit" class="but1" value="搜索评选" />
+		  </form>
+		  </div>
+		  </td>
+        </tr>
+      </table>-->
+<div class="tab-news" id="tab-news">
+	<div class="tab-news-hd tab-hd-index">
+        <ul class="fix">
+            <li>投票</li>
+        </ul>
+    </div>
+
+		<div class="tab-iteam" id="tab-iteam1">
+		<div class="tempWrap" style="overflow: hidden; position: relative;"><div class="tab-iteam-con" id="tabBox1-bd">
+     	<div class="con">
+    		<ul>
+				<volist name="lists" id="vo2">
+					<li>
+						<a href="toupiao.php/wep/detail?id={$vo2.id}"><img src="{$vo2.litpic}"></a>
+						<div>
+							<h2>{$vo2.title}</h2>
+							<p>{$vo2.description}</p>
+							<span>累计票数：<i>{$vo2.piao}</i></span>
+							<input class="loginsmt" type="button" value="投票" onclick="tp({$vo2.id});">
+						</div>
+					</li>
+				</volist>
+		   </ul>
+		
+		<div class="pages">
+			{$page}
+			<!--<a href="">上一页</a>-->
+			<!--<a href="" class="pages_active">1</a>-->
+			<!--<a href="" class="no_style">...</a>-->
+			<!--<a href="">4</a>-->
+			<!--<a href="">下一页</a>-->
+		</div>
+		</div></div>
+		<div class="link_a">
+			<a href="{:U('result2')}">所有投票结果</a></div>
+		</div>
+		</div>
+</div>
+<footer class="footer">
+	<menu class="footer-con">
+    	<ul class="fix">
+        	<li class="zx"><a href="{:U('index')}">参与投票</a></li>
+            <li class="yy"><a href="{:U('result2')}">投票排行</a></li>
+			<li class="tel"><a href="{:U('search')}">搜索选手</a></li>
+			<!-- <li class="yy"><a href="../index.html">电脑版</a></li> -->
+			</ul>
+	</menu>
+</footer>
+<!-- <nav id="nav" class="nav home">
+	<h3><a href="./index.html">网站首页</a></h3>
+	<div id="scrollerBox" class="scrollerBox">
+		<div class="scroller">
+			<ul>
+				<li><a href="./index.html"><span></span>参与投票</a></li>
+				<li><a href="./news.html"><span></span>活动资讯</a></li>
+				<li><a href="./elegant.html"><span></span>投票排行</a></li>
+				<li><a href="./search.html"><span></span>搜索选手</a></li>
+				<li><a href="./contact-information.html"><span></span>联系方式</a></li>
+				<li><a href="./Member-Center.html"><span></span>会员中心</a></li>
+				<li><a href="./Message-consultation.html"><span></span>留言咨询</a></li>
+			</ul>
+		</div>
+	</div>
+</nav> -->
+<script src="__TOUPIAO2__/history.js"></script>
+<script>
+	function tp(tip){
+		$.ajax({
+			url:"{:U('toupiao')}",
+			// url:"{:U('Toupiao/Index/toupiao',1,'')}",
+			async:false,
+			type:'post',
+			dataType:'json',
+			data:{id:tip},
+			//请求成功
+			success : function(result) {
+				console.log(result);
+				if(result.status == 1){
+					alert(result.msg);
+				}else{
+					alert(result.msg)
+				}
+			},
+			//请求失败，包含具体的错误信息
+			error : function(e){
+				alert('投票失败！')
+			}
+		});
+	}
+	$(".search").bind("click",function(){
+		$("#search-over").fadeIn(50);
+		$("#search-warmp").show();
+		$("html,body").animate({scrollTop:0},200);
+		searchBtn();			
+		//TouchSlide({ slideCell:"#search-tab",titCell:".search-tab-hd li",mainCell:".search-tab-bd"});	//搜索切换
+		//搜索切换
+		$("#search-tab .search-tab-hd li").each(function(i) {$(this).click(function(){$(this).addClass("on").siblings().removeClass("on");$("#search-tab .search-tab-con").eq(i).show().siblings().hide();})
+        });
+		
+		$("#search-over").bind("touchmove",function(e){e.preventDefault()}, false);
+	});			
+	$("#search-clear").bind("click",function(){
+		$("#search-button").text("取消");
+		$("#search-button").removeClass("search-go").addClass("search-cancel");
+		$("#keywords").val("");
+		$(this).hide();		
+	});		
+	$("#keywords").bind("keyup input keywords",function(){
+		searchBtn()
+	});
+	$("#search-button").bind("click",function(){
+		if($(this).hasClass("search-go")){
+			searchGo()//搜索
+		}else{
+			searchCancle();//取消搜索 
+		}
+	});	
+	
+	$("#history .search-change").click(function(){
+		clearCookie('history');
+		getHistory("history",$("#history p"));
+	})
+	function searchBtn(){
+		if($("#keywords").val()==""){
+			$("#search-clear").hide();
+			$("#search-button").text("取消");
+			$("#search-button").removeClass("search-go");
+		}else{
+			$("i#search-clear").show();
+			$("#search-button").text("搜索");
+			$("#search-button").addClass("search-go");
+		}
+	}
+	function searchCancle(){
+		$("#search-over").fadeOut(50);
+		$("#search-warmp").hide();
+	}
+	function searchGo(){
+		//设置最近搜索
+		setHistory("history",$("#keywords").val());
+		getHistory("history",$("#history p"));
+		var k = $("#keywords").val();
+		var url = "search.php@keyword="+k;
+		window.location = url;
+	}
+	//获取历史浏览记录
+	getHistory("history",$("#history p"));	
+</script>
+<script src="__TOUPIAO2__/index.js"></script>
+<script src="__TOUPIAO2__/foot.js"></script><div class="gotop" id="gotop" style="display: block;"><div></div></div>
+
+</body></html>

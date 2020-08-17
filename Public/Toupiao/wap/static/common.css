@@ -16,13 +16,13 @@ body{ margin:0;padding:0;font:14px/22px Microsoft Yahei;/* font-size:1em; line-h
 .bg{ background:#F5F5F5;}
 /**============ Reset End ===============**/
 .navbar{background:url(images/pci2.jpg) center center no-repeat; background-size: 100% 100%;}
-.navbar .ico-home,.navbar .ico-nav{float:left;width:20%;height:100px;overflow:hidden;text-indent:-9999em;background:url(./images/ico-home.png) center center no-repeat;}
-.navbar .ico-nav{float:right;background:url(./images/ico-nav.png) center center no-repeat;}
+.navbar .ico-home,.navbar .ico-nav{float:left;width:20%;height:100px;overflow:hidden;text-indent:-9999em;}
+.navbar .ico-nav{float:right;}
 .navbar #title{float:left;width:58%;height:100px;margin:0 1%;font-size:3.142em;font-weight:normal;color:#fff;line-height:100px;text-align:center;overflow:hidden;-webkit-transition:font-size 0.2s ease-out; -o-transition:font-size 0.2s ease-out; -moz-transition:font-size 0.2s ease-out;transition:font-size 0.2s ease-out;}
 .header .description{height:58px;font-size:1.7em;font-weight:normal;line-height:58px;text-align:center;-webkit-transition:font-size 0.2s ease-out;-moz-transition:font-size 0.2s ease-out; -o-transition:font-size 0.2s ease-out; transition:font-size 0.2s ease-out;}
 .header .description span{padding:2px 5px;overflow:hidden;color:#ffea00;font-weight:bold;background:#D93E00;border-radius:1em;}
 /**============= 通用标题 =========**/
-.index-hd{height:68px;line-height:68px;padding:18px 20px 0 70px;border-bottom:3px solid #D93E00;background:url(./images/ico-tt.png) 20px 38px no-repeat;}
+.index-hd{height:68px;line-height:68px;padding:18px 20px 0 70px;border-bottom:3px solid #D93E00;}
 .index-hd .more{float:right;font-size:24px;}
 .index-hd h3{display:inline;font-size:32px;font-weight:normal;}
 .index-hd strong{color:#cbcbcb;font-size:24px;font-weight:normal;text-transform:uppercase;}
@@ -35,7 +35,7 @@ body{ margin:0;padding:0;font:14px/22px Microsoft Yahei;/* font-size:1em; line-h
 .copyright a{color:#999;}
 .footer{height:119px}
 .footer-con{width:100%;height:118px;position:fixed; z-index:100; right:0; bottom:0;background:#D93E00;border-top:1px solid #4dbaff;-webkit-transition:right .5s ease;transition:right .5s ease;}
-.footer li{ float:left; width:25%;}
+.footer li{ float:left; width:33.33%;}
 .footer li a,.footer li span{display:block;height:44px;padding:74px 0 0 0;text-align:center;font-size:24px;color:#fff;cursor:pointer;}
 .footer li.zx a{background:url(./images/ico-mess.png) center 15px no-repeat;}
 .footer li.tel a{background:url(./images/ico-tel2.png) center 15px no-repeat;}
@@ -97,7 +97,7 @@ body{ margin:0;padding:0;font:14px/22px Microsoft Yahei;/* font-size:1em; line-h
 	.copyright{font-size:0.8em;}
 	.footer{height:60px}
 	.footer .footer-con{height:59px;}
-	.footer li{ float:left; width:25%;}
+	.footer li{ float:left; width:33.33%;}
 	.footer li a,.footer li span{height:22px;padding:37px 0 0 0;font-size:12px;line-height:18px;}
 	.footer li.zx a{background:url(./images/ico-mess.png) center 7px no-repeat;background-size:29px 24px;}
 	.footer li.tel a{background:url(./images/ico-tel2.png) center 7px no-repeat;background-size:26px 25px;}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://tp.hbxuwe.cn/wap/ranking.asp -->
+		<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title> - 风采中心 - 欢迎光临紫塞先锋</title>
+<link href="__TOUPIAO2__/common.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="__TOUPIAO2__/style.css">
+<script src="__TOUPIAO2__/jquery-1.9.1.min.js"></script>
+<script src="__TOUPIAO2__/TouchSlide.1.1.js"></script>
+<!--<base target="_self">--><base href="." target="_self">
+</head>
+<body>
+<div id="warmp" class="warmp">
+<header class="header">
+	<section class="fix navbar">
+        <span class="ico-nav navHome">网站导航</span>
+    </section>
+</header>
+<div class="path">
+	<img src="__TOUPIAO2__/images/pci1.jpg" style="width: 100%;" >
+</div>
+
+<div class="tab-news" id="tab-news">
+	<div class="tab-news-hd tab-hd-index">
+        <ul class="fix">
+            <li class="on">投票结果</li>
+        </ul>
+    </div>
+
+ <div class="tempWrap" >
+	 <table border="0" cellspacing="" cellpadding="" width="100%" style="text-align: left;">
+	 	<tr><th>序号</th><th>选项</th><th>比例</th><th>票数</th></tr>
+		 <volist name="info" id="vo">
+			 <tr><td align="left">{$i}</td><td>{$vo.title}</td><td>{$vo.baifenbi}</td><td>{$vo.piao}</td></tr>
+		 </volist>
+	 </table>
+	 <div class="pages">
+		 {$page}
+	 	<!--<a href="">上一页</a>-->
+	 	<!--<a href="" class="pages_active">1</a>-->
+	 	<!--<a href="" class="no_style">...</a>-->
+	 	<!--<a href="">4</a>-->
+	 	<!--<a href="">下一页</a>-->
+	 </div>
+</div>
+    <div class="copyright">
+      <p>
+        共有<span>{$ren}</span>人参与，共有<span>{$piao}</span>票
+      </p>
+    </div>
+</div>
+<footer class="footer">
+	<menu class="footer-con">
+    	<ul class="fix">
+			<li class="zx"><a href="{:U('index')}">参与投票</a></li>
+			<li class="yy"><a href="{:U('result2')}">投票排行</a></li>
+			<li class="tel"><a href="{:U('search')}">搜索选手</a></li>
+        	<!--<li class="zx"><a href="./index.html">参与投票</a></li>-->
+        	<!--<li class="yy"><a href="./elegant.html">投票排行</a></li>-->
+        	<!--<li class="tel"><a href="./search.html">搜索选手</a></li>-->
+        	<!--<li class="yy"><a href="./../index.html">电脑版</a></li>-->
+			</ul>
+	</menu>
+</footer>
+<nav id="nav" class="nav home">
+	<h3><a href="./index.html">网站首页</a></h3>
+	<div id="scrollerBox" class="scrollerBox">
+		<div class="scroller">
+			<ul>
+				<li><a href="./index.html"><span></span>参与投票</a></li>
+				<li><a href="./news.html"><span></span>活动资讯</a></li>
+				<li><a href="./elegant.html"><span></span>投票排行</a></li>
+				<li><a href="./contact-information.html"><span></span>联系方式</a></li>
+				<li><a href="./Member-Center.html"><span></span>会员中心</a></li>
+				<li><a href="./Message-consultation.html"><span></span>留言咨询</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<script src="__TOUPIAO2__/history.js"></script>
+<script>	
+	$(".search").bind("click",function(){
+		$("#search-over").fadeIn(50);
+		$("#search-warmp").show();
+		$("html,body").animate({scrollTop:0},200);
+		searchBtn();			
+		//TouchSlide({ slideCell:"#search-tab",titCell:".search-tab-hd li",mainCell:".search-tab-bd"});	//搜索切换
+		//搜索切换
+		$("#search-tab .search-tab-hd li").each(function(i) {$(this).click(function(){$(this).addClass("on").siblings().removeClass("on");$("#search-tab .search-tab-con").eq(i).show().siblings().hide();})
+        });
+		
+		$("#search-over").bind("touchmove",function(e){e.preventDefault()}, false);
+	});			
+	$("#search-clear").bind("click",function(){
+		$("#search-button").text("取消");
+		$("#search-button").removeClass("search-go").addClass("search-cancel");
+		$("#keywords").val("");
+		$(this).hide();		
+	});		
+	$("#keywords").bind("keyup input keywords",function(){
+		searchBtn()
+	});
+	$("#search-button").bind("click",function(){
+		if($(this).hasClass("search-go")){
+			searchGo()//搜索
+		}else{
+			searchCancle();//取消搜索 
+		}
+	});	
+	
+	$("#history .search-change").click(function(){
+		clearCookie('history');
+		getHistory("history",$("#history p"));
+	})
+	function searchBtn(){
+		if($("#keywords").val()==""){
+			$("#search-clear").hide();
+			$("#search-button").text("取消");
+			$("#search-button").removeClass("search-go");
+		}else{
+			$("i#search-clear").show();
+			$("#search-button").text("搜索");
+			$("#search-button").addClass("search-go");
+		}
+	}
+	function searchCancle(){
+		$("#search-over").fadeOut(50);
+		$("#search-warmp").hide();
+	}
+	function searchGo(){
+		//设置最近搜索
+		setHistory("history",$("#keywords").val());
+		getHistory("history",$("#history p"));
+		var k = $("#keywords").val();
+		var url = "search.php@keyword="+k;
+		window.location = url;
+	}
+	//获取历史浏览记录
+	getHistory("history",$("#history p"));	
+</script>
+<script src="__TOUPIAO2__/index.js"></script>
+<script src="__TOUPIAO2__/foot.js"></script><div class="gotop" id="gotop"><div></div></div>
+
+
+</body></html>
