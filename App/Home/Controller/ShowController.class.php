@@ -192,6 +192,51 @@ class ShowController extends HomeCommonController
 				$this->assign('tags', $tags);
 
                 break;
+        case 'video':
+            //图片
+            $pictureurls_arr = empty($content['pictureurls']) ? array() : explode('|||', $content['pictureurls']);
+            $pictureurls     = array();
+            foreach ($pictureurls_arr as $v) {
+                $temp_arr = explode('$$$', $v);
+                if (!empty($temp_arr[0])) {
+                    $pictureurls[] = array(
+                        'url' => $temp_arr[0],
+                        'alt' => $temp_arr[1],
+                    );
+                }
+            }
+            $content['pictureurls'] = $pictureurls;
+
+            //下载地址:
+            if($content['downlink']){
+                $str=$content['downlink'] ;
+                $content['downlink'] = substr($str,0,strlen($str)-3);
+            }
+            //热门标签
+            $map['tag_status'] = 1;
+            $map['typeid'] = $cid;
+            $tags = M('tag')->where($map)->order('tag_click DESC')->limit(30)->select();
+            $this->assign('tags', $tags);
+
+            $ids = Category::getChildsId(get_category(), 57, true);
+            $where['status'] = 1;
+            $where['cid'] = array('IN',$ids);
+            $vlist = D2('ArcView', 'article')->nofield('content')->where($where)->order('id desc')->select();
+            foreach ($vlist as $k => $v) {
+                if (isset($v['flag'])) {
+                    $_jumpflag = ($v['flag'] & B_JUMP) == B_JUMP ? true : false;
+                    $_jumpurl  = $v['jumpurl'];
+                } else {
+                    $_jumpflag = false;
+                    $_jumpurl  = '';
+                }
+                $vlist[$k]['url'] = get_content_url($v['id'], $v['cid'], $v['ename'], $_jumpflag, $_jumpurl);
+                $type = \Common\Lib\Category::getSelf(get_category(0), $v['cid']);
+                $vlist[$k]['curl'] = get_url($type);
+                $vlist[$k]['comment'] = get_comment($v['id'], $v['modelid']);
+            }
+            $this->assign('vlist', $vlist);
+            break;
 			case 'topic':
 				//热门标签
 				$cids = array();

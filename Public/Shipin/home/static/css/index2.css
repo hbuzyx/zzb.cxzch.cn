@@ -411,7 +411,7 @@ div.flip-3d .figure:after{ content:" "; display:block; height:8vw; width:100%; t
 .myzs li a{ display:block; width:100%; height:auto; background:#fff; text-align:center; overflow:hidden;}
 .myzs li:hover{ border:1px solid #710006;}
 .c_kxkx{ background:#fff;}
-.foot{ width:100%; height:260px; background:url("../images/dbg.jpg") no-repeat center; min-width:1200px;}
+.foot{ width:100%; height:260px; background:url("../images/dbg.jpg") no-repeat center;}
 .ssnb{ height:90px; line-height:50px; padding-top:40px; overflow:hidden;}
 .dbdh li{ float:left; padding-right:40px;}
 .dbdh li a{ color:#fff;}

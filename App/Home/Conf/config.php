@@ -37,6 +37,7 @@ $config_base = array(
     'TMPL_PARSE_STRING' => array(
         //'__PUBLIC__' => __ROOT__. '/Public/'.MODULE_NAME. '/' . get_cfg_value('CFG_THEMESTYLE'),
         '__PUBLIC__' => __ROOT__. '/Public/'.MODULE_NAME. '/' . get_cfg_value('CFG_THEMESTYLE'),
+        '__PUBLIC2__' => __ROOT__. '/Public/Shipin/home/static/',
         '__DATA__' => __ROOT__. '/Data',
         '__AVATAR__' => __ROOT__. '/avatar',
         '__STATIC__' => __ROOT__. '/Public/'. MODULE_NAME . '/static',

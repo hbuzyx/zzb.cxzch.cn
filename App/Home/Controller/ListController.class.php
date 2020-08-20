@@ -332,6 +332,123 @@ class ListController extends HomeCommonController
                 $this->display($template_list);
                 return;
                 break;
+            case 'video':
+                if ($self['property']) {
+                    $map['id'] = array('in',$self['property']);
+                    $proplist = M('property')->where($map)->order('listorder ASC')->select();
+
+                    $pstr = '';
+                    if ($proplist) {
+                        $m = 0;
+                        for ($h=1;$h<count($proplist)+1;$h++) {
+                            $propid = intval($_GET['q'.$h]);
+                            if ($propid > 0) {
+                                if ($m == 0) {
+                                    $where['_string'] .= 'FIND_IN_SET('.$propid.',prop_value)';
+                                } else {
+                                    $where['_string'] .= ' AND FIND_IN_SET('.$propid.',prop_value)';
+                                }
+                                $propv = M('PropertyValue')->where("id=$propid")->find();
+                                $pstr .= $propv['vname'];
+                                $m++;
+                            }
+                        }
+                        if (!empty($pstr)) {
+                            $pstr = '_'.$pstr;
+                        }
+                    }
+
+                    $ids = Category::getChildsId(get_category(), $cid, true);
+//dump($ids);
+                    $where['status'] = 1;
+                    $where['cid'] = array('IN',$ids);
+                    $where['flag'] = 5;
+                    $pagesize = 20;
+                    $pageroll = 3;
+                    $count = D2('ArcView', 'video')->where($where)->count();
+//                    dump($count);
+                    $ename = I('e', '', 'htmlspecialchars,trim');
+                    if (!empty($ename) && C('URL_ROUTER_ON') == true) {
+                        $param['p'] = I('p', 1, 'intval');
+
+                        for ($h=1;$h<count($proplist)+1;$h++) {
+                            $q = I('q'.$h, 0, 'intval');
+                            if ($q) {
+                                $param['q'.$h] = $q;
+                            }
+                        }
+
+                        $param_action = '/'.$ename;
+                    } else {
+                        $param = array();
+                        $param_action = '';
+                    }
+
+                    $thisPage = new \Common\Lib\Page($count, $pagesize, $param, $param_action);
+
+                    //设置显示的页数
+                    $thisPage->rollPage = $pageroll;
+                    $thisPage->setConfig('prev', "上一页");
+                    $thisPage->setConfig('next', "下一页");
+                    $thisPage->setConfig('theme', ' %HEADER% %FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%');
+                    $limit = $thisPage->firstRow. ',' .$thisPage->listRows;
+                    $page = $thisPage->show();
+
+                    $order = isset($_GET['order'])?$_GET['order']:0;
+                    switch ($order) {
+                        case '1':
+                            $order = 'id DESC';
+                            break;
+                        case '2':
+                            $order = 'click DESC';
+                            break;
+                        default:
+                            $order = 'id DESC';
+                    }
+
+                    $vlist = D2('ArcView', 'video')->nofield('content')->where($where)->order($order)->limit($limit)->select();
+//dump($vlist);die;
+                    if (!empty($vlist)) {
+                        foreach ($vlist as $k => $v) {
+                            if (isset($v['flag'])) {
+                                $_jumpflag = ($v['flag'] & B_JUMP) == B_JUMP ? true : false;
+                                $_jumpurl  = $v['jumpurl'];
+                            } else {
+                                $_jumpflag = false;
+                                $_jumpurl  = '';
+                            }
+                            $vlist[$k]['url'] = get_content_url($v['id'], $v['cid'], $v['ename'], $_jumpflag, $_jumpurl);
+                            $type = Category::getSelf(get_category(0), $v['cid']);
+                            $vlist[$k]['curl'] = get_url($type);
+                            $vlist[$k]['comment'] = get_comment($v['id'], $v['modelid']);
+                        }
+                    }
+                    unset($where['flag']);
+                    $vlist2 = D2('ArcView', 'video')->nofield('content')->where($where)->order($order)->select();
+                    if (!empty($vlist2)) {
+                        foreach ($vlist2 as $k => $v) {
+                            if (isset($v['flag'])) {
+                                $_jumpflag = ($v['flag'] & B_JUMP) == B_JUMP ? true : false;
+                                $_jumpurl  = $v['jumpurl'];
+                            } else {
+                                $_jumpflag = false;
+                                $_jumpurl  = '';
+                            }
+                            $vlist2[$k]['url'] = get_content_url($v['id'], $v['cid'], $v['ename'], $_jumpflag, $_jumpurl);
+                            $type = Category::getSelf(get_category(0), $v['cid']);
+                            $vlist2[$k]['curl'] = get_url($type);
+                            $vlist2[$k]['comment'] = get_comment($v['id'], $v['modelid']);
+                        }
+                    }
+                    $this->assign('ptitle', $pstr);
+                    $this->assign('proplist', $proplist);
+                    $this->assign('vlist', $vlist);
+                    $this->assign('vlist2', $vlist2);
+                    $this->assign('page1', $page);
+                }
+                $this->display($template_list);
+                return;
+                break;
             case 'page':
                 {
                     $cate            = M('Category')->Field('content')->find($cid);

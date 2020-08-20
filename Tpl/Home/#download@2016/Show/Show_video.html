@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="order by dede58.com/" />
+<title>2019年第四期_紫塞先锋网</title>
+<meta name="keywords" content="2019年,第四,期,2019年,第四,期," />
+<meta name="description" content="2019年第四期" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="__PUBLIC2__/css/amazeui.min.css">
+<link rel="stylesheet" href="__PUBLIC2__/css/app.css">
+<link rel="stylesheet" href="__PUBLIC2__/css/index.css">
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="__PUBLIC2__/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="__PUBLIC2__/js/amazeui.min.js"></script>
+<link rel="stylesheet" href="__PUBLIC2__/css/index.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+        href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]--> 
+<!-- 代码区 -->
+
+<include file="Public:header" />
+
+
+<div class="n_cont c">
+ <div class="jz c">
+    <div class="ny_nav" id="my_sticky">
+      <div class="wjssbt c">节目列表</div>
+      <ul class="wjsndh c">
+        <tp:list pagesize='10'>
+          <li class="c"><a href="{$list.url}">{$list.title}<span> > </span> </a></li>
+        </tp:list>
+        <!--<li class="c"> <a href="./jm.html"> 节目列表 <span> > </span> </a> </li>-->
+        <!--<li class="c"> <a href="http://video.blestgirl.top/home/video-list2.html"> 精彩点播 <span> > </span> </a> </li>-->
+        <!--<li class="c"> <a href="./lm.html"> 栏目介绍 <span> > </span> </a> </li>-->
+      </ul>
+      <!--<img src="__PUBLIC2__/picture/fqfm_051.jpg">-->
+    </div>
+    <script>
+            $(window).bind('scroll', function () {
+                var div_h = $('.ny_nav').height(); // div的高度
+                var foot_h = $(".foot").offset().top - $(window).scrollTop(); // foot到顶部的距离
+                var con_h = $('.ny_zqw_chb').offset().top - $(window).scrollTop(); // con到顶部的距离
+                if(con_h <= 0){
+                    $('#my_sticky').addClass('ny_nav_chb');
+                    if(foot_h - div_h <= 0){
+                        $('#my_sticky').css({
+                            'top':'auto',
+                            'bottom':$(window).height() - foot_h
+                        })
+                    }else{
+                        $('#my_sticky').css({
+                            'top':'0',
+                            'bottom':'auto'
+                        })
+                    }
+                }else{
+                    $('#my_sticky').removeClass('ny_nav_chb');
+                }
+            });
+        </script>
+    <div class="ny_zqw ny_zqw_chb">
+      <div class="nw_top"> <span class="top_tzbt l">节目列表</span>
+        <span class="top_mbx r">您的位置：
+        <a href='/'>主页</a> > <a href='/index.php?s=/xianfengshipin'>先锋视频</a> >
+        <a href='/index.php?s=/jicengfaxian'>基层发现</a> >
+      </div>
+      <!--内页正文-->
+      <div class="bjbld">
+        <div class="xqbt">{$content.title}</div>
+        <div class="xqbtnm">
+          <div class="xqbrq"> <span class="rqds l"><?php echo date('Y-m-d',$content['publishtime']); ?></span> <span class="ckrs l"><b style="font-weight:100;"><script src="__PUBLIC2__/js/count.js"type='text/javascript' language="javascript"></script></b></span> <a href="/index.php?s=/jicengfaxian" class="ybfh r">返回</a> </div>
+        </div>
+        <div class="xqxq">
+		<video src="{$content.downlink}" autoplay controls style="width: 432px; height: 292px;"><video>
+        </div>
+        <div class="xypxq"> 
+        <!--<a class='sypa l'><b>上一篇：</b>没有了</a>  <a href='/a/mingyuanzhanshi/jicengfaxian/jiemuliebiao/2019/1222/185.html' class='xypa r'><b>下一篇：</b>2019年第五期</a> -->
+        </div>
+      </div>
+      <!--内页正文--> 
+    </div>
+  </div>
+</div>
+<script language="JavaScript" src="__PUBLIC2__/js/api.js"></script> 
+<div align="center"><div class="foot">
+  <div align="center"><div class="footjz">
+<div DIV style="LINE-HEIGHT: 60%"><br/></div>
+    <div align="center"><div class="egwm"> <img src="__PUBLIC2__/picture/ewm.jpg" class="ewmtpw" alt="二维码">
+      <div class="lxfsa"> <span class="ytbts">紫塞先锋网</span> <span class="ytbta">电话：0314-2050747</span> <span class="ytbta">传真：0314-2050747</span> <span class="ytbta">邮箱：cdycb@126.com</span> <span class="ytbta">地址：河北省承德市政府行政中心 </span> </div>
+    </div></div>
+    <br/>
+    <div class="dbxx">Copyright © 2002-2019 紫塞先锋党建网 版权所有     备案号：冀ICP备1325325253 &nbsp;&nbsp;</div>
+  </div>
+</div></div></div>
+
+</body>
+</html>
