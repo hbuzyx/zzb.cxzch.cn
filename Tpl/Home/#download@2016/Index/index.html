@@ -169,11 +169,19 @@
           <div class="c_bkebt"> <div class="zwbtz l"  style="background-color: #710006;line-height: 46px; color: white;font-size: 16px;padding-left:20px;padding-right:20px;font-weight:normal;">{$catlist.name}</div>
           <div align="right" style="line-height:46px;">
               <span class="zwbtz r">
-                  <a class="ddson" href="/index.php?s=/jicengfaxian" target="_blank">基层发现</a>
-                  <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-              <volist name='catlist["child"]' id='v' offset='0' length='6'>
+                  <!--<a class="ddson" href="/index.php?s=/jicengfaxian" target="_blank">基层发现</a>-->
+                  <!--<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>-->
+              <volist name='catlist["child"]' id='v' offset='0' length='6' key="k" >
+                  <if condition="$k == 1">
                   <a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
                   <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                  <a class="ddson" href="/index.php?s=/jicengfaxian" target="_blank">基层发现</a>
+                  <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                      <else />
+                      <a class="ddson" href="{$v.ename}" target="_blank">{$v.name}</a>
+                  <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                  </if>
+
               </volist>
               <a class="more" href="{$catlist.url}" target="_blank">&nbsp;&nbsp;</a>
               </span>

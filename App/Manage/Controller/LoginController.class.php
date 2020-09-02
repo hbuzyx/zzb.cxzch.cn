@@ -80,7 +80,7 @@ class LoginController extends Controller {
 	//登录验证码
 	public function verify($id = '1') {
 
-		//ob_clean();
+		ob_clean();
 		$config = array(
 			'fontSize' => 18,
 			'length' => 4,
