@@ -231,7 +231,7 @@
   height: 100%;
   border-radius: 50%;
   box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6),
-    0 1px 2px rgba(0, 0, 0, 0.3);
+  0 1px 2px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
@@ -557,11 +557,11 @@
 .twentytwenty-container.active .twentytwenty-overlay .twentytwenty-before-label,
 .twentytwenty-container.active .twentytwenty-overlay .twentytwenty-after-label,
 .twentytwenty-container.active
-  :hover.twentytwenty-overlay
-  .twentytwenty-before-label,
+:hover.twentytwenty-overlay
+.twentytwenty-before-label,
 .twentytwenty-container.active
-  :hover.twentytwenty-overlay
-  .twentytwenty-after-label {
+:hover.twentytwenty-overlay
+.twentytwenty-after-label {
   opacity: 0;
 }
 .twentytwenty-container * {
@@ -1141,7 +1141,7 @@
   transform: translateY(-125px);
   -moz-transition: -moz-transform 0.2s 0.1s ease-out, opacity 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.2s 0.1s ease-out,
-    opacity 0.3s ease-in-out;
+  opacity 0.3s ease-in-out;
   -o-transition: -o-transform 0.2s 0.1s ease-out, opacity 0.3s ease-in-out;
   -ms-transition: -ms-transform 0.2s 0.1s ease-out, opacity 0.3s ease-in-out;
   transition: transform 0.2s 0.1s ease-out, opacity 0.3s ease-in-out;
@@ -1206,7 +1206,7 @@
   -ms-transform: scale(0, 0);
   transform: scale(0, 0);
   -webkit-transition: -webkit-transform 0.2s 0.1s ease-in,
-    opacity 0.1s ease-in-out;
+  opacity 0.1s ease-in-out;
   -moz-transition: -moz-transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out;
   -o-transition: -o-transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out;
   -ms-transition: -ms-transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out;
@@ -1354,9 +1354,9 @@ div.flip-3d .figure:after {
   width: 100%;
   transform: rotateX(90deg);
   background-image: radial-gradient(
-    ellipse closest-side,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0) 100%
+          ellipse closest-side,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0) 100%
   );
 }
 /*图片效果6*/
@@ -2034,7 +2034,7 @@ div.flip-3d .figure:after {
 }
 .foot {
   width: 100%;
-/*  height: 260px;*/
+  /*  height: 260px;*/
   padding-bottom: 40px;
   background: url("../img/dbg.jpg") no-repeat center;
 }
@@ -2478,7 +2478,7 @@ fieldset[disabled] .am-form-field {
 .jsanl li a img {
   display: block;
   width: 288px;
-  height: auto;
+  height: 190px;
   transition: all 0.3s;
 }
 .jsanl li a:hover img {
@@ -2537,6 +2537,7 @@ fieldset[disabled] .am-form-field {
   -moz-transition: background 0.4s; /* Firefox 4 */
   -webkit-transition: background 0.4s; /* Safari 和 Chrome */
   -o-transition: background 0.4s;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
 }
 .jsalnr .jsrnr {
   font-size: 12px;
@@ -2615,7 +2616,7 @@ fieldset[disabled] .am-form-field {
   background: #f9f9f9;
   float: right;
   width: 450px;
-  height: 308px;
+  min-height: 308px;
 }
 .gcxqs {
   padding: 35px;
@@ -3021,9 +3022,9 @@ fieldset[disabled] .am-form-field {
   .xypa {
     width: 90%;
   }
-.xypxq #left{
-	float: left;
-}
+  .xypxq #left{
+    float: left;
+  }
   .xqxq img {
     width: 100%;
   }
@@ -3418,8 +3419,8 @@ fieldset[disabled] .am-form-field {
   .boxon dl dd a.more {
     display: block;
   }
-.foot{
-	position: relative;
-	top: -25px;
-}
+  .foot{
+    position: relative;
+    top: -25px;
+  }
 }

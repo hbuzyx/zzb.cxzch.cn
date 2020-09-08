@@ -120,9 +120,9 @@
 	<!------------------------------------------------>
 	<div class="boxon">
 		<div class="pics">
-			<a href="http://j.hbxuwe.cn/plus/list.php?tid=76"><img src="__PUBLIC__/zzb/a.jpg"></a>
-			<a href="http://j.hbxuwe.cn/plus/list.php?tid=77"><img src="__PUBLIC__/zzb/b.jpg"></a>
-
+			<img style="display: block;width: 594px;height: 96px;margin: 0 6px;float: left;" src="__PUBLIC__/zzb/a.jpg">
+            <img style="display: block;width: 594px;height: 96px;margin: 0 6px;float: left;" src="__PUBLIC__/zzb/b.jpg">
+			<!--<a href="#"><img src="__PUBLIC__/zzb/b.jpg"></a>-->
 		</div>
        <tp:catlist typeid='0' flag='a' modelid='1' limit='4'>
 		<div class="con">
@@ -188,7 +188,7 @@
           </div>
           </div>
           <ul class="myzs">
-                <tp:list typeid='$catlist["id"]' flag='a' limit='7'>
+                <tp:list typeid='$catlist["id"]' flag='a' limit='5'>
                    <li>
                        <?php if(in_array($list["cid"],[82,83,84,85,86,87])){ ?>
                     <a href="shipin.php/api/detail?id={$list['id']}"><img src="{$list.litpic}" width="100%" alt="{$list.title}"></a>
@@ -271,7 +271,7 @@
 
               </div>
               <ul class="myzs">
-                <tp:list typeid='$catlist["id"]' flag='a' limit='7'>
+                <tp:list typeid='$catlist["id"]' flag='a' limit='5'>
                     <li>
                         <a href="{$list.url}"><img src="{$list.litpic}" width="100%" alt="{$list.title}"></a>
                     </li>
@@ -481,4 +481,11 @@
 	});
 </script>
 
+
+<script type="text/javascript"> 
+ var aList = document.getElementsByTagName('a');//获取所有的标签a 
+ for(var i=0;i<aList.length;i++){ 
+    aList[i].target='_blank';//定义成打开新窗口 
+ } 
+ </script> 
 </body></html>

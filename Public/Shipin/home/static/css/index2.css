@@ -434,7 +434,12 @@ div.flip-3d .figure:after{ content:" "; display:block; height:8vw; width:100%; t
 .ny_nav .wjssbtt{ overflow:hidden; width:252px; height:106px;}
 .wjsndh{ margin:0;}
 .wjsndh li{ border-bottom:1px solid #D3D3D3; width:252px; height:51px;}
-.wjsndh li a{ display:block; height:50px; background:#fff; color:#333; font-size:14px; line-height:50px; padding-left:20px; -webkit-transition:background 0.3s; -moz-transition:background 0.3s; -ms-transition:background 0.3s; -o-transition:background 0.3s; transition:background 0.3s;}
+.wjsndh li a{
+ display:block; height:50px; background:#fff; color:#333; font-size:14px; line-height:50px; padding-left:20px;
+ -webkit-transition:background 0.3s; -moz-transition:background 0.3s;-ms-transition:background 0.3s; -o-transition:background 0.3s;
+ transition:background 0.3s;
+ overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
 .wjsndh li a:hover{ background:#B0151A; color:#fff; -webkit-transition:background 0.3s; -moz-transition:background 0.3s; -ms-transition:background 0.3s; -o-transition:background 0.3s; transition:background 0.3s;}
 .wjsndh li a span{ float:right; font-family:"宋体"; font-size:20px; line-height:50px; padding-right:20px; -webkit-transition:padding 0.3s; -moz-transition:padding 0.3s; -ms-transition:padding 0.3s; -o-transition:padding 0.3s; transition:padding 0.3s;}
 .wjsndh li a:hover span{ padding-right:10px; -webkit-transition:padding 0.3s; -moz-transition:padding 0.3s; -ms-transition:padding 0.3s; -o-transition:padding 0.3s; transition:padding 0.3s;}
@@ -527,7 +532,7 @@ div.flip-3d .figure:after{ content:" "; display:block; height:8vw; width:100%; t
 .jsanl{ overflow:hidden;}
 .jsanl li{ width:288px; float:left; overflow:hidden; margin-right:10px; margin-top:20px;}
 .jsanl li:nth-child(3n){ margin-right: 0;}
-.jsanl li a img{ display:block; width:288px; height:auto; transition:all 0.3s;}
+.jsanl li a img{ display:block; width:288px; height:240px; transition:all 0.3s;}
 .jsanl li a:hover img{ transform:scale(1.1);}
 .dpdzfd{ overflow:hidden; display:block;}
 .jsanl li a .jsalnr{ /*height:200px;*/background:#F6F6F6; overflow:hidden; display:block; padding:25px 20px 20px 20px; transition:background 0.4s; -moz-transition:background 0.4s;	/* Firefox 4 */-webkit-transition:background 0.4s;	/* Safari 和 Chrome */-o-transition:background 0.4s;}
@@ -535,7 +540,11 @@ div.flip-3d .figure:after{ content:" "; display:block; height:8vw; width:100%; t
 .jsanl li a:hover .jsalnr .jsrbt{ color:#fff; transition:background 0.4s; -moz-transition:background 0.4s;	/* Firefox 4 */-webkit-transition:background 0.4s;	/* Safari 和 Chrome */-o-transition:background 0.4s;}
 .jsanl li a:hover .jsalnr .jsrnr{ color:#fff; transition:background 0.4s; -moz-transition:background 0.4s;	/* Firefox 4 */-webkit-transition:background 0.4s;	/* Safari 和 Chrome */-o-transition:background 0.4s;}
 .jsanl li a:hover .jsalnr .jsrgd{ color:#fff; background:#6FC1FF; transition:background 0.4s; -moz-transition:background 0.4s;	/* Firefox 4 */-webkit-transition:background 0.4s;	/* Safari 和 Chrome */-o-transition:background 0.4s;}
-.jsalnr .jsrbt{ display:block; font-size:16px; color:#333; margin-bottom:10px; transition:background 0.4s; -moz-transition:background 0.4s;	/* Firefox 4 */-webkit-transition:background 0.4s;	/* Safari 和 Chrome */-o-transition:background 0.4s;}
+.jsalnr .jsrbt{
+ display:block; font-size:16px; color:#333; margin-bottom:10px; transition:background 0.4s; -moz-transition:background 0.4s;
+ /* Firefox 4 */-webkit-transition:background 0.4s;	/* Safari 和 Chrome */-o-transition:background 0.4s;
+ overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
 .jsalnr .jsrnr{ font-size:12px; color:#333; display:block; line-height:25px; transition:background 0.4s; -moz-transition:background 0.4s;	/* Firefox 4 */-webkit-transition:background 0.4s;	/* Safari 和 Chrome */-o-transition:background 0.4s;}
 .jsalnr .jsrgd{ margin-top:10px; display:block; height:35px; line-height:35px; text-align:center; background:#DEDEDE; font-size:12px; transition:background 0.4s; -moz-transition:background 0.4s;	/* Firefox 4 */-webkit-transition:background 0.4s;	/* Safari 和 Chrome */-o-transition:background 0.4s;}
 .bjbld{ overflow:hidden; padding:0 0 30px 0;}
