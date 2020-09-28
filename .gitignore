@@ -1,0 +1,6 @@
+App/Runtime
+App/Common/Conf/db.php
+uploads
+#.gitignore
+# IDE / Editor
+.idea
