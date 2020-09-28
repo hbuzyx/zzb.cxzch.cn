@@ -76,7 +76,7 @@
                             <li class="c"> <a href="{$catlist.url}"> {$catlist.name} <span> &gt; </span> </a> </li>
                             <?php } ?>
                         </tp:catlist>
-                        <else />
+                      <else />
                         <if condition = "$cate['pid'] gt 0">
                             <tp:catlist typeid="$cate['pid']" type='son' flag='1'>
                                 <?php if($catlist['id']==58){ ?>
